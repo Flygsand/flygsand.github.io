@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://kvadevack.se/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kvadevack.se/post/wrapping-c-libraries-with-smart-pointers</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kvadevack.se/post/nintendo-switch-virtual-keyboard</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kvadevack.se/post/playlog-december-2018-grim-fandango-remastered</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kvadevack.se/post/cxx-modules</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kvadevack.se/resume/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>

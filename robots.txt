@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kvadevack.se/sitemap.xml
+Host: https://kvadevack.se
