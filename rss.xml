@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Martin Häger]]></title><description><![CDATA[Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY.]]></description><link>https://kvadevack.se</link><generator>RSS for Node</generator><lastBuildDate>Wed, 26 Jun 2019 15:30:01 GMT</lastBuildDate><item><title><![CDATA[Wrapping C Libraries With Smart Pointers]]></title><description><![CDATA[In this post, we will look at how smart pointers can be used to implement a RAII interface to C libraries. This is the
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Martin Häger]]></title><description><![CDATA[Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY.]]></description><link>https://kvadevack.se</link><generator>RSS for Node</generator><lastBuildDate>Thu, 15 Aug 2019 09:48:35 GMT</lastBuildDate><item><title><![CDATA[Wrapping C Libraries With Smart Pointers]]></title><description><![CDATA[In this post, we will look at how smart pointers can be used to implement a RAII interface to C libraries. This is the
 basis for my SDL2 wrapper. Using this method, we don't have to write wrapper classes.]]></description><link>https://kvadevack.sewrapping-c-libraries-with-smart-pointers</link><guid isPermaLink="false">https://kvadevack.sewrapping-c-libraries-with-smart-pointers</guid><pubDate>Thu, 31 Jan 2019 16:58:47 GMT</pubDate><content:encoded>&lt;p&gt;In this post, we will look at how smart pointers can be used to implement a RAII interface to C libraries. This is the
 basis for my &lt;a href=&quot;https://github.com/elebytes/sdl2xx&quot; target=&quot;_self&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;SDL2 wrapper&lt;/a&gt;. Using this method, we don&apos;t have to write wrapper classes.&lt;!-- jump --&gt;&lt;/p&gt;
 &lt;p&gt;SDL uses the common C design pattern of &lt;a href=&quot;https://en.wikipedia.org/wiki/Opaque_data_type&quot; target=&quot;_self&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;opaque types&lt;/a&gt;, in which the
@@ -51,7 +51,7 @@ efficiently be constructed from a &lt;code class=&quot;language-text&quot;&gt;st
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;auto&lt;/span&gt; sharedPtr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;make_shared_from&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;std&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;move&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;uniquePtr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The reverse is not possible. It is generally a bad idea to design your API to require a specific pointer implementation,
 and specifically &lt;code class=&quot;language-text&quot;&gt;std::unique_ptr&lt;/code&gt; &lt;a href=&quot;https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/&quot; target=&quot;_self&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;unless ownership transfer is implied&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Nintendo Switch Virtual Keyboard]]></title><description><![CDATA[libnx is now capable of calling up system applets, including the virtual keyboard and captive portal browser. With these
-two components, it should be straightforward to implement a makeshift web browser. ]]></description><link>https://kvadevack.senintendo-switch-virtual-keyboard</link><guid isPermaLink="false">https://kvadevack.senintendo-switch-virtual-keyboard</guid><pubDate>Wed, 23 Jan 2019 19:13:44 GMT</pubDate><content:encoded>&lt;p&gt;libnx is now capable of calling up system applets, including the virtual keyboard and captive portal browser. With these
+two components, it should be straightforward to implement a makeshift web browser.]]></description><link>https://kvadevack.senintendo-switch-virtual-keyboard</link><guid isPermaLink="false">https://kvadevack.senintendo-switch-virtual-keyboard</guid><pubDate>Wed, 23 Jan 2019 19:13:44 GMT</pubDate><content:encoded>&lt;p&gt;libnx is now capable of calling up system applets, including the virtual keyboard and captive portal browser. With these
 two components, it should be straightforward to implement a makeshift web browser. &lt;!-- jump --&gt;Here&apos;s how you use the keyboard:&lt;/p&gt;
 &lt;p&gt;&lt;div class=&quot;gatsby-highlight&quot;&gt;
         &lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;#&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;stdio.h&gt;&lt;/span&gt;&lt;/span&gt;
@@ -116,9 +116,8 @@ two components, it should be straightforward to implement a makeshift web browse
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
         alt=&quot;screenshot1&quot;
-        title=&quot;&quot;
+        title=&quot;screenshot1&quot;
         src=&quot;/static/5ffcbad5da14a8c3b8a8b2a2c2aa341f/a111b/2019012320041100-50E2A11CE4BDDC72EF99DF78315D4938.jpg&quot;
         srcset=&quot;/static/5ffcbad5da14a8c3b8a8b2a2c2aa341f/aca85/2019012320041100-50E2A11CE4BDDC72EF99DF78315D4938.jpg 163w,
 /static/5ffcbad5da14a8c3b8a8b2a2c2aa341f/0954f/2019012320041100-50E2A11CE4BDDC72EF99DF78315D4938.jpg 325w,
@@ -126,6 +125,7 @@ two components, it should be straightforward to implement a makeshift web browse
 /static/5ffcbad5da14a8c3b8a8b2a2c2aa341f/ce471/2019012320041100-50E2A11CE4BDDC72EF99DF78315D4938.jpg 975w,
 /static/5ffcbad5da14a8c3b8a8b2a2c2aa341f/6c315/2019012320041100-50E2A11CE4BDDC72EF99DF78315D4938.jpg 1280w&quot;
         sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
@@ -149,9 +149,8 @@ two components, it should be straightforward to implement a makeshift web browse
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
         alt=&quot;screenshot2&quot;
-        title=&quot;&quot;
+        title=&quot;screenshot2&quot;
         src=&quot;/static/e424b33be79612ec46055e34c0d83ab5/a111b/2019012320041700-DA63280140B1530CD17755515D814CFE.jpg&quot;
         srcset=&quot;/static/e424b33be79612ec46055e34c0d83ab5/aca85/2019012320041700-DA63280140B1530CD17755515D814CFE.jpg 163w,
 /static/e424b33be79612ec46055e34c0d83ab5/0954f/2019012320041700-DA63280140B1530CD17755515D814CFE.jpg 325w,
@@ -159,6 +158,7 @@ two components, it should be straightforward to implement a makeshift web browse
 /static/e424b33be79612ec46055e34c0d83ab5/ce471/2019012320041700-DA63280140B1530CD17755515D814CFE.jpg 975w,
 /static/e424b33be79612ec46055e34c0d83ab5/6c315/2019012320041700-DA63280140B1530CD17755515D814CFE.jpg 1280w&quot;
         sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
@@ -186,7 +186,6 @@ adventure games. But the faithful recreation leaves several gameplay aspects sho
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
         alt=&quot;gfs 419299 2 5&quot;
         title=&quot;The humor is on point.&quot;
         src=&quot;/static/374a1517e804444c971034de812a4d18/a111b/gfs_419299_2_5.jpg&quot;
@@ -196,6 +195,7 @@ adventure games. But the faithful recreation leaves several gameplay aspects sho
 /static/374a1517e804444c971034de812a4d18/ce471/gfs_419299_2_5.jpg 975w,
 /static/374a1517e804444c971034de812a4d18/1f853/gfs_419299_2_5.jpg 1024w&quot;
         sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
