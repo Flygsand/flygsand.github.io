@@ -1,1 +1,1 @@
-{"data":{"site":{"siteMetadata":{"author":"Martin Häger","repositoryUrl":"https://github.com/kvadevack/site"}},"latestPost":{"edges":[{"node":{"frontmatter":{"date":"2019-08-17T16:19:28.000Z"}}}]}}}
+{"data":{"site":{"id":"Site","siteMetadata":{"author":"Martin Häger","repositoryUrl":"https://github.com/kvadevack/site"}},"latestPost":{"edges":[{"node":{"id":"7d071a0c-b88e-5a27-ad9d-4199831df0af","frontmatter":{"date":"2019-08-17T16:19:28.000Z"}}}]}}}
