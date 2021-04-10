@@ -405,7 +405,7 @@
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
- */.transition{animation-iteration-count:1;animation-duration:.3s;animation-timing-function:ease;animation-fill-mode:both}.animating.transition{-webkit-backface-visibility:hidden;backface-visibility:hidden;visibility:visible!important}.loading.transition{position:absolute;top:-99999px;left:-99999px}.hidden.transition{display:none;visibility:hidden}.visible.transition{display:block!important;visibility:visible!important}.disabled.transition{animation-play-state:paused}.looping.transition{animation-iteration-count:infinite}.transition.browse{animation-duration:.5s}.transition.browse.in{animation-name:browseIn}.transition.browse.left.out,.transition.browse.out{animation-name:browseOutLeft}.transition.browse.right.out{animation-name:browseOutRight}@keyframes browseIn{0%{transform:scale(.8) translateZ(0);z-index:-1}10%{transform:scale(.8) translateZ(0);z-index:-1;opacity:.7}80%{transform:scale(1.05) translateZ(0);opacity:1;z-index:999}to{transform:scale(1) translateZ(0);z-index:999}}@keyframes browseOutLeft{0%{z-index:999;transform:translateX(0) rotateY(0deg) rotateX(0deg)}50%{z-index:-1;transform:translateX(-105%) rotateY(35deg) rotateX(10deg) translateZ(-10px)}80%{opacity:1}to{z-index:-1;transform:translateX(0) rotateY(0deg) rotateX(0deg) translateZ(-10px);opacity:0}}@keyframes browseOutRight{0%{z-index:999;transform:translateX(0) rotateY(0deg) rotateX(0deg)}50%{z-index:1;transform:translateX(105%) rotateY(35deg) rotateX(10deg) translateZ(-10px)}80%{opacity:1}to{z-index:1;transform:translateX(0) rotateY(0deg) rotateX(0deg) translateZ(-10px);opacity:0}}.drop.transition{transform-origin:top center;animation-duration:.4s;animation-timing-function:cubic-bezier(.34,1.61,.7,1)}.drop.transition.in{animation-name:dropIn}.drop.transition.out{animation-name:dropOut}@keyframes dropIn{0%{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}@keyframes dropOut{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(0)}}.transition.fade.in{animation-name:fadeIn}.transition[class*="fade up"].in{animation-name:fadeInUp}.transition[class*="fade down"].in{animation-name:fadeInDown}.transition[class*="fade left"].in{animation-name:fadeInLeft}.transition[class*="fade right"].in{animation-name:fadeInRight}.transition.fade.out{animation-name:fadeOut}.transition[class*="fade up"].out{animation-name:fadeOutUp}.transition[class*="fade down"].out{animation-name:fadeOutDown}.transition[class*="fade left"].out{animation-name:fadeOutLeft}.transition[class*="fade right"].out{animation-name:fadeOutRight}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeInUp{0%{opacity:0;transform:translateY(10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInLeft{0%{opacity:0;transform:translateX(10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeInRight{0%{opacity:0;transform:translateX(-10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOutUp{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(5%)}}@keyframes fadeOutDown{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-5%)}}@keyframes fadeOutLeft{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(5%)}}@keyframes fadeOutRight{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-5%)}}.flip.transition.in,.flip.transition.out{animation-duration:.6s}.horizontal.flip.transition.in{animation-name:horizontalFlipIn}.horizontal.flip.transition.out{animation-name:horizontalFlipOut}.vertical.flip.transition.in{animation-name:verticalFlipIn}.vertical.flip.transition.out{animation-name:verticalFlipOut}@keyframes horizontalFlipIn{0%{transform:perspective(2000px) rotateY(-90deg);opacity:0}to{transform:perspective(2000px) rotateY(0deg);opacity:1}}@keyframes verticalFlipIn{0%{transform:perspective(2000px) rotateX(-90deg);opacity:0}to{transform:perspective(2000px) rotateX(0deg);opacity:1}}@keyframes horizontalFlipOut{0%{transform:perspective(2000px) rotateY(0deg);opacity:1}to{transform:perspective(2000px) rotateY(90deg);opacity:0}}@keyframes verticalFlipOut{0%{transform:perspective(2000px) rotateX(0deg);opacity:1}to{transform:perspective(2000px) rotateX(-90deg);opacity:0}}.scale.transition.in{animation-name:scaleIn}.scale.transition.out{animation-name:scaleOut}@keyframes scaleIn{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes scaleOut{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.9)}}.transition.fly{animation-duration:.6s;transition-timing-function:cubic-bezier(.215,.61,.355,1)}.transition.fly.in{animation-name:flyIn}.transition[class*="fly up"].in{animation-name:flyInUp}.transition[class*="fly down"].in{animation-name:flyInDown}.transition[class*="fly left"].in{animation-name:flyInLeft}.transition[class*="fly right"].in{animation-name:flyInRight}.transition.fly.out{animation-name:flyOut}.transition[class*="fly up"].out{animation-name:flyOutUp}.transition[class*="fly down"].out{animation-name:flyOutDown}.transition[class*="fly left"].out{animation-name:flyOutLeft}.transition[class*="fly right"].out{animation-name:flyOutRight}@keyframes flyIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scaleX(1)}}@keyframes flyInUp{0%{opacity:0;transform:translate3d(0,1500px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translateZ(0)}}@keyframes flyInDown{0%{opacity:0;transform:translate3d(0,-1500px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}@keyframes flyInLeft{0%{opacity:0;transform:translate3d(1500px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}@keyframes flyInRight{0%{opacity:0;transform:translate3d(-1500px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}@keyframes flyOut{20%{transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;transform:scale3d(1.1,1.1,1.1)}to{opacity:0;transform:scale3d(.3,.3,.3)}}@keyframes flyOutUp{20%{transform:translate3d(0,10px,0)}40%,45%{opacity:1;transform:translate3d(0,-20px,0)}to{opacity:0;transform:translate3d(0,2000px,0)}}@keyframes flyOutDown{20%{transform:translate3d(0,-10px,0)}40%,45%{opacity:1;transform:translate3d(0,20px,0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes flyOutRight{20%{opacity:1;transform:translate3d(20px,0,0)}to{opacity:0;transform:translate3d(-2000px,0,0)}}@keyframes flyOutLeft{20%{opacity:1;transform:translate3d(-20px,0,0)}to{opacity:0;transform:translate3d(2000px,0,0)}}.transition.slide.in,.transition[class*="slide down"].in{animation-name:slideInY;transform-origin:top center}.transition[class*="slide up"].in{animation-name:slideInY;transform-origin:bottom center}.transition[class*="slide left"].in{animation-name:slideInX;transform-origin:center right}.transition[class*="slide right"].in{animation-name:slideInX;transform-origin:center left}.transition.slide.out,.transition[class*="slide down"].out{animation-name:slideOutY;transform-origin:top center}.transition[class*="slide up"].out{animation-name:slideOutY;transform-origin:bottom center}.transition[class*="slide left"].out{animation-name:slideOutX;transform-origin:center right}.transition[class*="slide right"].out{animation-name:slideOutX;transform-origin:center left}@keyframes slideInY{0%{opacity:0;transform:scaleY(0)}to{opacity:1;transform:scaleY(1)}}@keyframes slideInX{0%{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}@keyframes slideOutY{0%{opacity:1;transform:scaleY(1)}to{opacity:0;transform:scaleY(0)}}@keyframes slideOutX{0%{opacity:1;transform:scaleX(1)}to{opacity:0;transform:scaleX(0)}}.transition.swing{animation-duration:.8s}.transition[class*="swing down"].in{animation-name:swingInX;transform-origin:top center}.transition[class*="swing up"].in{animation-name:swingInX;transform-origin:bottom center}.transition[class*="swing left"].in{animation-name:swingInY;transform-origin:center right}.transition[class*="swing right"].in{animation-name:swingInY;transform-origin:center left}.transition.swing.out,.transition[class*="swing down"].out{animation-name:swingOutX;transform-origin:top center}.transition[class*="swing up"].out{animation-name:swingOutX;transform-origin:bottom center}.transition[class*="swing left"].out{animation-name:swingOutY;transform-origin:center right}.transition[class*="swing right"].out{animation-name:swingOutY;transform-origin:center left}@keyframes swingInX{0%{transform:perspective(1000px) rotateX(90deg);opacity:0}40%{transform:perspective(1000px) rotateX(-30deg);opacity:1}60%{transform:perspective(1000px) rotateX(15deg)}80%{transform:perspective(1000px) rotateX(-7.5deg)}to{transform:perspective(1000px) rotateX(0deg)}}@keyframes swingInY{0%{transform:perspective(1000px) rotateY(-90deg);opacity:0}40%{transform:perspective(1000px) rotateY(30deg);opacity:1}60%{transform:perspective(1000px) rotateY(-17.5deg)}80%{transform:perspective(1000px) rotateY(7.5deg)}to{transform:perspective(1000px) rotateY(0deg)}}@keyframes swingOutX{0%{transform:perspective(1000px) rotateX(0deg)}40%{transform:perspective(1000px) rotateX(-7.5deg)}60%{transform:perspective(1000px) rotateX(17.5deg)}80%{transform:perspective(1000px) rotateX(-30deg);opacity:1}to{transform:perspective(1000px) rotateX(90deg);opacity:0}}@keyframes swingOutY{0%{transform:perspective(1000px) rotateY(0deg)}40%{transform:perspective(1000px) rotateY(7.5deg)}60%{transform:perspective(1000px) rotateY(-10deg)}80%{transform:perspective(1000px) rotateY(30deg);opacity:1}to{transform:perspective(1000px) rotateY(-90deg);opacity:0}}.transition.zoom.in{animation-name:zoomIn}.transition.zoom.out{animation-name:zoomOut}@keyframes zoomIn{0%{opacity:1;transform:scale(0)}to{opacity:1;transform:scale(1)}}@keyframes zoomOut{0%{opacity:1;transform:scale(1)}to{opacity:1;transform:scale(0)}}.flash.transition{animation-duration:.75s;animation-name:flash}.shake.transition{animation-duration:.75s;animation-name:shake}.bounce.transition{animation-duration:.75s;animation-name:bounce}.tada.transition{animation-duration:.75s;animation-name:tada}.pulse.transition{animation-duration:.5s;animation-name:pulse}.jiggle.transition{animation-duration:.75s;animation-name:jiggle}.transition.glow{animation-duration:2s;animation-timing-function:cubic-bezier(.19,1,.22,1);animation-name:glow}@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes shake{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes bounce{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes tada{0%{transform:scale(1)}10%,20%{transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{transform:scale(1.1) rotate(3deg)}40%,60%,80%{transform:scale(1.1) rotate(-3deg)}to{transform:scale(1) rotate(0)}}@keyframes pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(.9);opacity:.7}to{transform:scale(1);opacity:1}}@keyframes jiggle{0%{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scaleX(1)}}@keyframes glow{0%{background-color:#fcfcfd}30%{background-color:#fff6cd}to{background-color:#fcfcfd}}body,html{background:#c6ffdd;background:linear-gradient(180deg,#f7797d,#fbd786,#c6ffdd);background-attachment:fixed;font-weight:300;font-size:16px}#___gatsby{padding:2em 0}#___gatsby code[class*=language-],#___gatsby pre[class*=language-]{font-family:Fira Mono,monospace;font-weight:400;-moz-tab-size:2;-o-tab-size:2;tab-size:2}.gatsby-resp-image-figcaption{font-style:italic;margin-top:.5rem}@media only screen and (max-width:767px){[class*="computer only"]:not(.mobile),[class*="large screen only"]:not(.mobile),[class*="mobile hidden"],[class*="or lower hidden"],[class*="tablet only"]:not(.mobile),[class*="widescreen only"]:not(.mobile){display:none!important}}@media only screen and (min-width:768px) and (max-width:991px){[class*="computer only"]:not(.tablet),[class*="large screen only"]:not(.tablet),[class*="mobile only"]:not(.tablet),[class*="or lower hidden"]:not(.mobile),[class*="tablet hidden"],[class*="widescreen only"]:not(.tablet){display:none!important}}@media only screen and (min-width:992px) and (max-width:1199px){[class*="computer hidden"],[class*="large screen only"]:not(.computer),[class*="mobile only"]:not(.computer),[class*="or lower hidden"]:not(.tablet):not(.mobile),[class*="tablet only"]:not(.computer),[class*="widescreen only"]:not(.computer){display:none!important}}@media only screen and (min-width:1200px) and (max-width:1919px){[class*="computer only"]:not([class*="large screen"]),[class*="large screen hidden"],[class*="mobile only"]:not([class*="large screen"]),[class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile),[class*="tablet only"]:not([class*="large screen"]),[class*="widescreen only"]:not([class*="large screen"]){display:none!important}}@media only screen and (min-width:1920px){[class*="computer only"]:not([class*=widescreen]),[class*="large screen only"]:not([class*=widescreen]),[class*="mobile only"]:not([class*=widescreen]),[class*="tablet only"]:not([class*=widescreen]),[class*="widescreen hidden"],[class*="widescreen or lower hidden"]{display:none!important}}</style><meta name="generator" content="Gatsby 2.32.11"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="aliceblue"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><title data-react-helmet="true">Changelog | Martin Häger</title><meta data-react-helmet="true" name="description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><meta data-react-helmet="true" name="og:title" content="Changelog"/><meta data-react-helmet="true" name="og:description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><meta data-react-helmet="true" name="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Martin Häger"/><meta data-react-helmet="true" name="twitter:title" content="Changelog"/><meta data-react-helmet="true" name="twitter:description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link as="script" rel="preload" href="/webpack-runtime-71e046241d7d5cdf707d.js"/><link as="script" rel="preload" href="/framework-04017db0dec66097c42d.js"/><link as="script" rel="preload" href="/styles-08bc34de4ea872a98d93.js"/><link as="script" rel="preload" href="/app-c071990d232c107de880.js"/><link as="fetch" rel="preload" href="/page-data/changelog/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2496608583.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/440568431.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="ui container stackable grid"><div class="row"><div id="foo" class="five wide column"><div style="overflow:hidden" class="ui fluid raised card"><a href="/"><div class="mobile hidden gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:133%"></div><noscript><picture><source srcset="/static/00ffa6729dff6c17059ae0ec06807491/61cdf/avatar.jpg 100w,
+ */.transition{animation-iteration-count:1;animation-duration:.3s;animation-timing-function:ease;animation-fill-mode:both}.animating.transition{-webkit-backface-visibility:hidden;backface-visibility:hidden;visibility:visible!important}.loading.transition{position:absolute;top:-99999px;left:-99999px}.hidden.transition{display:none;visibility:hidden}.visible.transition{display:block!important;visibility:visible!important}.disabled.transition{animation-play-state:paused}.looping.transition{animation-iteration-count:infinite}.transition.browse{animation-duration:.5s}.transition.browse.in{animation-name:browseIn}.transition.browse.left.out,.transition.browse.out{animation-name:browseOutLeft}.transition.browse.right.out{animation-name:browseOutRight}@keyframes browseIn{0%{transform:scale(.8) translateZ(0);z-index:-1}10%{transform:scale(.8) translateZ(0);z-index:-1;opacity:.7}80%{transform:scale(1.05) translateZ(0);opacity:1;z-index:999}to{transform:scale(1) translateZ(0);z-index:999}}@keyframes browseOutLeft{0%{z-index:999;transform:translateX(0) rotateY(0deg) rotateX(0deg)}50%{z-index:-1;transform:translateX(-105%) rotateY(35deg) rotateX(10deg) translateZ(-10px)}80%{opacity:1}to{z-index:-1;transform:translateX(0) rotateY(0deg) rotateX(0deg) translateZ(-10px);opacity:0}}@keyframes browseOutRight{0%{z-index:999;transform:translateX(0) rotateY(0deg) rotateX(0deg)}50%{z-index:1;transform:translateX(105%) rotateY(35deg) rotateX(10deg) translateZ(-10px)}80%{opacity:1}to{z-index:1;transform:translateX(0) rotateY(0deg) rotateX(0deg) translateZ(-10px);opacity:0}}.drop.transition{transform-origin:top center;animation-duration:.4s;animation-timing-function:cubic-bezier(.34,1.61,.7,1)}.drop.transition.in{animation-name:dropIn}.drop.transition.out{animation-name:dropOut}@keyframes dropIn{0%{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}@keyframes dropOut{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(0)}}.transition.fade.in{animation-name:fadeIn}.transition[class*="fade up"].in{animation-name:fadeInUp}.transition[class*="fade down"].in{animation-name:fadeInDown}.transition[class*="fade left"].in{animation-name:fadeInLeft}.transition[class*="fade right"].in{animation-name:fadeInRight}.transition.fade.out{animation-name:fadeOut}.transition[class*="fade up"].out{animation-name:fadeOutUp}.transition[class*="fade down"].out{animation-name:fadeOutDown}.transition[class*="fade left"].out{animation-name:fadeOutLeft}.transition[class*="fade right"].out{animation-name:fadeOutRight}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeInUp{0%{opacity:0;transform:translateY(10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInLeft{0%{opacity:0;transform:translateX(10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeInRight{0%{opacity:0;transform:translateX(-10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOutUp{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(5%)}}@keyframes fadeOutDown{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-5%)}}@keyframes fadeOutLeft{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(5%)}}@keyframes fadeOutRight{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-5%)}}.flip.transition.in,.flip.transition.out{animation-duration:.6s}.horizontal.flip.transition.in{animation-name:horizontalFlipIn}.horizontal.flip.transition.out{animation-name:horizontalFlipOut}.vertical.flip.transition.in{animation-name:verticalFlipIn}.vertical.flip.transition.out{animation-name:verticalFlipOut}@keyframes horizontalFlipIn{0%{transform:perspective(2000px) rotateY(-90deg);opacity:0}to{transform:perspective(2000px) rotateY(0deg);opacity:1}}@keyframes verticalFlipIn{0%{transform:perspective(2000px) rotateX(-90deg);opacity:0}to{transform:perspective(2000px) rotateX(0deg);opacity:1}}@keyframes horizontalFlipOut{0%{transform:perspective(2000px) rotateY(0deg);opacity:1}to{transform:perspective(2000px) rotateY(90deg);opacity:0}}@keyframes verticalFlipOut{0%{transform:perspective(2000px) rotateX(0deg);opacity:1}to{transform:perspective(2000px) rotateX(-90deg);opacity:0}}.scale.transition.in{animation-name:scaleIn}.scale.transition.out{animation-name:scaleOut}@keyframes scaleIn{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes scaleOut{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.9)}}.transition.fly{animation-duration:.6s;transition-timing-function:cubic-bezier(.215,.61,.355,1)}.transition.fly.in{animation-name:flyIn}.transition[class*="fly up"].in{animation-name:flyInUp}.transition[class*="fly down"].in{animation-name:flyInDown}.transition[class*="fly left"].in{animation-name:flyInLeft}.transition[class*="fly right"].in{animation-name:flyInRight}.transition.fly.out{animation-name:flyOut}.transition[class*="fly up"].out{animation-name:flyOutUp}.transition[class*="fly down"].out{animation-name:flyOutDown}.transition[class*="fly left"].out{animation-name:flyOutLeft}.transition[class*="fly right"].out{animation-name:flyOutRight}@keyframes flyIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scaleX(1)}}@keyframes flyInUp{0%{opacity:0;transform:translate3d(0,1500px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translateZ(0)}}@keyframes flyInDown{0%{opacity:0;transform:translate3d(0,-1500px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}@keyframes flyInLeft{0%{opacity:0;transform:translate3d(1500px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}@keyframes flyInRight{0%{opacity:0;transform:translate3d(-1500px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}@keyframes flyOut{20%{transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;transform:scale3d(1.1,1.1,1.1)}to{opacity:0;transform:scale3d(.3,.3,.3)}}@keyframes flyOutUp{20%{transform:translate3d(0,10px,0)}40%,45%{opacity:1;transform:translate3d(0,-20px,0)}to{opacity:0;transform:translate3d(0,2000px,0)}}@keyframes flyOutDown{20%{transform:translate3d(0,-10px,0)}40%,45%{opacity:1;transform:translate3d(0,20px,0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes flyOutRight{20%{opacity:1;transform:translate3d(20px,0,0)}to{opacity:0;transform:translate3d(-2000px,0,0)}}@keyframes flyOutLeft{20%{opacity:1;transform:translate3d(-20px,0,0)}to{opacity:0;transform:translate3d(2000px,0,0)}}.transition.slide.in,.transition[class*="slide down"].in{animation-name:slideInY;transform-origin:top center}.transition[class*="slide up"].in{animation-name:slideInY;transform-origin:bottom center}.transition[class*="slide left"].in{animation-name:slideInX;transform-origin:center right}.transition[class*="slide right"].in{animation-name:slideInX;transform-origin:center left}.transition.slide.out,.transition[class*="slide down"].out{animation-name:slideOutY;transform-origin:top center}.transition[class*="slide up"].out{animation-name:slideOutY;transform-origin:bottom center}.transition[class*="slide left"].out{animation-name:slideOutX;transform-origin:center right}.transition[class*="slide right"].out{animation-name:slideOutX;transform-origin:center left}@keyframes slideInY{0%{opacity:0;transform:scaleY(0)}to{opacity:1;transform:scaleY(1)}}@keyframes slideInX{0%{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}@keyframes slideOutY{0%{opacity:1;transform:scaleY(1)}to{opacity:0;transform:scaleY(0)}}@keyframes slideOutX{0%{opacity:1;transform:scaleX(1)}to{opacity:0;transform:scaleX(0)}}.transition.swing{animation-duration:.8s}.transition[class*="swing down"].in{animation-name:swingInX;transform-origin:top center}.transition[class*="swing up"].in{animation-name:swingInX;transform-origin:bottom center}.transition[class*="swing left"].in{animation-name:swingInY;transform-origin:center right}.transition[class*="swing right"].in{animation-name:swingInY;transform-origin:center left}.transition.swing.out,.transition[class*="swing down"].out{animation-name:swingOutX;transform-origin:top center}.transition[class*="swing up"].out{animation-name:swingOutX;transform-origin:bottom center}.transition[class*="swing left"].out{animation-name:swingOutY;transform-origin:center right}.transition[class*="swing right"].out{animation-name:swingOutY;transform-origin:center left}@keyframes swingInX{0%{transform:perspective(1000px) rotateX(90deg);opacity:0}40%{transform:perspective(1000px) rotateX(-30deg);opacity:1}60%{transform:perspective(1000px) rotateX(15deg)}80%{transform:perspective(1000px) rotateX(-7.5deg)}to{transform:perspective(1000px) rotateX(0deg)}}@keyframes swingInY{0%{transform:perspective(1000px) rotateY(-90deg);opacity:0}40%{transform:perspective(1000px) rotateY(30deg);opacity:1}60%{transform:perspective(1000px) rotateY(-17.5deg)}80%{transform:perspective(1000px) rotateY(7.5deg)}to{transform:perspective(1000px) rotateY(0deg)}}@keyframes swingOutX{0%{transform:perspective(1000px) rotateX(0deg)}40%{transform:perspective(1000px) rotateX(-7.5deg)}60%{transform:perspective(1000px) rotateX(17.5deg)}80%{transform:perspective(1000px) rotateX(-30deg);opacity:1}to{transform:perspective(1000px) rotateX(90deg);opacity:0}}@keyframes swingOutY{0%{transform:perspective(1000px) rotateY(0deg)}40%{transform:perspective(1000px) rotateY(7.5deg)}60%{transform:perspective(1000px) rotateY(-10deg)}80%{transform:perspective(1000px) rotateY(30deg);opacity:1}to{transform:perspective(1000px) rotateY(-90deg);opacity:0}}.transition.zoom.in{animation-name:zoomIn}.transition.zoom.out{animation-name:zoomOut}@keyframes zoomIn{0%{opacity:1;transform:scale(0)}to{opacity:1;transform:scale(1)}}@keyframes zoomOut{0%{opacity:1;transform:scale(1)}to{opacity:1;transform:scale(0)}}.flash.transition{animation-duration:.75s;animation-name:flash}.shake.transition{animation-duration:.75s;animation-name:shake}.bounce.transition{animation-duration:.75s;animation-name:bounce}.tada.transition{animation-duration:.75s;animation-name:tada}.pulse.transition{animation-duration:.5s;animation-name:pulse}.jiggle.transition{animation-duration:.75s;animation-name:jiggle}.transition.glow{animation-duration:2s;animation-timing-function:cubic-bezier(.19,1,.22,1);animation-name:glow}@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes shake{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes bounce{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes tada{0%{transform:scale(1)}10%,20%{transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{transform:scale(1.1) rotate(3deg)}40%,60%,80%{transform:scale(1.1) rotate(-3deg)}to{transform:scale(1) rotate(0)}}@keyframes pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(.9);opacity:.7}to{transform:scale(1);opacity:1}}@keyframes jiggle{0%{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scaleX(1)}}@keyframes glow{0%{background-color:#fcfcfd}30%{background-color:#fff6cd}to{background-color:#fcfcfd}}body,html{background:#c6ffdd;background:linear-gradient(180deg,#f7797d,#fbd786,#c6ffdd);background-attachment:fixed;font-weight:300;font-size:16px}#___gatsby{padding:2em 0}#___gatsby code[class*=language-],#___gatsby pre[class*=language-]{font-family:Fira Mono,monospace;font-weight:400;-moz-tab-size:2;-o-tab-size:2;tab-size:2}.gatsby-resp-image-figcaption{font-style:italic;margin-top:.5rem}@media only screen and (max-width:767px){[class*="computer only"]:not(.mobile),[class*="large screen only"]:not(.mobile),[class*="mobile hidden"],[class*="or lower hidden"],[class*="tablet only"]:not(.mobile),[class*="widescreen only"]:not(.mobile){display:none!important}}@media only screen and (min-width:768px) and (max-width:991px){[class*="computer only"]:not(.tablet),[class*="large screen only"]:not(.tablet),[class*="mobile only"]:not(.tablet),[class*="or lower hidden"]:not(.mobile),[class*="tablet hidden"],[class*="widescreen only"]:not(.tablet){display:none!important}}@media only screen and (min-width:992px) and (max-width:1199px){[class*="computer hidden"],[class*="large screen only"]:not(.computer),[class*="mobile only"]:not(.computer),[class*="or lower hidden"]:not(.tablet):not(.mobile),[class*="tablet only"]:not(.computer),[class*="widescreen only"]:not(.computer){display:none!important}}@media only screen and (min-width:1200px) and (max-width:1919px){[class*="computer only"]:not([class*="large screen"]),[class*="large screen hidden"],[class*="mobile only"]:not([class*="large screen"]),[class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile),[class*="tablet only"]:not([class*="large screen"]),[class*="widescreen only"]:not([class*="large screen"]){display:none!important}}@media only screen and (min-width:1920px){[class*="computer only"]:not([class*=widescreen]),[class*="large screen only"]:not([class*=widescreen]),[class*="mobile only"]:not([class*=widescreen]),[class*="tablet only"]:not([class*=widescreen]),[class*="widescreen hidden"],[class*="widescreen or lower hidden"]{display:none!important}}</style><meta name="generator" content="Gatsby 2.32.11"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="aliceblue"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><title data-react-helmet="true">Changelog | Martin Häger</title><meta data-react-helmet="true" name="description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><meta data-react-helmet="true" name="og:title" content="Changelog"/><meta data-react-helmet="true" name="og:description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><meta data-react-helmet="true" name="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Martin Häger"/><meta data-react-helmet="true" name="twitter:title" content="Changelog"/><meta data-react-helmet="true" name="twitter:description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link as="script" rel="preload" href="/webpack-runtime-71e046241d7d5cdf707d.js"/><link as="script" rel="preload" href="/framework-04017db0dec66097c42d.js"/><link as="script" rel="preload" href="/styles-08bc34de4ea872a98d93.js"/><link as="script" rel="preload" href="/app-ca152fa4446df4431db4.js"/><link as="fetch" rel="preload" href="/page-data/changelog/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2496608583.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/440568431.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="ui container stackable grid"><div class="row"><div id="foo" class="five wide column"><div style="overflow:hidden" class="ui fluid raised card"><a href="/"><div class="mobile hidden gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:133%"></div><noscript><picture><source srcset="/static/00ffa6729dff6c17059ae0ec06807491/61cdf/avatar.jpg 100w,
 /static/00ffa6729dff6c17059ae0ec06807491/e30d9/avatar.jpg 199w,
 /static/00ffa6729dff6c17059ae0ec06807491/486ab/avatar.jpg 398w,
 /static/00ffa6729dff6c17059ae0ec06807491/956c9/avatar.jpg 597w,
@@ -415,609 +415,614 @@
 /static/00ffa6729dff6c17059ae0ec06807491/486ab/avatar.jpg 398w,
 /static/00ffa6729dff6c17059ae0ec06807491/956c9/avatar.jpg 597w,
 /static/00ffa6729dff6c17059ae0ec06807491/d542d/avatar.jpg 796w,
-/static/00ffa6729dff6c17059ae0ec06807491/16018/avatar.jpg 3024w" src="/static/00ffa6729dff6c17059ae0ec06807491/486ab/avatar.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></a><div class="content"><div class="header">Martin Häger</div><div class="description">Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY.</div></div><div style="text-align:center" class="extra content"><div class="ui vertical buttons mobile hidden"><a href="https://twitter.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="twitter icon"></i>Twitter</a><a href="https://github.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="github icon"></i>GitHub</a><a href="https://matrix.to/#/@kvadevack:kvadevack.se" class="ui basic button" role="button"><i aria-hidden="true" class="comments icon"></i>Matrix</a></div><div class="ui two buttons mobile only"><a href="https://twitter.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="twitter icon"></i>Twitter</a><a href="https://github.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="github icon"></i>GitHub</a><a href="https://matrix.to/#/@kvadevack:kvadevack.se" class="ui basic button" role="button"><i aria-hidden="true" class="comments icon"></i>Matrix</a></div></div></div><div style="padding:0" class="ui raised segment"><div style="border:none;box-shadow:none;margin:0" class="ui fluid vertical mobile hidden menu"><a class="item" href="/">Blog</a><a class="item" href="/resume">Resume</a><a href="/rss.xml" class="item"><i aria-hidden="true" class="rss icon"></i>RSS Feed</a></div><div style="border:none;box-shadow:none;margin:0" class="ui fluid three item mobile only menu"><a class="item" href="/">Blog</a><a class="item" href="/resume">Resume</a><a href="/rss.xml" class="item"><i aria-hidden="true" class="rss icon"></i>RSS Feed</a></div></div><div class="ui basic segment mobile hidden"><p>© <!-- -->Martin Häger<!-- -->, 2018 - 2021.</p><p>v<!-- -->1.5.2<!-- --> (<a href="/changelog">changelog</a>). Built with <a href="https://graphql.org/">GraphQL</a>, <a href="https://reactjs.org/">React</a> and <a href="https://semantic-ui.com/">Semantic UI</a>.</p></div></div><div class="eleven wide column"><div class="ui raised segment"><h1 class="ui header">Changelog</h1><div><h2>1.5.2 (2021-04-10)</h2>
+/static/00ffa6729dff6c17059ae0ec06807491/16018/avatar.jpg 3024w" src="/static/00ffa6729dff6c17059ae0ec06807491/486ab/avatar.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></a><div class="content"><div class="header">Martin Häger</div><div class="description">Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY.</div></div><div style="text-align:center" class="extra content"><div class="ui vertical buttons mobile hidden"><a href="https://twitter.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="twitter icon"></i>Twitter</a><a href="https://github.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="github icon"></i>GitHub</a><a href="https://matrix.to/#/@kvadevack:kvadevack.se" class="ui basic button" role="button"><i aria-hidden="true" class="comments icon"></i>Matrix</a></div><div class="ui two buttons mobile only"><a href="https://twitter.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="twitter icon"></i>Twitter</a><a href="https://github.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="github icon"></i>GitHub</a><a href="https://matrix.to/#/@kvadevack:kvadevack.se" class="ui basic button" role="button"><i aria-hidden="true" class="comments icon"></i>Matrix</a></div></div></div><div style="padding:0" class="ui raised segment"><div style="border:none;box-shadow:none;margin:0" class="ui fluid vertical mobile hidden menu"><a class="item" href="/">Blog</a><a class="item" href="/resume">Resume</a><a href="/rss.xml" class="item"><i aria-hidden="true" class="rss icon"></i>RSS Feed</a></div><div style="border:none;box-shadow:none;margin:0" class="ui fluid three item mobile only menu"><a class="item" href="/">Blog</a><a class="item" href="/resume">Resume</a><a href="/rss.xml" class="item"><i aria-hidden="true" class="rss icon"></i>RSS Feed</a></div></div><div class="ui basic segment mobile hidden"><p>© <!-- -->Martin Häger<!-- -->, 2018 - 2021.</p><p>v<!-- -->1.5.3<!-- --> (<a href="/changelog">changelog</a>). Built with <a href="https://graphql.org/">GraphQL</a>, <a href="https://reactjs.org/">React</a> and <a href="https://semantic-ui.com/">Semantic UI</a>.</p></div></div><div class="eleven wide column"><div class="ui raised segment"><h1 class="ui header">Changelog</h1><div><h2>1.5.3 (2021-04-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>regenerate changelog with new options (7eb46b5)</li>
+<li>remove commit hash from changelog</li>
+</ul>
+<h2>1.5.2 (2021-04-10)</h2>
+<h3>Bug Fixes</h3>
+<ul>
+<li>regenerate changelog with new options</li>
 </ul>
 <h2>1.5.1 (2021-04-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>don't link to repo in changelog (2705e6f)</li>
+<li>don't link to repo in changelog</li>
 </ul>
 <h2>1.5.0 (2021-04-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>move code examples to replit (679c9b8)</li>
-<li>remove footer repo link (4ef591d)</li>
+<li>move code examples to replit</li>
+<li>remove footer repo link</li>
 </ul>
 <h3>Features</h3>
 <ul>
-<li>render changelog to a page (fab7e35)</li>
+<li>render changelog to a page</li>
 </ul>
 <h2>1.4.9 (2021-04-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 3.1.0 to 3.2.0 (3784aad)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.13.0 to 2.13.1 (de92880)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.11.0 to 3.11.1 (a816aa5)</li>
+<li><strong>deps:</strong> bump gatsby-image from 3.1.0 to 3.2.0</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.13.0 to 2.13.1</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.11.0 to 3.11.1</li>
 </ul>
 <h2>1.4.8 (2021-04-03)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.32.9 to 2.32.11 (049009e)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.10.0 to 3.10.2 (f3f4535)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.12.0 to 2.12.1 (7a4fbb1)</li>
-<li><strong>deps:</strong> bump mermaid from 8.9.1 to 8.9.2 (7f44359)</li>
+<li><strong>deps:</strong> bump gatsby from 2.32.9 to 2.32.11</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.10.0 to 3.10.2</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.12.0 to 2.12.1</li>
+<li><strong>deps:</strong> bump mermaid from 8.9.1 to 8.9.2</li>
 </ul>
 <h2>1.4.7 (2021-03-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump less from 3.13.1 to 4.1.1 (8d788d0)</li>
+<li><strong>deps:</strong> bump less from 3.13.1 to 4.1.1</li>
 </ul>
 <h2>1.4.6 (2021-03-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.11.0 to 3.1.0 (bc02c85)</li>
-<li><strong>deps:</strong> bump gatsby-remark-embed-video from 3.0.12 to 3.1.1 (dfba9ea)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.11.0 to 2.11.1 (2872940)</li>
-<li><strong>resume:</strong> add new job (d6f6d91)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.11.0 to 3.1.0</li>
+<li><strong>deps:</strong> bump gatsby-remark-embed-video from 3.0.12 to 3.1.1</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.11.0 to 2.11.1</li>
+<li><strong>resume:</strong> add new job</li>
 </ul>
 <h2>1.4.5 (2021-03-06)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>remove unused import (c1c7f92)</li>
+<li>remove unused import</li>
 </ul>
 <h2>1.4.4 (2021-03-06)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>copyright:</strong> update copyright year (312dbdf)</li>
-<li><strong>resume:</strong> update address (5b9ab75)</li>
+<li><strong>copyright:</strong> update copyright year</li>
+<li><strong>resume:</strong> update address</li>
 </ul>
 <h2>1.4.3 (2021-03-05)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.14.1 to 2.14.3 (5d1e1da)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.16.0 to 2.16.1 (b9d7c24)</li>
-<li><strong>deps:</strong> bump mermaid from 8.9.0 to 8.9.1 (9702e0e)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.14.1 to 2.14.3</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.16.0 to 2.16.1</li>
+<li><strong>deps:</strong> bump mermaid from 8.9.0 to 8.9.1</li>
 </ul>
 <h2>1.4.2 (2021-03-04)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.32.3 to 2.32.9 (e9581f6)</li>
-<li><strong>deps:</strong> bump semantic-ui-react from 0.88.2 to 2.0.3 (d4151a2)</li>
+<li><strong>deps:</strong> bump gatsby from 2.32.3 to 2.32.9</li>
+<li><strong>deps:</strong> bump semantic-ui-react from 0.88.2 to 2.0.3</li>
 </ul>
 <h2>1.4.1 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>social:</strong> add Matrix link (cbc1b24)</li>
+<li><strong>social:</strong> add Matrix link</li>
 </ul>
 <h2>1.4.0 (2021-02-17)</h2>
 <h3>Features</h3>
 <ul>
-<li>add Matrix client delegation (a20cd51)</li>
+<li>add Matrix client delegation</li>
 </ul>
 <h2>1.3.4 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump socket.io from 2.3.0 to 2.4.1 (c685e43)</li>
-<li><strong>deps:</strong> bump gatsby from 2.23.1 to 2.32.3 (aa1a703)</li>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.6 to 2.11.0 (d931648)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.4 to 2.13.0 (c079968)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.10 to 2.14.1 (9b06aab)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.4 to 2.10.0 (bf31b6a)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.3 to 3.13.0 (66188aa)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.4 to 2.11.0 (84b7fb4)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.4 to 2.11.0 (c9a8d1c)</li>
-<li><strong>deps:</strong> bump mermaid from 8.8.4 to 8.9.0 (cbb4600)</li>
-<li><strong>deps:</strong> install gatsby-remark-embed-snippet from NPM and fix package-lock.json (561afac)</li>
+<li><strong>deps:</strong> [security] bump socket.io from 2.3.0 to 2.4.1</li>
+<li><strong>deps:</strong> bump gatsby from 2.23.1 to 2.32.3</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.6 to 2.11.0</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.4 to 2.13.0</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.10 to 2.14.1</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.4 to 2.10.0</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.3 to 3.13.0</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.4 to 2.11.0</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.4 to 2.11.0</li>
+<li><strong>deps:</strong> bump mermaid from 8.8.4 to 8.9.0</li>
+<li><strong>deps:</strong> install gatsby-remark-embed-snippet from NPM and fix package-lock.json</li>
 </ul>
 <h2>1.3.3 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>gh-pages:</strong> disable Jekyll processing (ceec777)</li>
+<li><strong>gh-pages:</strong> disable Jekyll processing</li>
 </ul>
 <h2>1.3.2 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>ci:</strong> include dotfiles in deploy and force a new release (b64ad01)</li>
+<li><strong>ci:</strong> include dotfiles in deploy and force a new release</li>
 </ul>
 <h2>1.3.1 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>ci:</strong> fix deployment and force a new release (d6940a7)</li>
+<li><strong>ci:</strong> fix deployment and force a new release</li>
 </ul>
 <h2>1.3.0 (2021-02-16)</h2>
 <h3>Features</h3>
 <ul>
-<li>add matrix delegation file (f8507b0)</li>
+<li>add matrix delegation file</li>
 </ul>
 <h2>1.2.58 (2021-01-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump dot-prop from 4.2.0 to 4.2.1 (107dcbc)</li>
-<li><strong>deps:</strong> [security] bump npm-user-validate from 1.0.0 to 1.0.1 (900ef7e)</li>
+<li><strong>deps:</strong> [security] bump dot-prop from 4.2.0 to 4.2.1</li>
+<li><strong>deps:</strong> [security] bump npm-user-validate from 1.0.0 to 1.0.1</li>
 </ul>
 <h2>1.2.57 (2021-01-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump object-path from 0.11.4 to 0.11.5 (8d6bd3c)</li>
-<li><strong>deps:</strong> [security] bump prismjs from 1.20.0 to 1.21.0 (29dbf24)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.3 to 4.6.0 (d0e7706)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.8 to 3.9.0 (cd1fb62)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.9 to 3.10.0 (f704dfc)</li>
-<li><strong>deps:</strong> bump less from 3.11.2 to 3.13.1 (76e8899)</li>
-<li><strong>deps:</strong> bump mermaid from 8.5.1 to 8.8.4 (ec3901a)</li>
-<li><strong>deps:</strong> bump react-helmet from 6.0.0 to 6.1.0 (3ce3984)</li>
+<li><strong>deps:</strong> [security] bump object-path from 0.11.4 to 0.11.5</li>
+<li><strong>deps:</strong> [security] bump prismjs from 1.20.0 to 1.21.0</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.3 to 4.6.0</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.8 to 3.9.0</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.9 to 3.10.0</li>
+<li><strong>deps:</strong> bump less from 3.11.2 to 3.13.1</li>
+<li><strong>deps:</strong> bump mermaid from 8.5.1 to 8.8.4</li>
+<li><strong>deps:</strong> bump react-helmet from 6.0.0 to 6.1.0</li>
 </ul>
 <h2>1.2.56 (2020-12-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump ini from 1.3.5 to 1.3.7 (a29dec2)</li>
+<li><strong>deps:</strong> [security] bump ini from 1.3.5 to 1.3.7</li>
 </ul>
 <h2>1.2.55 (2020-10-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump npm-user-validate from 1.0.0 to 1.0.1 (5984a16)</li>
+<li><strong>deps:</strong> [security] bump npm-user-validate from 1.0.0 to 1.0.1</li>
 </ul>
 <h2>1.2.54 (2020-09-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump bl from 1.2.2 to 1.2.3 (dde87e4)</li>
+<li><strong>deps:</strong> [security] bump bl from 1.2.2 to 1.2.3</li>
 </ul>
 <h2>1.2.53 (2020-07-29)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump elliptic from 6.5.2 to 6.5.3 (ddfb63b)</li>
+<li><strong>deps:</strong> [security] bump elliptic from 6.5.2 to 6.5.3</li>
 </ul>
 <h2>1.2.52 (2020-07-07)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump npm from 6.14.5 to 6.14.6 (153ca77)</li>
+<li><strong>deps:</strong> [security] bump npm from 6.14.5 to 6.14.6</li>
 </ul>
 <h2>1.2.51 (2020-06-09)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump graphql-playground-html from 1.6.20 to 1.6.25 (a37dda1)</li>
+<li><strong>deps:</strong> [security] bump graphql-playground-html from 1.6.20 to 1.6.25</li>
 </ul>
 <h2>1.2.50 (2020-06-05)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.2 to 3.2.3 (f43ab9a)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.2 to 3.2.3</li>
 </ul>
 <h2>1.2.49 (2020-06-05)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump websocket-extensions from 0.1.3 to 0.1.4 (3f18ba0)</li>
-<li><strong>deps:</strong> bump gatsby from 2.22.11 to 2.23.1 (0579242)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.3 to 2.5.4 (1054d26)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.7 to 3.2.8 (ca5a413)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.8 to 3.3.9 (99ff6b1)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.3 to 2.4.4 (a82e9a2)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.13 to 2.8.14 (9edd4bf)</li>
+<li><strong>deps:</strong> [security] bump websocket-extensions from 0.1.3 to 0.1.4</li>
+<li><strong>deps:</strong> bump gatsby from 2.22.11 to 2.23.1</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.3 to 2.5.4</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.7 to 3.2.8</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.8 to 3.3.9</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.3 to 2.4.4</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.13 to 2.8.14</li>
 </ul>
 <h2>1.2.48 (2020-06-03)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.5 to 2.4.6 (a271d49)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.9 to 2.4.10 (0162041)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.2 to 3.5.3 (896ab31)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.8 to 2.3.10 (1407ff1)</li>
-<li><strong>deps:</strong> bump less from 3.11.1 to 3.11.2 (cb41a7e)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.5 to 2.4.6</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.9 to 2.4.10</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.2 to 3.5.3</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.8 to 2.3.10</li>
+<li><strong>deps:</strong> bump less from 3.11.1 to 3.11.2</li>
 </ul>
 <h2>1.2.47 (2020-06-03)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.6 to 2.6.10 (f5f8db9)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.6 to 2.6.10</li>
 </ul>
 <h2>1.2.46 (2020-06-02)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-robots-txt from 1.5.0 to 1.5.1 (92ebd33)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.3 to 2.3.4 (0ae9f9c)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-robots-txt from 1.5.0 to 1.5.1</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.3 to 2.3.4</li>
 </ul>
 <h2>1.2.45 (2020-06-02)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.3.1 to 3.3.3 (05109b1)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.2 to 2.4.4 (1700250)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.5.2 to 2.5.4 (083c000)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.3.1 to 3.3.3</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.2 to 2.4.4</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.5.2 to 2.5.4</li>
 </ul>
 <h2>1.2.44 (2020-05-27)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> flesh out summary for AUTOCOM position (3a3eb36)</li>
+<li><strong>resume:</strong> flesh out summary for AUTOCOM position</li>
 </ul>
 <h2>1.2.43 (2020-05-26)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.22.1 to 2.22.11 (ffe5735)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.1 to 2.5.3 (0efd43c)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.1 to 3.2.2 (912b266)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.2 to 2.3.3 (cddc96a)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.1 to 3.5.2 (1065e4c)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.2 to 2.4.3 (04a8c0e)</li>
+<li><strong>deps:</strong> bump gatsby from 2.22.1 to 2.22.11</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.1 to 2.5.3</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.1 to 3.2.2</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.2 to 2.3.3</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.1 to 3.5.2</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.2 to 2.4.3</li>
 </ul>
 <h2>1.2.42 (2020-05-26)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> reword position to developer (af1820a)</li>
+<li><strong>resume:</strong> reword position to developer</li>
 </ul>
 <h2>1.2.41 (2020-05-23)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.4 to 3.2.7 (91f4009)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.10 to 2.8.13 (0969acf)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.4 to 3.2.7</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.10 to 2.8.13</li>
 </ul>
 <h2>1.2.40 (2020-05-23)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.3 to 2.4.5 (54e0c64)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.6 to 2.4.9 (6068458)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.5 to 3.3.8 (f2ed74a)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.5 to 2.3.8 (37cbd95)</li>
-<li><strong>deps:</strong> bump moment from 2.25.3 to 2.26.0 (ecdfeda)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.3 to 2.4.5</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.6 to 2.4.9</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.5 to 3.3.8</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.5 to 2.3.8</li>
+<li><strong>deps:</strong> bump moment from 2.25.3 to 2.26.0</li>
 </ul>
 <h2>1.2.39 (2020-05-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.22.0 to 2.22.1 (ab63015)</li>
+<li><strong>deps:</strong> bump gatsby from 2.22.0 to 2.22.1</li>
 </ul>
 <h2>1.2.38 (2020-05-19)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.24 to 2.22.0 (f459c80)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.2 to 2.4.6 (3789f38)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.1 to 2.3.5 (a7ba0f0)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.24 to 2.22.0</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.2 to 2.4.6</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.1 to 2.3.5</li>
 </ul>
 <h2>1.2.37 (2020-05-19)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.1 to 3.2.4 (cca54c0)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.2 to 2.6.6 (4021729)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.2 to 3.3.5 (4fa56a7)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.7 to 2.8.10 (f09e7c1)</li>
-<li><strong>deps:</strong> bump mermaid from 8.5.0 to 8.5.1 (13e2482)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.1 to 3.2.4</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.2 to 2.6.6</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.2 to 3.3.5</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.7 to 2.8.10</li>
+<li><strong>deps:</strong> bump mermaid from 8.5.0 to 8.5.1</li>
 </ul>
 <h2>1.2.36 (2020-05-12)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.22 to 2.21.24 (c3e23a8)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.22 to 2.21.24</li>
 </ul>
 <h2>1.2.35 (2020-05-11)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.21 to 2.21.22 (1f6896e)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.21 to 2.21.22</li>
 </ul>
 <h2>1.2.34 (2020-05-08)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.19 to 2.21.21 (9b457a7)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.1 to 3.3.2 (8c29240)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.19 to 2.21.21</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.1 to 3.3.2</li>
 </ul>
 <h2>1.2.33 (2020-05-08)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.2 to 2.4.3 (a3dfb45)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.1 to 2.6.2 (c9080dc)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.0 to 3.5.1 (739fd28)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.5 to 2.8.7 (5f9a4ae)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.2 to 2.4.3</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.1 to 2.6.2</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.0 to 3.5.1</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.5 to 2.8.7</li>
 </ul>
 <h2>1.2.32 (2020-05-07)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.11 to 2.21.19 (1c7ff9e)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.1 to 2.4.2 (c6a9930)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.11 to 2.21.19</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.1 to 2.4.2</li>
 </ul>
 <h2>1.2.31 (2020-05-07)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.1 to 2.3.2 (0797523)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.0 to 3.3.1 (fb2a656)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.0 to 2.3.1 (4a3d12c)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.5.0 to 2.5.2 (f7883d2)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.1 to 2.3.2</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.0 to 3.3.1</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.0 to 2.3.1</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.5.0 to 2.5.2</li>
 </ul>
 <h2>1.2.30 (2020-05-06)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.0 to 2.4.2 (f2d2492)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.0 to 3.2.1 (7ba6013)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.0 to 3.2.1 (ce6c51a)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.0 to 2.6.1 (a20c232)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.0 to 2.4.2</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.0 to 3.2.1</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.0 to 3.2.1</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.0 to 2.6.1</li>
 </ul>
 <h2>1.2.29 (2020-05-06)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.0 to 2.5.1 (4f45c2b)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.1 to 2.4.2 (659fb03)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.3.0 to 3.3.1 (ab6c179)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.1 to 2.4.2 (c1ab86a)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.0 to 2.5.1</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.1 to 2.4.2</li>
+<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.3.0 to 3.3.1</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.1 to 2.4.2</li>
 </ul>
 <h2>1.2.28 (2020-05-04)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.10 to 2.21.11 (dc6a6a9)</li>
-<li><strong>deps:</strong> bump moment from 2.24.0 to 2.25.3 (35da430)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.10 to 2.21.11</li>
+<li><strong>deps:</strong> bump moment from 2.24.0 to 2.25.3</li>
 </ul>
 <h2>1.2.27 (2020-05-04)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.9 to 2.21.10 (1c5535d)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.4 to 2.8.5 (2fe6cd7)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.9 to 2.21.10</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.4 to 2.8.5</li>
 </ul>
 <h2>1.2.26 (2020-05-03)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.7 to 2.21.9 (bc5cc2f)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.0 to 2.4.1 (61e6dd8)</li>
-<li><strong>deps:</strong> bump gatsby-remark-embed-video from 2.0.1 to 3.0.10 (fdb3f3f)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.3 to 2.8.4 (7928c8b)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.7 to 2.21.9</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.0 to 2.4.1</li>
+<li><strong>deps:</strong> bump gatsby-remark-embed-video from 2.0.1 to 3.0.10</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.3 to 2.8.4</li>
 </ul>
 <h2>1.2.25 (2020-04-30)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.5 to 2.21.7 (5d29ba1)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.5 to 2.21.7</li>
 </ul>
 <h2>1.2.24 (2020-04-29)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.4 to 2.21.5 (0b43e6a)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.4 to 2.21.5</li>
 </ul>
 <h2>1.2.23 (2020-04-29)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.1 to 2.21.4 (9a20216)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.0 to 2.8.3 (fccbe17)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.1 to 2.21.4</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.0 to 2.8.3</li>
 </ul>
 <h2>1.2.22 (2020-04-28)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.0 to 2.21.1 (b20ebf9)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.0 to 2.4.1 (ad539f1)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.0 to 2.3.1 (d34018e)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.0 to 2.4.1 (086deb9)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.0 to 2.21.1</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.0 to 2.4.1</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.0 to 2.3.1</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.0 to 2.4.1</li>
 </ul>
 <h2>1.2.21 (2020-04-28)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.4 to 2.5.0 (27aa877)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.1.3 to 3.2.0 (f92dff8)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.5.6 to 2.6.0 (951ce37)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.5 to 3.3.0 (98d4e92)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.2.4 to 2.3.0 (90d228a)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.7.3 to 2.8.0 (4cafba2)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.4.6 to 2.5.0 (ae48371)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.4 to 2.5.0</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.1.3 to 3.2.0</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.5.6 to 2.6.0</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.5 to 3.3.0</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.2.4 to 2.3.0</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.7.3 to 2.8.0</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.4.6 to 2.5.0</li>
 </ul>
 <h2>1.2.20 (2020-04-26)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.35 to 2.20.36 (801b75b)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.35 to 2.20.36</li>
 </ul>
 <h2>1.2.19 (2020-04-25)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.29 to 2.20.35 (881a933)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.29 to 2.20.35</li>
 </ul>
 <h2>1.2.18 (2020-04-24)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.3.4 to 2.3.5 (bc597b9)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.3 to 2.4.4 (c859704)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.3.6 to 2.3.7 (891ef32)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.1.4 to 3.1.5 (a8fbe75)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.2.4 to 3.2.5 (d1e90cf)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.3.5 to 2.3.6 (48e6480)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.2.3 to 2.2.4 (cc85332)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.4 to 3.4.5 (5f6e4a6)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.3.3 to 2.3.4 (7cd7d8a)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.3.4 to 2.3.5</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.3 to 2.4.4</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.3.6 to 2.3.7</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.1.4 to 3.1.5</li>
+<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.2.4 to 3.2.5</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.3.5 to 2.3.6</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.2.3 to 2.2.4</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.4 to 3.4.5</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.3.3 to 2.3.4</li>
 </ul>
 <h2>1.2.17 (2020-04-23)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.2.1 to 2.2.3 (c8261ba)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.2.1 to 2.2.3</li>
 </ul>
 <h2>1.2.16 (2020-04-22)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.28 to 2.20.29 (0b6081d)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.28 to 2.20.29</li>
 </ul>
 <h2>1.2.15 (2020-04-22)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.1.2 to 3.1.4 (1a9ce32)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.5.4 to 2.5.6 (03cc4d6)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.4 to 3.2.5 (c2b8087)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.7.1 to 2.7.3 (e262af5)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.4.4 to 2.4.6 (e349547)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.1.2 to 3.1.4</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.5.4 to 2.5.6</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.4 to 3.2.5</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.7.1 to 2.7.3</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.4.4 to 2.4.6</li>
 </ul>
 <h2>1.2.14 (2020-04-21)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.27 to 2.20.28 (6603cc9)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.3.3 to 2.3.6 (3cc1ec4)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.27 to 2.20.28</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.3.3 to 2.3.6</li>
 </ul>
 <h2>1.2.13 (2020-04-21)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.26 to 2.20.27 (3e212fe)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.1 to 2.4.3 (a8fda90)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.1.1 to 3.1.3 (bf4cd52)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.2 to 3.2.4 (fc0dc13)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.2.2 to 2.2.4 (2d1821c)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.26 to 2.20.27</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.1 to 2.4.3</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.1.1 to 3.1.3</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.2 to 3.2.4</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.2.2 to 2.2.4</li>
 </ul>
 <h2>1.2.12 (2020-04-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.1 to 3.4.4 (756f5fe)</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.1 to 3.4.4</li>
 </ul>
 <h2>1.2.11 (2020-04-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.25 to 2.20.26 (c3589eb)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.2.2 to 3.2.4 (6b918d8)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.3.1 to 2.3.5 (ae6a4e2)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.1 to 3.4.3 (2f1a6f7)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.25 to 2.20.26</li>
+<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.2.2 to 3.2.4</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.3.1 to 2.3.5</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.1 to 3.4.3</li>
 </ul>
 <h2>1.2.10 (2020-04-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>bump gatsby from 2.20.18 to 2.20.25 (a541bcf)</li>
+<li>bump gatsby from 2.20.18 to 2.20.25</li>
 </ul>
 <h2>1.2.9 (2020-04-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.3.2 to 2.3.4 (e9b04f3)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.3.1 to 2.3.3 (e5b2eb1)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.3.2 to 2.3.4</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.3.1 to 2.3.3</li>
 </ul>
 <h2>1.2.8 (2020-04-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>upgrade start-server-and-test from 1.10.11 to 1.11.0 (29fe276)</li>
+<li>upgrade start-server-and-test from 1.10.11 to 1.11.0</li>
 </ul>
 <h2>1.2.7 (2020-04-16)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>upgrade cypress from 4.3.0 to 4.4.0 (1a14158)</li>
+<li>upgrade cypress from 4.3.0 to 4.4.0</li>
 </ul>
 <h2>1.2.6 (2020-04-16)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>package.json, package-lock.json &#x26; .snyk to reduce vulnerabilities (8603c96)</li>
+<li>package.json, package-lock.json &#x26; .snyk to reduce vulnerabilities</li>
 </ul>
 <h2>1.2.5 (2020-04-13)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.19.12 to 2.20.18 (0d3e3b4)</li>
-<li><strong>package:</strong> update gatsby-image from 2.2.40 to 2.3.2 (a0ac458)</li>
-<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.27 to 2.4.1 (fb096ec)</li>
-<li><strong>package:</strong> update gatsby-plugin-less from 3.0.19 to 3.1.1 (421d7c4)</li>
-<li><strong>package:</strong> update gatsby-plugin-manifest from 2.2.5 to 2.3.3 (7d9e07e)</li>
+<li><strong>package:</strong> update gatsby from 2.19.12 to 2.20.18</li>
+<li><strong>package:</strong> update gatsby-image from 2.2.40 to 2.3.2</li>
+<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.27 to 2.4.1</li>
+<li><strong>package:</strong> update gatsby-plugin-less from 3.0.19 to 3.1.1</li>
+<li><strong>package:</strong> update gatsby-plugin-manifest from 2.2.5 to 2.3.3</li>
 </ul>
 <h2>1.2.4 (2020-04-09)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update react-helmet to version 6.0.0 (7d952f0)</li>
+<li><strong>package:</strong> update react-helmet to version 6.0.0</li>
 </ul>
 <h2>1.2.3 (2020-02-08)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> update with new position (376322c)</li>
+<li><strong>resume:</strong> update with new position</li>
 </ul>
 <h2>1.2.2 (2020-02-08)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.13.64 to 2.19.12 (1f61e0d)</li>
-<li><strong>package:</strong> update gatsby-plugin-less from 2.1.2 to 3.0.19 (ed78af8)</li>
-<li><strong>package:</strong> update gatsby-plugin-offline from 2.2.10 to 3.0.34 (13f0ac1)</li>
-<li><strong>package:</strong> update gatsby-remark-embed-video from 1.7.1 to 2.0.1 (ad68663)</li>
+<li><strong>package:</strong> update gatsby from 2.13.64 to 2.19.12</li>
+<li><strong>package:</strong> update gatsby-plugin-less from 2.1.2 to 3.0.19</li>
+<li><strong>package:</strong> update gatsby-plugin-offline from 2.2.10 to 3.0.34</li>
+<li><strong>package:</strong> update gatsby-remark-embed-video from 1.7.1 to 2.0.1</li>
 </ul>
 <h2>1.2.1 (2019-08-23)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update semantic-ui-react to version 0.88.0 (357c82a)</li>
+<li><strong>package:</strong> update semantic-ui-react to version 0.88.0</li>
 </ul>
 <h2>1.2.0 (2019-08-18)</h2>
 <h3>Features</h3>
 <ul>
-<li><strong>resume:</strong> about/summary (16fbf28)</li>
+<li><strong>resume:</strong> about/summary</li>
 </ul>
 <h2>1.1.1 (2019-08-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> add some technologies (b283859)</li>
-<li><strong>resume:</strong> show GitHub URL for print and add a link to the resume (45857a5)</li>
+<li><strong>resume:</strong> add some technologies</li>
+<li><strong>resume:</strong> show GitHub URL for print and add a link to the resume</li>
 </ul>
 <h2>1.1.0 (2019-08-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>dom:</strong> use new react-helmet syntax and ensure all head tags are unique (7b17f9a)</li>
-<li><strong>posts/nintendo-switch-virtual-keyboard:</strong> meaningful alts (33f4992)</li>
-<li><strong>posts/wrapping-c-libraries-with-smart-pointers:</strong> update GitHub URL to reflect transferred repository (a29c2fc)</li>
+<li><strong>dom:</strong> use new react-helmet syntax and ensure all head tags are unique</li>
+<li><strong>posts/nintendo-switch-virtual-keyboard:</strong> meaningful alts</li>
+<li><strong>posts/wrapping-c-libraries-with-smart-pointers:</strong> update GitHub URL to reflect transferred repository</li>
 </ul>
 <h3>Features</h3>
 <ul>
-<li><strong>posts:</strong> new post "How This Site Gets Built" (84f9f12)</li>
+<li><strong>posts:</strong> new post "How This Site Gets Built"</li>
 </ul>
 <h2>1.0.6 (2019-08-15)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>content:</strong> use better photo (d8e1ebe)</li>
-<li><strong>resume:</strong> update address to current (70359be)</li>
+<li><strong>content:</strong> use better photo</li>
+<li><strong>resume:</strong> update address to current</li>
 </ul>
 <h2>1.0.5 (2019-08-15)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.10.5 to 2.13.64 (6c7432e)</li>
-<li><strong>package:</strong> update gatsby-image from 2.2.3 to 2.2.8 (0a0dc3c)</li>
-<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.1 to 2.3.6 (e7e48c2)</li>
-<li><strong>package:</strong> update gatsby-plugin-less from 2.1.0 to 2.1.2 (3f5216b)</li>
-<li><strong>package:</strong> update gatsby-plugin-manifest from 2.2.0 to 2.2.5 (299d96a)</li>
-<li><strong>package:</strong> update gatsby-plugin-offline from 2.2.0 to 2.2.6 (52062e6)</li>
-<li><strong>package:</strong> update gatsby-plugin-react-helmet from 3.1.0 to 3.1.3 (8ed5458)</li>
-<li><strong>package:</strong> update gatsby-plugin-robots-txt from 1.4.0 to 1.5.0 (91714f6)</li>
-<li><strong>package:</strong> update gatsby-plugin-sharp from 2.2.1 to 2.2.11 (e51734a)</li>
-<li><strong>package:</strong> update gatsby-plugin-sitemap from 2.2.0 to 2.2.6 (f1cbe1c)</li>
-<li><strong>package:</strong> update gatsby-remark-copy-linked-files from 2.1.0 to 2.1.6 (b99c278)</li>
-<li><strong>package:</strong> update gatsby-remark-images from 3.1.2 to 3.1.11 (ba5a7bd)</li>
-<li><strong>package:</strong> update gatsby-remark-prismjs from 3.3.0 to 3.3.5 (389a34f)</li>
-<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.2.1 to 2.2.4 (7739b8a)</li>
-<li><strong>package:</strong> update gatsby-source-filesystem from 2.1.1 to 2.1.9 (240573c)</li>
-<li><strong>package:</strong> update gatsby-transformer-remark from 2.5.0 to 2.6.14 (b273620)</li>
-<li><strong>package:</strong> update gatsby-transformer-sharp from 2.2.0 to 2.2.6 (db38e1f)</li>
-<li><strong>package:</strong> update mermaid from 8.1.0 to 8.2.3 (dc9b6e7)</li>
-<li><strong>package:</strong> update prismjs from 1.16.0 to 1.17.1 (ace81ce)</li>
-<li><strong>package:</strong> update react from 16.8.6 to 16.9.0 (025e653)</li>
-<li><strong>package:</strong> update react-dom from 16.8.6 to 16.9.0 (3bd5266)</li>
-<li><strong>package:</strong> update semantic-ui-react from 0.87.2 to 0.87.3 (fa0546b)</li>
+<li><strong>package:</strong> update gatsby from 2.10.5 to 2.13.64</li>
+<li><strong>package:</strong> update gatsby-image from 2.2.3 to 2.2.8</li>
+<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.1 to 2.3.6</li>
+<li><strong>package:</strong> update gatsby-plugin-less from 2.1.0 to 2.1.2</li>
+<li><strong>package:</strong> update gatsby-plugin-manifest from 2.2.0 to 2.2.5</li>
+<li><strong>package:</strong> update gatsby-plugin-offline from 2.2.0 to 2.2.6</li>
+<li><strong>package:</strong> update gatsby-plugin-react-helmet from 3.1.0 to 3.1.3</li>
+<li><strong>package:</strong> update gatsby-plugin-robots-txt from 1.4.0 to 1.5.0</li>
+<li><strong>package:</strong> update gatsby-plugin-sharp from 2.2.1 to 2.2.11</li>
+<li><strong>package:</strong> update gatsby-plugin-sitemap from 2.2.0 to 2.2.6</li>
+<li><strong>package:</strong> update gatsby-remark-copy-linked-files from 2.1.0 to 2.1.6</li>
+<li><strong>package:</strong> update gatsby-remark-images from 3.1.2 to 3.1.11</li>
+<li><strong>package:</strong> update gatsby-remark-prismjs from 3.3.0 to 3.3.5</li>
+<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.2.1 to 2.2.4</li>
+<li><strong>package:</strong> update gatsby-source-filesystem from 2.1.1 to 2.1.9</li>
+<li><strong>package:</strong> update gatsby-transformer-remark from 2.5.0 to 2.6.14</li>
+<li><strong>package:</strong> update gatsby-transformer-sharp from 2.2.0 to 2.2.6</li>
+<li><strong>package:</strong> update mermaid from 8.1.0 to 8.2.3</li>
+<li><strong>package:</strong> update prismjs from 1.16.0 to 1.17.1</li>
+<li><strong>package:</strong> update react from 16.8.6 to 16.9.0</li>
+<li><strong>package:</strong> update react-dom from 16.8.6 to 16.9.0</li>
+<li><strong>package:</strong> update semantic-ui-react from 0.87.2 to 0.87.3</li>
 </ul>
 <h2>1.0.4 (2019-06-26)</h2>
 <h3>Performance Improvements</h3>
 <ul>
-<li><strong>fonts:</strong> use font-display and preconnect for Google Fonts (5271922)</li>
+<li><strong>fonts:</strong> use font-display and preconnect for Google Fonts</li>
 </ul>
 <h2>1.0.3 (2019-06-26)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.10.0 to 2.10.5 (b9a492a)</li>
-<li><strong>package:</strong> update gatsby-image from 2.2.1 to 2.2.3 (2264bf3)</li>
-<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.0 to 2.3.1 (aada1da)</li>
-<li><strong>package:</strong> update gatsby-remark-images from 3.1.0 to 3.1.2 (4e325be)</li>
-<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.2.0 to 2.2.1 (4fcf48a)</li>
-<li><strong>package:</strong> update gatsby-source-filesystem from 2.1.0 to 2.1.1 (cbc203a)</li>
-<li><strong>package:</strong> update mermaid from 8.0.0 to 8.1.0 (1e957b6)</li>
+<li><strong>package:</strong> update gatsby from 2.10.0 to 2.10.5</li>
+<li><strong>package:</strong> update gatsby-image from 2.2.1 to 2.2.3</li>
+<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.0 to 2.3.1</li>
+<li><strong>package:</strong> update gatsby-remark-images from 3.1.0 to 3.1.2</li>
+<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.2.0 to 2.2.1</li>
+<li><strong>package:</strong> update gatsby-source-filesystem from 2.1.0 to 2.1.1</li>
+<li><strong>package:</strong> update mermaid from 8.0.0 to 8.1.0</li>
 </ul>
 <h2>1.0.2 (2019-06-24)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.1.29 to 2.10.0 (e93bae8)</li>
-<li><strong>package:</strong> update gatsby-image from 2.0.31 to 2.2.1 (81727d1)</li>
-<li><strong>package:</strong> update gatsby-plugin-feed from 2.0.14 to 2.3.0 (ff0fe49)</li>
-<li><strong>package:</strong> update gatsby-plugin-less from 2.0.11 to 2.1.0 (dba423a)</li>
-<li><strong>package:</strong> update gatsby-plugin-manifest from 2.0.22 to 2.2.0 (5b66b7b)</li>
-<li><strong>package:</strong> update gatsby-plugin-offline from 2.0.24 to 2.2.0 (ba1e216)</li>
-<li><strong>package:</strong> update gatsby-plugin-react-helmet from 3.0.8 to 3.1.0 (9e03bc6)</li>
-<li><strong>package:</strong> update gatsby-plugin-sharp from 2.0.25 to 2.2.1 (749570b)</li>
-<li><strong>package:</strong> update gatsby-plugin-sitemap from 2.0.6 to 2.2.0 (f2ec55a)</li>
-<li><strong>package:</strong> update gatsby-remark-copy-linked-files from 2.0.9 to 2.1.0 (56ff361)</li>
-<li><strong>package:</strong> update gatsby-remark-embed-video from 1.7.0 to 1.7.1 (6cc5383)</li>
-<li><strong>package:</strong> update gatsby-remark-images from 3.0.6 to 3.1.0 (2a7ca12)</li>
-<li><strong>package:</strong> update gatsby-remark-prismjs from 3.2.4 to 3.3.0 (199cbd1)</li>
-<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.0.10 to 2.2.0 (c8f59e5)</li>
-<li><strong>package:</strong> update gatsby-source-filesystem from 2.0.23 to 2.1.0 (f013c19)</li>
-<li><strong>package:</strong> update gatsby-transformer-remark from 2.3.1 to 2.5.0 (9f257f1)</li>
-<li><strong>package:</strong> update gatsby-transformer-sharp from 2.1.15 to 2.2.0 (7309fe6)</li>
-<li><strong>package:</strong> update prismjs from 1.15.0 to 1.16.0 (4c71b1c)</li>
-<li><strong>package:</strong> update react from 16.8.4 to 16.8.6 (fc6bdd9)</li>
-<li><strong>package:</strong> update react-dom from 16.8.4 to 16.8.6 (8e6b553)</li>
-<li><strong>package:</strong> update react-helmet from 5.2.0 to 5.2.1 (ff694d2)</li>
+<li><strong>package:</strong> update gatsby from 2.1.29 to 2.10.0</li>
+<li><strong>package:</strong> update gatsby-image from 2.0.31 to 2.2.1</li>
+<li><strong>package:</strong> update gatsby-plugin-feed from 2.0.14 to 2.3.0</li>
+<li><strong>package:</strong> update gatsby-plugin-less from 2.0.11 to 2.1.0</li>
+<li><strong>package:</strong> update gatsby-plugin-manifest from 2.0.22 to 2.2.0</li>
+<li><strong>package:</strong> update gatsby-plugin-offline from 2.0.24 to 2.2.0</li>
+<li><strong>package:</strong> update gatsby-plugin-react-helmet from 3.0.8 to 3.1.0</li>
+<li><strong>package:</strong> update gatsby-plugin-sharp from 2.0.25 to 2.2.1</li>
+<li><strong>package:</strong> update gatsby-plugin-sitemap from 2.0.6 to 2.2.0</li>
+<li><strong>package:</strong> update gatsby-remark-copy-linked-files from 2.0.9 to 2.1.0</li>
+<li><strong>package:</strong> update gatsby-remark-embed-video from 1.7.0 to 1.7.1</li>
+<li><strong>package:</strong> update gatsby-remark-images from 3.0.6 to 3.1.0</li>
+<li><strong>package:</strong> update gatsby-remark-prismjs from 3.2.4 to 3.3.0</li>
+<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.0.10 to 2.2.0</li>
+<li><strong>package:</strong> update gatsby-source-filesystem from 2.0.23 to 2.1.0</li>
+<li><strong>package:</strong> update gatsby-transformer-remark from 2.3.1 to 2.5.0</li>
+<li><strong>package:</strong> update gatsby-transformer-sharp from 2.1.15 to 2.2.0</li>
+<li><strong>package:</strong> update prismjs from 1.15.0 to 1.16.0</li>
+<li><strong>package:</strong> update react from 16.8.4 to 16.8.6</li>
+<li><strong>package:</strong> update react-dom from 16.8.4 to 16.8.6</li>
+<li><strong>package:</strong> update react-helmet from 5.2.0 to 5.2.1</li>
 </ul>
 <h2>1.0.1 (2019-06-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update semantic-ui-react to version 0.87.2 (38dfc87)</li>
+<li><strong>package:</strong> update semantic-ui-react to version 0.87.2</li>
 </ul>
 <h2>1.0.0 (2019-03-15)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> reword DevOps level (4e35c73)</li>
-</ul></div></div></div></div><div class="row mobile only"><div class="sixteen wide column"><div class="ui basic center aligned segment"><p>© <!-- -->Martin Häger<!-- -->, 2018 - 2021.</p><p>v<!-- -->1.5.2<!-- --> (<a href="/changelog">changelog</a>). Built with <a href="https://graphql.org/">GraphQL</a>, <a href="https://reactjs.org/">React</a> and <a href="https://semantic-ui.com/">Semantic UI</a>.</p></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/changelog";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e01de5659a002fb7adfb.js"],"app":["/app-c071990d232c107de880.js"]};/*]]>*/</script><script src="/polyfill-e01de5659a002fb7adfb.js" nomodule=""></script><script src="/app-c071990d232c107de880.js" async=""></script><script src="/styles-08bc34de4ea872a98d93.js" async=""></script><script src="/framework-04017db0dec66097c42d.js" async=""></script><script src="/webpack-runtime-71e046241d7d5cdf707d.js" async=""></script></body></html>
+<li><strong>resume:</strong> reword DevOps level</li>
+</ul></div></div></div></div><div class="row mobile only"><div class="sixteen wide column"><div class="ui basic center aligned segment"><p>© <!-- -->Martin Häger<!-- -->, 2018 - 2021.</p><p>v<!-- -->1.5.3<!-- --> (<a href="/changelog">changelog</a>). Built with <a href="https://graphql.org/">GraphQL</a>, <a href="https://reactjs.org/">React</a> and <a href="https://semantic-ui.com/">Semantic UI</a>.</p></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/changelog";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e01de5659a002fb7adfb.js"],"app":["/app-ca152fa4446df4431db4.js"]};/*]]>*/</script><script src="/polyfill-e01de5659a002fb7adfb.js" nomodule=""></script><script src="/app-ca152fa4446df4431db4.js" async=""></script><script src="/styles-08bc34de4ea872a98d93.js" async=""></script><script src="/framework-04017db0dec66097c42d.js" async=""></script><script src="/webpack-runtime-71e046241d7d5cdf707d.js" async=""></script></body></html>
