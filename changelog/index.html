@@ -405,7 +405,7 @@
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
- */.transition{animation-iteration-count:1;animation-duration:.3s;animation-timing-function:ease;animation-fill-mode:both}.animating.transition{-webkit-backface-visibility:hidden;backface-visibility:hidden;visibility:visible!important}.loading.transition{position:absolute;top:-99999px;left:-99999px}.hidden.transition{display:none;visibility:hidden}.visible.transition{display:block!important;visibility:visible!important}.disabled.transition{animation-play-state:paused}.looping.transition{animation-iteration-count:infinite}.transition.browse{animation-duration:.5s}.transition.browse.in{animation-name:browseIn}.transition.browse.left.out,.transition.browse.out{animation-name:browseOutLeft}.transition.browse.right.out{animation-name:browseOutRight}@keyframes browseIn{0%{transform:scale(.8) translateZ(0);z-index:-1}10%{transform:scale(.8) translateZ(0);z-index:-1;opacity:.7}80%{transform:scale(1.05) translateZ(0);opacity:1;z-index:999}to{transform:scale(1) translateZ(0);z-index:999}}@keyframes browseOutLeft{0%{z-index:999;transform:translateX(0) rotateY(0deg) rotateX(0deg)}50%{z-index:-1;transform:translateX(-105%) rotateY(35deg) rotateX(10deg) translateZ(-10px)}80%{opacity:1}to{z-index:-1;transform:translateX(0) rotateY(0deg) rotateX(0deg) translateZ(-10px);opacity:0}}@keyframes browseOutRight{0%{z-index:999;transform:translateX(0) rotateY(0deg) rotateX(0deg)}50%{z-index:1;transform:translateX(105%) rotateY(35deg) rotateX(10deg) translateZ(-10px)}80%{opacity:1}to{z-index:1;transform:translateX(0) rotateY(0deg) rotateX(0deg) translateZ(-10px);opacity:0}}.drop.transition{transform-origin:top center;animation-duration:.4s;animation-timing-function:cubic-bezier(.34,1.61,.7,1)}.drop.transition.in{animation-name:dropIn}.drop.transition.out{animation-name:dropOut}@keyframes dropIn{0%{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}@keyframes dropOut{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(0)}}.transition.fade.in{animation-name:fadeIn}.transition[class*="fade up"].in{animation-name:fadeInUp}.transition[class*="fade down"].in{animation-name:fadeInDown}.transition[class*="fade left"].in{animation-name:fadeInLeft}.transition[class*="fade right"].in{animation-name:fadeInRight}.transition.fade.out{animation-name:fadeOut}.transition[class*="fade up"].out{animation-name:fadeOutUp}.transition[class*="fade down"].out{animation-name:fadeOutDown}.transition[class*="fade left"].out{animation-name:fadeOutLeft}.transition[class*="fade right"].out{animation-name:fadeOutRight}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeInUp{0%{opacity:0;transform:translateY(10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInLeft{0%{opacity:0;transform:translateX(10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeInRight{0%{opacity:0;transform:translateX(-10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOutUp{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(5%)}}@keyframes fadeOutDown{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-5%)}}@keyframes fadeOutLeft{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(5%)}}@keyframes fadeOutRight{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-5%)}}.flip.transition.in,.flip.transition.out{animation-duration:.6s}.horizontal.flip.transition.in{animation-name:horizontalFlipIn}.horizontal.flip.transition.out{animation-name:horizontalFlipOut}.vertical.flip.transition.in{animation-name:verticalFlipIn}.vertical.flip.transition.out{animation-name:verticalFlipOut}@keyframes horizontalFlipIn{0%{transform:perspective(2000px) rotateY(-90deg);opacity:0}to{transform:perspective(2000px) rotateY(0deg);opacity:1}}@keyframes verticalFlipIn{0%{transform:perspective(2000px) rotateX(-90deg);opacity:0}to{transform:perspective(2000px) rotateX(0deg);opacity:1}}@keyframes horizontalFlipOut{0%{transform:perspective(2000px) rotateY(0deg);opacity:1}to{transform:perspective(2000px) rotateY(90deg);opacity:0}}@keyframes verticalFlipOut{0%{transform:perspective(2000px) rotateX(0deg);opacity:1}to{transform:perspective(2000px) rotateX(-90deg);opacity:0}}.scale.transition.in{animation-name:scaleIn}.scale.transition.out{animation-name:scaleOut}@keyframes scaleIn{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes scaleOut{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.9)}}.transition.fly{animation-duration:.6s;transition-timing-function:cubic-bezier(.215,.61,.355,1)}.transition.fly.in{animation-name:flyIn}.transition[class*="fly up"].in{animation-name:flyInUp}.transition[class*="fly down"].in{animation-name:flyInDown}.transition[class*="fly left"].in{animation-name:flyInLeft}.transition[class*="fly right"].in{animation-name:flyInRight}.transition.fly.out{animation-name:flyOut}.transition[class*="fly up"].out{animation-name:flyOutUp}.transition[class*="fly down"].out{animation-name:flyOutDown}.transition[class*="fly left"].out{animation-name:flyOutLeft}.transition[class*="fly right"].out{animation-name:flyOutRight}@keyframes flyIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scaleX(1)}}@keyframes flyInUp{0%{opacity:0;transform:translate3d(0,1500px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translateZ(0)}}@keyframes flyInDown{0%{opacity:0;transform:translate3d(0,-1500px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}@keyframes flyInLeft{0%{opacity:0;transform:translate3d(1500px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}@keyframes flyInRight{0%{opacity:0;transform:translate3d(-1500px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}@keyframes flyOut{20%{transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;transform:scale3d(1.1,1.1,1.1)}to{opacity:0;transform:scale3d(.3,.3,.3)}}@keyframes flyOutUp{20%{transform:translate3d(0,10px,0)}40%,45%{opacity:1;transform:translate3d(0,-20px,0)}to{opacity:0;transform:translate3d(0,2000px,0)}}@keyframes flyOutDown{20%{transform:translate3d(0,-10px,0)}40%,45%{opacity:1;transform:translate3d(0,20px,0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes flyOutRight{20%{opacity:1;transform:translate3d(20px,0,0)}to{opacity:0;transform:translate3d(-2000px,0,0)}}@keyframes flyOutLeft{20%{opacity:1;transform:translate3d(-20px,0,0)}to{opacity:0;transform:translate3d(2000px,0,0)}}.transition.slide.in,.transition[class*="slide down"].in{animation-name:slideInY;transform-origin:top center}.transition[class*="slide up"].in{animation-name:slideInY;transform-origin:bottom center}.transition[class*="slide left"].in{animation-name:slideInX;transform-origin:center right}.transition[class*="slide right"].in{animation-name:slideInX;transform-origin:center left}.transition.slide.out,.transition[class*="slide down"].out{animation-name:slideOutY;transform-origin:top center}.transition[class*="slide up"].out{animation-name:slideOutY;transform-origin:bottom center}.transition[class*="slide left"].out{animation-name:slideOutX;transform-origin:center right}.transition[class*="slide right"].out{animation-name:slideOutX;transform-origin:center left}@keyframes slideInY{0%{opacity:0;transform:scaleY(0)}to{opacity:1;transform:scaleY(1)}}@keyframes slideInX{0%{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}@keyframes slideOutY{0%{opacity:1;transform:scaleY(1)}to{opacity:0;transform:scaleY(0)}}@keyframes slideOutX{0%{opacity:1;transform:scaleX(1)}to{opacity:0;transform:scaleX(0)}}.transition.swing{animation-duration:.8s}.transition[class*="swing down"].in{animation-name:swingInX;transform-origin:top center}.transition[class*="swing up"].in{animation-name:swingInX;transform-origin:bottom center}.transition[class*="swing left"].in{animation-name:swingInY;transform-origin:center right}.transition[class*="swing right"].in{animation-name:swingInY;transform-origin:center left}.transition.swing.out,.transition[class*="swing down"].out{animation-name:swingOutX;transform-origin:top center}.transition[class*="swing up"].out{animation-name:swingOutX;transform-origin:bottom center}.transition[class*="swing left"].out{animation-name:swingOutY;transform-origin:center right}.transition[class*="swing right"].out{animation-name:swingOutY;transform-origin:center left}@keyframes swingInX{0%{transform:perspective(1000px) rotateX(90deg);opacity:0}40%{transform:perspective(1000px) rotateX(-30deg);opacity:1}60%{transform:perspective(1000px) rotateX(15deg)}80%{transform:perspective(1000px) rotateX(-7.5deg)}to{transform:perspective(1000px) rotateX(0deg)}}@keyframes swingInY{0%{transform:perspective(1000px) rotateY(-90deg);opacity:0}40%{transform:perspective(1000px) rotateY(30deg);opacity:1}60%{transform:perspective(1000px) rotateY(-17.5deg)}80%{transform:perspective(1000px) rotateY(7.5deg)}to{transform:perspective(1000px) rotateY(0deg)}}@keyframes swingOutX{0%{transform:perspective(1000px) rotateX(0deg)}40%{transform:perspective(1000px) rotateX(-7.5deg)}60%{transform:perspective(1000px) rotateX(17.5deg)}80%{transform:perspective(1000px) rotateX(-30deg);opacity:1}to{transform:perspective(1000px) rotateX(90deg);opacity:0}}@keyframes swingOutY{0%{transform:perspective(1000px) rotateY(0deg)}40%{transform:perspective(1000px) rotateY(7.5deg)}60%{transform:perspective(1000px) rotateY(-10deg)}80%{transform:perspective(1000px) rotateY(30deg);opacity:1}to{transform:perspective(1000px) rotateY(-90deg);opacity:0}}.transition.zoom.in{animation-name:zoomIn}.transition.zoom.out{animation-name:zoomOut}@keyframes zoomIn{0%{opacity:1;transform:scale(0)}to{opacity:1;transform:scale(1)}}@keyframes zoomOut{0%{opacity:1;transform:scale(1)}to{opacity:1;transform:scale(0)}}.flash.transition{animation-duration:.75s;animation-name:flash}.shake.transition{animation-duration:.75s;animation-name:shake}.bounce.transition{animation-duration:.75s;animation-name:bounce}.tada.transition{animation-duration:.75s;animation-name:tada}.pulse.transition{animation-duration:.5s;animation-name:pulse}.jiggle.transition{animation-duration:.75s;animation-name:jiggle}.transition.glow{animation-duration:2s;animation-timing-function:cubic-bezier(.19,1,.22,1);animation-name:glow}@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes shake{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes bounce{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes tada{0%{transform:scale(1)}10%,20%{transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{transform:scale(1.1) rotate(3deg)}40%,60%,80%{transform:scale(1.1) rotate(-3deg)}to{transform:scale(1) rotate(0)}}@keyframes pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(.9);opacity:.7}to{transform:scale(1);opacity:1}}@keyframes jiggle{0%{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scaleX(1)}}@keyframes glow{0%{background-color:#fcfcfd}30%{background-color:#fff6cd}to{background-color:#fcfcfd}}body,html{background:#c6ffdd;background:linear-gradient(180deg,#f7797d,#fbd786,#c6ffdd);background-attachment:fixed;font-weight:300;font-size:16px}#___gatsby{padding:2em 0}#___gatsby code[class*=language-],#___gatsby pre[class*=language-]{font-family:Fira Mono,monospace;font-weight:400;-moz-tab-size:2;-o-tab-size:2;tab-size:2}.gatsby-resp-image-figcaption{font-style:italic;margin-top:.5rem}@media only screen and (max-width:767px){[class*="computer only"]:not(.mobile),[class*="large screen only"]:not(.mobile),[class*="mobile hidden"],[class*="or lower hidden"],[class*="tablet only"]:not(.mobile),[class*="widescreen only"]:not(.mobile){display:none!important}}@media only screen and (min-width:768px) and (max-width:991px){[class*="computer only"]:not(.tablet),[class*="large screen only"]:not(.tablet),[class*="mobile only"]:not(.tablet),[class*="or lower hidden"]:not(.mobile),[class*="tablet hidden"],[class*="widescreen only"]:not(.tablet){display:none!important}}@media only screen and (min-width:992px) and (max-width:1199px){[class*="computer hidden"],[class*="large screen only"]:not(.computer),[class*="mobile only"]:not(.computer),[class*="or lower hidden"]:not(.tablet):not(.mobile),[class*="tablet only"]:not(.computer),[class*="widescreen only"]:not(.computer){display:none!important}}@media only screen and (min-width:1200px) and (max-width:1919px){[class*="computer only"]:not([class*="large screen"]),[class*="large screen hidden"],[class*="mobile only"]:not([class*="large screen"]),[class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile),[class*="tablet only"]:not([class*="large screen"]),[class*="widescreen only"]:not([class*="large screen"]){display:none!important}}@media only screen and (min-width:1920px){[class*="computer only"]:not([class*=widescreen]),[class*="large screen only"]:not([class*=widescreen]),[class*="mobile only"]:not([class*=widescreen]),[class*="tablet only"]:not([class*=widescreen]),[class*="widescreen hidden"],[class*="widescreen or lower hidden"]{display:none!important}}</style><meta name="generator" content="Gatsby 2.32.11"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="aliceblue"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><title data-react-helmet="true">Changelog | Martin Häger</title><meta data-react-helmet="true" name="description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><meta data-react-helmet="true" name="og:title" content="Changelog"/><meta data-react-helmet="true" name="og:description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><meta data-react-helmet="true" name="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Martin Häger"/><meta data-react-helmet="true" name="twitter:title" content="Changelog"/><meta data-react-helmet="true" name="twitter:description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link as="script" rel="preload" href="/webpack-runtime-71e046241d7d5cdf707d.js"/><link as="script" rel="preload" href="/framework-04017db0dec66097c42d.js"/><link as="script" rel="preload" href="/styles-08bc34de4ea872a98d93.js"/><link as="script" rel="preload" href="/app-6228d84f66e98df05d8e.js"/><link as="fetch" rel="preload" href="/page-data/changelog/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2496608583.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/440568431.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="ui container stackable grid"><div class="row"><div id="foo" class="five wide column"><div style="overflow:hidden" class="ui fluid raised card"><a href="/"><div class="mobile hidden gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:133%"></div><noscript><picture><source srcset="/static/00ffa6729dff6c17059ae0ec06807491/61cdf/avatar.jpg 100w,
+ */.transition{animation-iteration-count:1;animation-duration:.3s;animation-timing-function:ease;animation-fill-mode:both}.animating.transition{-webkit-backface-visibility:hidden;backface-visibility:hidden;visibility:visible!important}.loading.transition{position:absolute;top:-99999px;left:-99999px}.hidden.transition{display:none;visibility:hidden}.visible.transition{display:block!important;visibility:visible!important}.disabled.transition{animation-play-state:paused}.looping.transition{animation-iteration-count:infinite}.transition.browse{animation-duration:.5s}.transition.browse.in{animation-name:browseIn}.transition.browse.left.out,.transition.browse.out{animation-name:browseOutLeft}.transition.browse.right.out{animation-name:browseOutRight}@keyframes browseIn{0%{transform:scale(.8) translateZ(0);z-index:-1}10%{transform:scale(.8) translateZ(0);z-index:-1;opacity:.7}80%{transform:scale(1.05) translateZ(0);opacity:1;z-index:999}to{transform:scale(1) translateZ(0);z-index:999}}@keyframes browseOutLeft{0%{z-index:999;transform:translateX(0) rotateY(0deg) rotateX(0deg)}50%{z-index:-1;transform:translateX(-105%) rotateY(35deg) rotateX(10deg) translateZ(-10px)}80%{opacity:1}to{z-index:-1;transform:translateX(0) rotateY(0deg) rotateX(0deg) translateZ(-10px);opacity:0}}@keyframes browseOutRight{0%{z-index:999;transform:translateX(0) rotateY(0deg) rotateX(0deg)}50%{z-index:1;transform:translateX(105%) rotateY(35deg) rotateX(10deg) translateZ(-10px)}80%{opacity:1}to{z-index:1;transform:translateX(0) rotateY(0deg) rotateX(0deg) translateZ(-10px);opacity:0}}.drop.transition{transform-origin:top center;animation-duration:.4s;animation-timing-function:cubic-bezier(.34,1.61,.7,1)}.drop.transition.in{animation-name:dropIn}.drop.transition.out{animation-name:dropOut}@keyframes dropIn{0%{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}@keyframes dropOut{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(0)}}.transition.fade.in{animation-name:fadeIn}.transition[class*="fade up"].in{animation-name:fadeInUp}.transition[class*="fade down"].in{animation-name:fadeInDown}.transition[class*="fade left"].in{animation-name:fadeInLeft}.transition[class*="fade right"].in{animation-name:fadeInRight}.transition.fade.out{animation-name:fadeOut}.transition[class*="fade up"].out{animation-name:fadeOutUp}.transition[class*="fade down"].out{animation-name:fadeOutDown}.transition[class*="fade left"].out{animation-name:fadeOutLeft}.transition[class*="fade right"].out{animation-name:fadeOutRight}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeInUp{0%{opacity:0;transform:translateY(10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInLeft{0%{opacity:0;transform:translateX(10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeInRight{0%{opacity:0;transform:translateX(-10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOutUp{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(5%)}}@keyframes fadeOutDown{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-5%)}}@keyframes fadeOutLeft{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(5%)}}@keyframes fadeOutRight{0%{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-5%)}}.flip.transition.in,.flip.transition.out{animation-duration:.6s}.horizontal.flip.transition.in{animation-name:horizontalFlipIn}.horizontal.flip.transition.out{animation-name:horizontalFlipOut}.vertical.flip.transition.in{animation-name:verticalFlipIn}.vertical.flip.transition.out{animation-name:verticalFlipOut}@keyframes horizontalFlipIn{0%{transform:perspective(2000px) rotateY(-90deg);opacity:0}to{transform:perspective(2000px) rotateY(0deg);opacity:1}}@keyframes verticalFlipIn{0%{transform:perspective(2000px) rotateX(-90deg);opacity:0}to{transform:perspective(2000px) rotateX(0deg);opacity:1}}@keyframes horizontalFlipOut{0%{transform:perspective(2000px) rotateY(0deg);opacity:1}to{transform:perspective(2000px) rotateY(90deg);opacity:0}}@keyframes verticalFlipOut{0%{transform:perspective(2000px) rotateX(0deg);opacity:1}to{transform:perspective(2000px) rotateX(-90deg);opacity:0}}.scale.transition.in{animation-name:scaleIn}.scale.transition.out{animation-name:scaleOut}@keyframes scaleIn{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes scaleOut{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.9)}}.transition.fly{animation-duration:.6s;transition-timing-function:cubic-bezier(.215,.61,.355,1)}.transition.fly.in{animation-name:flyIn}.transition[class*="fly up"].in{animation-name:flyInUp}.transition[class*="fly down"].in{animation-name:flyInDown}.transition[class*="fly left"].in{animation-name:flyInLeft}.transition[class*="fly right"].in{animation-name:flyInRight}.transition.fly.out{animation-name:flyOut}.transition[class*="fly up"].out{animation-name:flyOutUp}.transition[class*="fly down"].out{animation-name:flyOutDown}.transition[class*="fly left"].out{animation-name:flyOutLeft}.transition[class*="fly right"].out{animation-name:flyOutRight}@keyframes flyIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scaleX(1)}}@keyframes flyInUp{0%{opacity:0;transform:translate3d(0,1500px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translateZ(0)}}@keyframes flyInDown{0%{opacity:0;transform:translate3d(0,-1500px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}@keyframes flyInLeft{0%{opacity:0;transform:translate3d(1500px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}@keyframes flyInRight{0%{opacity:0;transform:translate3d(-1500px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}@keyframes flyOut{20%{transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;transform:scale3d(1.1,1.1,1.1)}to{opacity:0;transform:scale3d(.3,.3,.3)}}@keyframes flyOutUp{20%{transform:translate3d(0,10px,0)}40%,45%{opacity:1;transform:translate3d(0,-20px,0)}to{opacity:0;transform:translate3d(0,2000px,0)}}@keyframes flyOutDown{20%{transform:translate3d(0,-10px,0)}40%,45%{opacity:1;transform:translate3d(0,20px,0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes flyOutRight{20%{opacity:1;transform:translate3d(20px,0,0)}to{opacity:0;transform:translate3d(-2000px,0,0)}}@keyframes flyOutLeft{20%{opacity:1;transform:translate3d(-20px,0,0)}to{opacity:0;transform:translate3d(2000px,0,0)}}.transition.slide.in,.transition[class*="slide down"].in{animation-name:slideInY;transform-origin:top center}.transition[class*="slide up"].in{animation-name:slideInY;transform-origin:bottom center}.transition[class*="slide left"].in{animation-name:slideInX;transform-origin:center right}.transition[class*="slide right"].in{animation-name:slideInX;transform-origin:center left}.transition.slide.out,.transition[class*="slide down"].out{animation-name:slideOutY;transform-origin:top center}.transition[class*="slide up"].out{animation-name:slideOutY;transform-origin:bottom center}.transition[class*="slide left"].out{animation-name:slideOutX;transform-origin:center right}.transition[class*="slide right"].out{animation-name:slideOutX;transform-origin:center left}@keyframes slideInY{0%{opacity:0;transform:scaleY(0)}to{opacity:1;transform:scaleY(1)}}@keyframes slideInX{0%{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}@keyframes slideOutY{0%{opacity:1;transform:scaleY(1)}to{opacity:0;transform:scaleY(0)}}@keyframes slideOutX{0%{opacity:1;transform:scaleX(1)}to{opacity:0;transform:scaleX(0)}}.transition.swing{animation-duration:.8s}.transition[class*="swing down"].in{animation-name:swingInX;transform-origin:top center}.transition[class*="swing up"].in{animation-name:swingInX;transform-origin:bottom center}.transition[class*="swing left"].in{animation-name:swingInY;transform-origin:center right}.transition[class*="swing right"].in{animation-name:swingInY;transform-origin:center left}.transition.swing.out,.transition[class*="swing down"].out{animation-name:swingOutX;transform-origin:top center}.transition[class*="swing up"].out{animation-name:swingOutX;transform-origin:bottom center}.transition[class*="swing left"].out{animation-name:swingOutY;transform-origin:center right}.transition[class*="swing right"].out{animation-name:swingOutY;transform-origin:center left}@keyframes swingInX{0%{transform:perspective(1000px) rotateX(90deg);opacity:0}40%{transform:perspective(1000px) rotateX(-30deg);opacity:1}60%{transform:perspective(1000px) rotateX(15deg)}80%{transform:perspective(1000px) rotateX(-7.5deg)}to{transform:perspective(1000px) rotateX(0deg)}}@keyframes swingInY{0%{transform:perspective(1000px) rotateY(-90deg);opacity:0}40%{transform:perspective(1000px) rotateY(30deg);opacity:1}60%{transform:perspective(1000px) rotateY(-17.5deg)}80%{transform:perspective(1000px) rotateY(7.5deg)}to{transform:perspective(1000px) rotateY(0deg)}}@keyframes swingOutX{0%{transform:perspective(1000px) rotateX(0deg)}40%{transform:perspective(1000px) rotateX(-7.5deg)}60%{transform:perspective(1000px) rotateX(17.5deg)}80%{transform:perspective(1000px) rotateX(-30deg);opacity:1}to{transform:perspective(1000px) rotateX(90deg);opacity:0}}@keyframes swingOutY{0%{transform:perspective(1000px) rotateY(0deg)}40%{transform:perspective(1000px) rotateY(7.5deg)}60%{transform:perspective(1000px) rotateY(-10deg)}80%{transform:perspective(1000px) rotateY(30deg);opacity:1}to{transform:perspective(1000px) rotateY(-90deg);opacity:0}}.transition.zoom.in{animation-name:zoomIn}.transition.zoom.out{animation-name:zoomOut}@keyframes zoomIn{0%{opacity:1;transform:scale(0)}to{opacity:1;transform:scale(1)}}@keyframes zoomOut{0%{opacity:1;transform:scale(1)}to{opacity:1;transform:scale(0)}}.flash.transition{animation-duration:.75s;animation-name:flash}.shake.transition{animation-duration:.75s;animation-name:shake}.bounce.transition{animation-duration:.75s;animation-name:bounce}.tada.transition{animation-duration:.75s;animation-name:tada}.pulse.transition{animation-duration:.5s;animation-name:pulse}.jiggle.transition{animation-duration:.75s;animation-name:jiggle}.transition.glow{animation-duration:2s;animation-timing-function:cubic-bezier(.19,1,.22,1);animation-name:glow}@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes shake{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes bounce{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes tada{0%{transform:scale(1)}10%,20%{transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{transform:scale(1.1) rotate(3deg)}40%,60%,80%{transform:scale(1.1) rotate(-3deg)}to{transform:scale(1) rotate(0)}}@keyframes pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(.9);opacity:.7}to{transform:scale(1);opacity:1}}@keyframes jiggle{0%{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scaleX(1)}}@keyframes glow{0%{background-color:#fcfcfd}30%{background-color:#fff6cd}to{background-color:#fcfcfd}}body,html{background:#c6ffdd;background:linear-gradient(180deg,#f7797d,#fbd786,#c6ffdd);background-attachment:fixed;font-weight:300;font-size:16px}#___gatsby{padding:2em 0}#___gatsby code[class*=language-],#___gatsby pre[class*=language-]{font-family:Fira Mono,monospace;font-weight:400;-moz-tab-size:2;-o-tab-size:2;tab-size:2}.gatsby-resp-image-figcaption{font-style:italic;margin-top:.5rem}@media only screen and (max-width:767px){[class*="computer only"]:not(.mobile),[class*="large screen only"]:not(.mobile),[class*="mobile hidden"],[class*="or lower hidden"],[class*="tablet only"]:not(.mobile),[class*="widescreen only"]:not(.mobile){display:none!important}}@media only screen and (min-width:768px) and (max-width:991px){[class*="computer only"]:not(.tablet),[class*="large screen only"]:not(.tablet),[class*="mobile only"]:not(.tablet),[class*="or lower hidden"]:not(.mobile),[class*="tablet hidden"],[class*="widescreen only"]:not(.tablet){display:none!important}}@media only screen and (min-width:992px) and (max-width:1199px){[class*="computer hidden"],[class*="large screen only"]:not(.computer),[class*="mobile only"]:not(.computer),[class*="or lower hidden"]:not(.tablet):not(.mobile),[class*="tablet only"]:not(.computer),[class*="widescreen only"]:not(.computer){display:none!important}}@media only screen and (min-width:1200px) and (max-width:1919px){[class*="computer only"]:not([class*="large screen"]),[class*="large screen hidden"],[class*="mobile only"]:not([class*="large screen"]),[class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile),[class*="tablet only"]:not([class*="large screen"]),[class*="widescreen only"]:not([class*="large screen"]){display:none!important}}@media only screen and (min-width:1920px){[class*="computer only"]:not([class*=widescreen]),[class*="large screen only"]:not([class*=widescreen]),[class*="mobile only"]:not([class*=widescreen]),[class*="tablet only"]:not([class*=widescreen]),[class*="widescreen hidden"],[class*="widescreen or lower hidden"]{display:none!important}}</style><meta name="generator" content="Gatsby 2.32.11"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="aliceblue"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=850fa70ba69cd0a7a65ba0c0c602fb4e"/><title data-react-helmet="true">Changelog | Martin Häger</title><meta data-react-helmet="true" name="description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><meta data-react-helmet="true" name="og:title" content="Changelog"/><meta data-react-helmet="true" name="og:description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><meta data-react-helmet="true" name="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Martin Häger"/><meta data-react-helmet="true" name="twitter:title" content="Changelog"/><meta data-react-helmet="true" name="twitter:description" content="Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY."/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link as="script" rel="preload" href="/webpack-runtime-71e046241d7d5cdf707d.js"/><link as="script" rel="preload" href="/framework-04017db0dec66097c42d.js"/><link as="script" rel="preload" href="/styles-08bc34de4ea872a98d93.js"/><link as="script" rel="preload" href="/app-c071990d232c107de880.js"/><link as="fetch" rel="preload" href="/page-data/changelog/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2496608583.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/440568431.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="ui container stackable grid"><div class="row"><div id="foo" class="five wide column"><div style="overflow:hidden" class="ui fluid raised card"><a href="/"><div class="mobile hidden gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:133%"></div><noscript><picture><source srcset="/static/00ffa6729dff6c17059ae0ec06807491/61cdf/avatar.jpg 100w,
 /static/00ffa6729dff6c17059ae0ec06807491/e30d9/avatar.jpg 199w,
 /static/00ffa6729dff6c17059ae0ec06807491/486ab/avatar.jpg 398w,
 /static/00ffa6729dff6c17059ae0ec06807491/956c9/avatar.jpg 597w,
@@ -415,604 +415,609 @@
 /static/00ffa6729dff6c17059ae0ec06807491/486ab/avatar.jpg 398w,
 /static/00ffa6729dff6c17059ae0ec06807491/956c9/avatar.jpg 597w,
 /static/00ffa6729dff6c17059ae0ec06807491/d542d/avatar.jpg 796w,
-/static/00ffa6729dff6c17059ae0ec06807491/16018/avatar.jpg 3024w" src="/static/00ffa6729dff6c17059ae0ec06807491/486ab/avatar.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></a><div class="content"><div class="header">Martin Häger</div><div class="description">Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY.</div></div><div style="text-align:center" class="extra content"><div class="ui vertical buttons mobile hidden"><a href="https://twitter.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="twitter icon"></i>Twitter</a><a href="https://github.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="github icon"></i>GitHub</a><a href="https://matrix.to/#/@kvadevack:kvadevack.se" class="ui basic button" role="button"><i aria-hidden="true" class="comments icon"></i>Matrix</a></div><div class="ui two buttons mobile only"><a href="https://twitter.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="twitter icon"></i>Twitter</a><a href="https://github.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="github icon"></i>GitHub</a><a href="https://matrix.to/#/@kvadevack:kvadevack.se" class="ui basic button" role="button"><i aria-hidden="true" class="comments icon"></i>Matrix</a></div></div></div><div style="padding:0" class="ui raised segment"><div style="border:none;box-shadow:none;margin:0" class="ui fluid vertical mobile hidden menu"><a class="item" href="/">Blog</a><a class="item" href="/resume">Resume</a><a href="/rss.xml" class="item"><i aria-hidden="true" class="rss icon"></i>RSS Feed</a></div><div style="border:none;box-shadow:none;margin:0" class="ui fluid three item mobile only menu"><a class="item" href="/">Blog</a><a class="item" href="/resume">Resume</a><a href="/rss.xml" class="item"><i aria-hidden="true" class="rss icon"></i>RSS Feed</a></div></div><div class="ui basic segment mobile hidden"><p>© <!-- -->Martin Häger<!-- -->, 2018 - 2021.</p><p>v<!-- -->1.5.1<!-- --> (<a href="/changelog">changelog</a>). Built with <a href="https://graphql.org/">GraphQL</a>, <a href="https://reactjs.org/">React</a> and <a href="https://semantic-ui.com/">Semantic UI</a>.</p></div></div><div class="eleven wide column"><div class="ui raised segment"><h1 class="ui header">Changelog</h1><div><h2>1.5.1 (2021-04-10)</h2>
+/static/00ffa6729dff6c17059ae0ec06807491/16018/avatar.jpg 3024w" src="/static/00ffa6729dff6c17059ae0ec06807491/486ab/avatar.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></a><div class="content"><div class="header">Martin Häger</div><div class="description">Full-stack software developer with DevOps experience. Blogging about programming, video games, music, electronics engineering, and all things DIY.</div></div><div style="text-align:center" class="extra content"><div class="ui vertical buttons mobile hidden"><a href="https://twitter.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="twitter icon"></i>Twitter</a><a href="https://github.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="github icon"></i>GitHub</a><a href="https://matrix.to/#/@kvadevack:kvadevack.se" class="ui basic button" role="button"><i aria-hidden="true" class="comments icon"></i>Matrix</a></div><div class="ui two buttons mobile only"><a href="https://twitter.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="twitter icon"></i>Twitter</a><a href="https://github.com/kvadevack" class="ui basic button" role="button"><i aria-hidden="true" class="github icon"></i>GitHub</a><a href="https://matrix.to/#/@kvadevack:kvadevack.se" class="ui basic button" role="button"><i aria-hidden="true" class="comments icon"></i>Matrix</a></div></div></div><div style="padding:0" class="ui raised segment"><div style="border:none;box-shadow:none;margin:0" class="ui fluid vertical mobile hidden menu"><a class="item" href="/">Blog</a><a class="item" href="/resume">Resume</a><a href="/rss.xml" class="item"><i aria-hidden="true" class="rss icon"></i>RSS Feed</a></div><div style="border:none;box-shadow:none;margin:0" class="ui fluid three item mobile only menu"><a class="item" href="/">Blog</a><a class="item" href="/resume">Resume</a><a href="/rss.xml" class="item"><i aria-hidden="true" class="rss icon"></i>RSS Feed</a></div></div><div class="ui basic segment mobile hidden"><p>© <!-- -->Martin Häger<!-- -->, 2018 - 2021.</p><p>v<!-- -->1.5.2<!-- --> (<a href="/changelog">changelog</a>). Built with <a href="https://graphql.org/">GraphQL</a>, <a href="https://reactjs.org/">React</a> and <a href="https://semantic-ui.com/">Semantic UI</a>.</p></div></div><div class="eleven wide column"><div class="ui raised segment"><h1 class="ui header">Changelog</h1><div><h2>1.5.2 (2021-04-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>don't link to repo in changelog 2705e6f</li>
+<li>regenerate changelog with new options (7eb46b5)</li>
 </ul>
-<h1><a href="https://github.com/kvadevack/site/compare/v1.4.9...v1.5.0" target="_self" rel="nofollow noopener noreferrer">1.5.0</a> (2021-04-10)</h1>
+<h2>1.5.1 (2021-04-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>move code examples to replit (<a href="https://github.com/kvadevack/site/commit/679c9b8c52021bc1de0756efab60973b913ce6ab" target="_self" rel="nofollow noopener noreferrer">679c9b8</a>)</li>
-<li>remove footer repo link (<a href="https://github.com/kvadevack/site/commit/4ef591d2c4884fcce3d27a5fd2a719c56f288c7f" target="_self" rel="nofollow noopener noreferrer">4ef591d</a>)</li>
+<li>don't link to repo in changelog (2705e6f)</li>
+</ul>
+<h2>1.5.0 (2021-04-10)</h2>
+<h3>Bug Fixes</h3>
+<ul>
+<li>move code examples to replit (679c9b8)</li>
+<li>remove footer repo link (4ef591d)</li>
 </ul>
 <h3>Features</h3>
 <ul>
-<li>render changelog to a page (<a href="https://github.com/kvadevack/site/commit/fab7e3569d3bc389c834ff18574d2378cc42e61c" target="_self" rel="nofollow noopener noreferrer">fab7e35</a>)</li>
+<li>render changelog to a page (fab7e35)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.8...v1.4.9" target="_self" rel="nofollow noopener noreferrer">1.4.9</a> (2021-04-10)</h2>
+<h2>1.4.9 (2021-04-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 3.1.0 to 3.2.0 (<a href="https://github.com/kvadevack/site/commit/3784aade1bcd9f7884ea11ee1796d7c20b996662" target="_self" rel="nofollow noopener noreferrer">3784aad</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.13.0 to 2.13.1 (<a href="https://github.com/kvadevack/site/commit/de92880c7d0199aff50526060712dcd095cc665d" target="_self" rel="nofollow noopener noreferrer">de92880</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.11.0 to 3.11.1 (<a href="https://github.com/kvadevack/site/commit/a816aa51cd9b0d9cee040970c31a29cc601f6eb1" target="_self" rel="nofollow noopener noreferrer">a816aa5</a>)</li>
+<li><strong>deps:</strong> bump gatsby-image from 3.1.0 to 3.2.0 (3784aad)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.13.0 to 2.13.1 (de92880)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.11.0 to 3.11.1 (a816aa5)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.7...v1.4.8" target="_self" rel="nofollow noopener noreferrer">1.4.8</a> (2021-04-03)</h2>
+<h2>1.4.8 (2021-04-03)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.32.9 to 2.32.11 (<a href="https://github.com/kvadevack/site/commit/049009eb494ed359f6fe088ace44293d5955d975" target="_self" rel="nofollow noopener noreferrer">049009e</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.10.0 to 3.10.2 (<a href="https://github.com/kvadevack/site/commit/f3f45355f2f57a386fef5ed82d92a95fbdedd187" target="_self" rel="nofollow noopener noreferrer">f3f4535</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.12.0 to 2.12.1 (<a href="https://github.com/kvadevack/site/commit/7a4fbb1002bd17e6a32adb515785e5a86455176d" target="_self" rel="nofollow noopener noreferrer">7a4fbb1</a>)</li>
-<li><strong>deps:</strong> bump mermaid from 8.9.1 to 8.9.2 (<a href="https://github.com/kvadevack/site/commit/7f44359a7f9876e5ed7bd4397d3734006044f7fb" target="_self" rel="nofollow noopener noreferrer">7f44359</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.32.9 to 2.32.11 (049009e)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.10.0 to 3.10.2 (f3f4535)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.12.0 to 2.12.1 (7a4fbb1)</li>
+<li><strong>deps:</strong> bump mermaid from 8.9.1 to 8.9.2 (7f44359)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.6...v1.4.7" target="_self" rel="nofollow noopener noreferrer">1.4.7</a> (2021-03-20)</h2>
+<h2>1.4.7 (2021-03-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump less from 3.13.1 to 4.1.1 (<a href="https://github.com/kvadevack/site/commit/8d788d0353d9b2e34a6d58e552de516e0692520b" target="_self" rel="nofollow noopener noreferrer">8d788d0</a>)</li>
+<li><strong>deps:</strong> bump less from 3.13.1 to 4.1.1 (8d788d0)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.5...v1.4.6" target="_self" rel="nofollow noopener noreferrer">1.4.6</a> (2021-03-18)</h2>
+<h2>1.4.6 (2021-03-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.11.0 to 3.1.0 (<a href="https://github.com/kvadevack/site/commit/bc02c853eeafdc79c2f53de41bcc8c001f24676b" target="_self" rel="nofollow noopener noreferrer">bc02c85</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-embed-video from 3.0.12 to 3.1.1 (<a href="https://github.com/kvadevack/site/commit/dfba9eaf78d63ddd4c5d01f738c8ff059b59d3c4" target="_self" rel="nofollow noopener noreferrer">dfba9ea</a>)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.11.0 to 2.11.1 (<a href="https://github.com/kvadevack/site/commit/2872940a1f51a63e45a5b094bf70fb394fa940ac" target="_self" rel="nofollow noopener noreferrer">2872940</a>)</li>
-<li><strong>resume:</strong> add new job (<a href="https://github.com/kvadevack/site/commit/d6f6d915e61bf745f4f00d430fb37ad75eec8fd3" target="_self" rel="nofollow noopener noreferrer">d6f6d91</a>)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.11.0 to 3.1.0 (bc02c85)</li>
+<li><strong>deps:</strong> bump gatsby-remark-embed-video from 3.0.12 to 3.1.1 (dfba9ea)</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.11.0 to 2.11.1 (2872940)</li>
+<li><strong>resume:</strong> add new job (d6f6d91)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.4...v1.4.5" target="_self" rel="nofollow noopener noreferrer">1.4.5</a> (2021-03-06)</h2>
+<h2>1.4.5 (2021-03-06)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>remove unused import (<a href="https://github.com/kvadevack/site/commit/c1c7f92d25c5ff2ac14f25b10ac36bab314f580e" target="_self" rel="nofollow noopener noreferrer">c1c7f92</a>)</li>
+<li>remove unused import (c1c7f92)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.3...v1.4.4" target="_self" rel="nofollow noopener noreferrer">1.4.4</a> (2021-03-06)</h2>
+<h2>1.4.4 (2021-03-06)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>copyright:</strong> update copyright year (<a href="https://github.com/kvadevack/site/commit/312dbdf6c58bf09d871ce096ab9855aea47606df" target="_self" rel="nofollow noopener noreferrer">312dbdf</a>)</li>
-<li><strong>resume:</strong> update address (<a href="https://github.com/kvadevack/site/commit/5b9ab756d232375e0bc38ef5f9ee8a1951b531ea" target="_self" rel="nofollow noopener noreferrer">5b9ab75</a>)</li>
+<li><strong>copyright:</strong> update copyright year (312dbdf)</li>
+<li><strong>resume:</strong> update address (5b9ab75)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.2...v1.4.3" target="_self" rel="nofollow noopener noreferrer">1.4.3</a> (2021-03-05)</h2>
+<h2>1.4.3 (2021-03-05)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.14.1 to 2.14.3 (<a href="https://github.com/kvadevack/site/commit/5d1e1da0fa805b254c48255d31722030e70e323d" target="_self" rel="nofollow noopener noreferrer">5d1e1da</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.16.0 to 2.16.1 (<a href="https://github.com/kvadevack/site/commit/b9d7c243c748edde88244f0b4aac34e149245367" target="_self" rel="nofollow noopener noreferrer">b9d7c24</a>)</li>
-<li><strong>deps:</strong> bump mermaid from 8.9.0 to 8.9.1 (<a href="https://github.com/kvadevack/site/commit/9702e0e2f2e1da32a59d89daaea1fc3f80c58889" target="_self" rel="nofollow noopener noreferrer">9702e0e</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.14.1 to 2.14.3 (5d1e1da)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.16.0 to 2.16.1 (b9d7c24)</li>
+<li><strong>deps:</strong> bump mermaid from 8.9.0 to 8.9.1 (9702e0e)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.1...v1.4.2" target="_self" rel="nofollow noopener noreferrer">1.4.2</a> (2021-03-04)</h2>
+<h2>1.4.2 (2021-03-04)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.32.3 to 2.32.9 (<a href="https://github.com/kvadevack/site/commit/e9581f64fd02efd942df63f109ca5879a486f46f" target="_self" rel="nofollow noopener noreferrer">e9581f6</a>)</li>
-<li><strong>deps:</strong> bump semantic-ui-react from 0.88.2 to 2.0.3 (<a href="https://github.com/kvadevack/site/commit/d4151a26563e86294e5e36a2f81d0d9fd47d66e6" target="_self" rel="nofollow noopener noreferrer">d4151a2</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.32.3 to 2.32.9 (e9581f6)</li>
+<li><strong>deps:</strong> bump semantic-ui-react from 0.88.2 to 2.0.3 (d4151a2)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.4.0...v1.4.1" target="_self" rel="nofollow noopener noreferrer">1.4.1</a> (2021-02-17)</h2>
+<h2>1.4.1 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>social:</strong> add Matrix link (<a href="https://github.com/kvadevack/site/commit/cbc1b24fe6282a910e2cfaced1ff9127544bbf86" target="_self" rel="nofollow noopener noreferrer">cbc1b24</a>)</li>
+<li><strong>social:</strong> add Matrix link (cbc1b24)</li>
 </ul>
-<h1><a href="https://github.com/kvadevack/site/compare/v1.3.4...v1.4.0" target="_self" rel="nofollow noopener noreferrer">1.4.0</a> (2021-02-17)</h1>
+<h2>1.4.0 (2021-02-17)</h2>
 <h3>Features</h3>
 <ul>
-<li>add Matrix client delegation (<a href="https://github.com/kvadevack/site/commit/a20cd517a2bf83fda02222331381533638a41a51" target="_self" rel="nofollow noopener noreferrer">a20cd51</a>)</li>
+<li>add Matrix client delegation (a20cd51)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.3.3...v1.3.4" target="_self" rel="nofollow noopener noreferrer">1.3.4</a> (2021-02-17)</h2>
+<h2>1.3.4 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump socket.io from 2.3.0 to 2.4.1 (<a href="https://github.com/kvadevack/site/commit/c685e43bfe9237f4a0dca63abae28ae7bd82278a" target="_self" rel="nofollow noopener noreferrer">c685e43</a>)</li>
-<li><strong>deps:</strong> bump gatsby from 2.23.1 to 2.32.3 (<a href="https://github.com/kvadevack/site/commit/aa1a7036ed6120e6791c76ed93744d21da153c8d" target="_self" rel="nofollow noopener noreferrer">aa1a703</a>)</li>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.6 to 2.11.0 (<a href="https://github.com/kvadevack/site/commit/d931648dadd7c51ace199478e5b69f8ac460bffa" target="_self" rel="nofollow noopener noreferrer">d931648</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.4 to 2.13.0 (<a href="https://github.com/kvadevack/site/commit/c07996873e84b2813bfcc57b6d956663a6f94713" target="_self" rel="nofollow noopener noreferrer">c079968</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.10 to 2.14.1 (<a href="https://github.com/kvadevack/site/commit/9b06aabfbd973375c91d3ccb7f02758b52f0228e" target="_self" rel="nofollow noopener noreferrer">9b06aab</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.4 to 2.10.0 (<a href="https://github.com/kvadevack/site/commit/bf31b6a7c85081a62e5b4881bd6c783f9b3f7ba6" target="_self" rel="nofollow noopener noreferrer">bf31b6a</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.3 to 3.13.0 (<a href="https://github.com/kvadevack/site/commit/66188aa750e52cee5d774adc8402ca2f9675a625" target="_self" rel="nofollow noopener noreferrer">66188aa</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.4 to 2.11.0 (<a href="https://github.com/kvadevack/site/commit/84b7fb4b6d894eb445c59e3681a9d4998fd942b0" target="_self" rel="nofollow noopener noreferrer">84b7fb4</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.4 to 2.11.0 (<a href="https://github.com/kvadevack/site/commit/c9a8d1c302199028d022165d168825338bdb5412" target="_self" rel="nofollow noopener noreferrer">c9a8d1c</a>)</li>
-<li><strong>deps:</strong> bump mermaid from 8.8.4 to 8.9.0 (<a href="https://github.com/kvadevack/site/commit/cbb4600a89257807cbfbb26be7f9bdbf72854c4a" target="_self" rel="nofollow noopener noreferrer">cbb4600</a>)</li>
-<li><strong>deps:</strong> install gatsby-remark-embed-snippet from NPM and fix package-lock.json (<a href="https://github.com/kvadevack/site/commit/561afac09f4d1f3711071fdac72e2cd92a79ba65" target="_self" rel="nofollow noopener noreferrer">561afac</a>)</li>
+<li><strong>deps:</strong> [security] bump socket.io from 2.3.0 to 2.4.1 (c685e43)</li>
+<li><strong>deps:</strong> bump gatsby from 2.23.1 to 2.32.3 (aa1a703)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.6 to 2.11.0 (d931648)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.4 to 2.13.0 (c079968)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.10 to 2.14.1 (9b06aab)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.4 to 2.10.0 (bf31b6a)</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.3 to 3.13.0 (66188aa)</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.4 to 2.11.0 (84b7fb4)</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.4 to 2.11.0 (c9a8d1c)</li>
+<li><strong>deps:</strong> bump mermaid from 8.8.4 to 8.9.0 (cbb4600)</li>
+<li><strong>deps:</strong> install gatsby-remark-embed-snippet from NPM and fix package-lock.json (561afac)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.3.2...v1.3.3" target="_self" rel="nofollow noopener noreferrer">1.3.3</a> (2021-02-17)</h2>
+<h2>1.3.3 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>gh-pages:</strong> disable Jekyll processing (<a href="https://github.com/kvadevack/site/commit/ceec7772bc4dfbaf83203c396f2ea2f0254846da" target="_self" rel="nofollow noopener noreferrer">ceec777</a>)</li>
+<li><strong>gh-pages:</strong> disable Jekyll processing (ceec777)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.3.1...v1.3.2" target="_self" rel="nofollow noopener noreferrer">1.3.2</a> (2021-02-17)</h2>
+<h2>1.3.2 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>ci:</strong> include dotfiles in deploy and force a new release (<a href="https://github.com/kvadevack/site/commit/b64ad01dd507d25790b3cd4ecff328b632617103" target="_self" rel="nofollow noopener noreferrer">b64ad01</a>)</li>
+<li><strong>ci:</strong> include dotfiles in deploy and force a new release (b64ad01)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.3.0...v1.3.1" target="_self" rel="nofollow noopener noreferrer">1.3.1</a> (2021-02-17)</h2>
+<h2>1.3.1 (2021-02-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>ci:</strong> fix deployment and force a new release (<a href="https://github.com/kvadevack/site/commit/d6940a74d4bd8234b77f7898116da3e6f00f3b50" target="_self" rel="nofollow noopener noreferrer">d6940a7</a>)</li>
+<li><strong>ci:</strong> fix deployment and force a new release (d6940a7)</li>
 </ul>
-<h1><a href="https://github.com/kvadevack/site/compare/v1.2.58...v1.3.0" target="_self" rel="nofollow noopener noreferrer">1.3.0</a> (2021-02-16)</h1>
+<h2>1.3.0 (2021-02-16)</h2>
 <h3>Features</h3>
 <ul>
-<li>add matrix delegation file (<a href="https://github.com/kvadevack/site/commit/f8507b0cf7411f8feb65bd9a9fef597c2ee86998" target="_self" rel="nofollow noopener noreferrer">f8507b0</a>)</li>
+<li>add matrix delegation file (f8507b0)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.57...v1.2.58" target="_self" rel="nofollow noopener noreferrer">1.2.58</a> (2021-01-20)</h2>
+<h2>1.2.58 (2021-01-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump dot-prop from 4.2.0 to 4.2.1 (<a href="https://github.com/kvadevack/site/commit/107dcbc0d867beef65286469996e7142e19126a1" target="_self" rel="nofollow noopener noreferrer">107dcbc</a>)</li>
-<li><strong>deps:</strong> [security] bump npm-user-validate from 1.0.0 to 1.0.1 (<a href="https://github.com/kvadevack/site/commit/900ef7ee6cb4ea989e1291bd54c8e1c05f31e562" target="_self" rel="nofollow noopener noreferrer">900ef7e</a>)</li>
+<li><strong>deps:</strong> [security] bump dot-prop from 4.2.0 to 4.2.1 (107dcbc)</li>
+<li><strong>deps:</strong> [security] bump npm-user-validate from 1.0.0 to 1.0.1 (900ef7e)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.56...v1.2.57" target="_self" rel="nofollow noopener noreferrer">1.2.57</a> (2021-01-20)</h2>
+<h2>1.2.57 (2021-01-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump object-path from 0.11.4 to 0.11.5 (<a href="https://github.com/kvadevack/site/commit/8d6bd3ccdb19f984682dab899539e7540b2d113e" target="_self" rel="nofollow noopener noreferrer">8d6bd3c</a>)</li>
-<li><strong>deps:</strong> [security] bump prismjs from 1.20.0 to 1.21.0 (<a href="https://github.com/kvadevack/site/commit/29dbf24d8f1b1907fcdba8be7b0e07f1280f03c0" target="_self" rel="nofollow noopener noreferrer">29dbf24</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.3 to 4.6.0 (<a href="https://github.com/kvadevack/site/commit/d0e77062edc2f7b7660d2820d4a3ec7e62839918" target="_self" rel="nofollow noopener noreferrer">d0e7706</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.8 to 3.9.0 (<a href="https://github.com/kvadevack/site/commit/cd1fb62a79f11dbccaccdf2fc292e4d806bfe2d3" target="_self" rel="nofollow noopener noreferrer">cd1fb62</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.9 to 3.10.0 (<a href="https://github.com/kvadevack/site/commit/f704dfc39401a0a6918220c1226b13d9433d09de" target="_self" rel="nofollow noopener noreferrer">f704dfc</a>)</li>
-<li><strong>deps:</strong> bump less from 3.11.2 to 3.13.1 (<a href="https://github.com/kvadevack/site/commit/76e8899beb98623d9d433ee66368cdbe25488564" target="_self" rel="nofollow noopener noreferrer">76e8899</a>)</li>
-<li><strong>deps:</strong> bump mermaid from 8.5.1 to 8.8.4 (<a href="https://github.com/kvadevack/site/commit/ec3901a29fecd67b632d9d806e3f7f4fa082a475" target="_self" rel="nofollow noopener noreferrer">ec3901a</a>)</li>
-<li><strong>deps:</strong> bump react-helmet from 6.0.0 to 6.1.0 (<a href="https://github.com/kvadevack/site/commit/3ce3984f05d7caf4581faf064040347b286f23ce" target="_self" rel="nofollow noopener noreferrer">3ce3984</a>)</li>
+<li><strong>deps:</strong> [security] bump object-path from 0.11.4 to 0.11.5 (8d6bd3c)</li>
+<li><strong>deps:</strong> [security] bump prismjs from 1.20.0 to 1.21.0 (29dbf24)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.3 to 4.6.0 (d0e7706)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.8 to 3.9.0 (cd1fb62)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.9 to 3.10.0 (f704dfc)</li>
+<li><strong>deps:</strong> bump less from 3.11.2 to 3.13.1 (76e8899)</li>
+<li><strong>deps:</strong> bump mermaid from 8.5.1 to 8.8.4 (ec3901a)</li>
+<li><strong>deps:</strong> bump react-helmet from 6.0.0 to 6.1.0 (3ce3984)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.55...v1.2.56" target="_self" rel="nofollow noopener noreferrer">1.2.56</a> (2020-12-10)</h2>
+<h2>1.2.56 (2020-12-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump ini from 1.3.5 to 1.3.7 (<a href="https://github.com/kvadevack/site/commit/a29dec20b10e9796af0a4465351414dfc273381a" target="_self" rel="nofollow noopener noreferrer">a29dec2</a>)</li>
+<li><strong>deps:</strong> [security] bump ini from 1.3.5 to 1.3.7 (a29dec2)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.54...v1.2.55" target="_self" rel="nofollow noopener noreferrer">1.2.55</a> (2020-10-17)</h2>
+<h2>1.2.55 (2020-10-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump npm-user-validate from 1.0.0 to 1.0.1 (<a href="https://github.com/kvadevack/site/commit/5984a16eb0fbe1e2ffe50c27f7ff0dcf7e8c652c" target="_self" rel="nofollow noopener noreferrer">5984a16</a>)</li>
+<li><strong>deps:</strong> [security] bump npm-user-validate from 1.0.0 to 1.0.1 (5984a16)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.53...v1.2.54" target="_self" rel="nofollow noopener noreferrer">1.2.54</a> (2020-09-10)</h2>
+<h2>1.2.54 (2020-09-10)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump bl from 1.2.2 to 1.2.3 (<a href="https://github.com/kvadevack/site/commit/dde87e424810295720b549345ffc0dea72078714" target="_self" rel="nofollow noopener noreferrer">dde87e4</a>)</li>
+<li><strong>deps:</strong> [security] bump bl from 1.2.2 to 1.2.3 (dde87e4)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.52...v1.2.53" target="_self" rel="nofollow noopener noreferrer">1.2.53</a> (2020-07-29)</h2>
+<h2>1.2.53 (2020-07-29)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump elliptic from 6.5.2 to 6.5.3 (<a href="https://github.com/kvadevack/site/commit/ddfb63bdcc07e9e633b603cc2ad70d11107b0b0e" target="_self" rel="nofollow noopener noreferrer">ddfb63b</a>)</li>
+<li><strong>deps:</strong> [security] bump elliptic from 6.5.2 to 6.5.3 (ddfb63b)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.51...v1.2.52" target="_self" rel="nofollow noopener noreferrer">1.2.52</a> (2020-07-07)</h2>
+<h2>1.2.52 (2020-07-07)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump npm from 6.14.5 to 6.14.6 (<a href="https://github.com/kvadevack/site/commit/153ca777d2e6fac4f39caccad21e1be31fd543ce" target="_self" rel="nofollow noopener noreferrer">153ca77</a>)</li>
+<li><strong>deps:</strong> [security] bump npm from 6.14.5 to 6.14.6 (153ca77)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.50...v1.2.51" target="_self" rel="nofollow noopener noreferrer">1.2.51</a> (2020-06-09)</h2>
+<h2>1.2.51 (2020-06-09)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump graphql-playground-html from 1.6.20 to 1.6.25 (<a href="https://github.com/kvadevack/site/commit/a37dda17547c5fe86767872bca764c96445399fb" target="_self" rel="nofollow noopener noreferrer">a37dda1</a>)</li>
+<li><strong>deps:</strong> [security] bump graphql-playground-html from 1.6.20 to 1.6.25 (a37dda1)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.49...v1.2.50" target="_self" rel="nofollow noopener noreferrer">1.2.50</a> (2020-06-05)</h2>
+<h2>1.2.50 (2020-06-05)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.2 to 3.2.3 (<a href="https://github.com/kvadevack/site/commit/f43ab9adea4229b6713225058d7eac5aa83b4503" target="_self" rel="nofollow noopener noreferrer">f43ab9a</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.2 to 3.2.3 (f43ab9a)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.48...v1.2.49" target="_self" rel="nofollow noopener noreferrer">1.2.49</a> (2020-06-05)</h2>
+<h2>1.2.49 (2020-06-05)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> [security] bump websocket-extensions from 0.1.3 to 0.1.4 (<a href="https://github.com/kvadevack/site/commit/3f18ba0e877f1f435a10b7ae25dfb7476be744ef" target="_self" rel="nofollow noopener noreferrer">3f18ba0</a>)</li>
-<li><strong>deps:</strong> bump gatsby from 2.22.11 to 2.23.1 (<a href="https://github.com/kvadevack/site/commit/0579242db644313fbc2b3163cdf71672e50c3bb9" target="_self" rel="nofollow noopener noreferrer">0579242</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.3 to 2.5.4 (<a href="https://github.com/kvadevack/site/commit/1054d26c285c5b5ac451620b586db4c3c83238c9" target="_self" rel="nofollow noopener noreferrer">1054d26</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.7 to 3.2.8 (<a href="https://github.com/kvadevack/site/commit/ca5a413da077f76f48214fe26d493d774772a114" target="_self" rel="nofollow noopener noreferrer">ca5a413</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.8 to 3.3.9 (<a href="https://github.com/kvadevack/site/commit/99ff6b1f342d03fee5a1fb2d24fa298b8f6a90d0" target="_self" rel="nofollow noopener noreferrer">99ff6b1</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.3 to 2.4.4 (<a href="https://github.com/kvadevack/site/commit/a82e9a2bea6568b5e6f9d0333cdd735ee2e98676" target="_self" rel="nofollow noopener noreferrer">a82e9a2</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.13 to 2.8.14 (<a href="https://github.com/kvadevack/site/commit/9edd4bfd9e483eb62b487c83bac0482f77295d06" target="_self" rel="nofollow noopener noreferrer">9edd4bf</a>)</li>
+<li><strong>deps:</strong> [security] bump websocket-extensions from 0.1.3 to 0.1.4 (3f18ba0)</li>
+<li><strong>deps:</strong> bump gatsby from 2.22.11 to 2.23.1 (0579242)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.3 to 2.5.4 (1054d26)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.7 to 3.2.8 (ca5a413)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.8 to 3.3.9 (99ff6b1)</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.3 to 2.4.4 (a82e9a2)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.13 to 2.8.14 (9edd4bf)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.47...v1.2.48" target="_self" rel="nofollow noopener noreferrer">1.2.48</a> (2020-06-03)</h2>
+<h2>1.2.48 (2020-06-03)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.5 to 2.4.6 (<a href="https://github.com/kvadevack/site/commit/a271d4921357e02fb62b6470de9097bc30d0787c" target="_self" rel="nofollow noopener noreferrer">a271d49</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.9 to 2.4.10 (<a href="https://github.com/kvadevack/site/commit/0162041885e05f38f638c87a8937f5abf56973fd" target="_self" rel="nofollow noopener noreferrer">0162041</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.2 to 3.5.3 (<a href="https://github.com/kvadevack/site/commit/896ab3162bbcfcb7829d8c170dc58626334746fe" target="_self" rel="nofollow noopener noreferrer">896ab31</a>)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.8 to 2.3.10 (<a href="https://github.com/kvadevack/site/commit/1407ff12ee768297a4da2bdea95d5b3662003efb" target="_self" rel="nofollow noopener noreferrer">1407ff1</a>)</li>
-<li><strong>deps:</strong> bump less from 3.11.1 to 3.11.2 (<a href="https://github.com/kvadevack/site/commit/cb41a7ec3c75eb626ac15be39dd5aa1c353d3af8" target="_self" rel="nofollow noopener noreferrer">cb41a7e</a>)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.5 to 2.4.6 (a271d49)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.9 to 2.4.10 (0162041)</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.2 to 3.5.3 (896ab31)</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.8 to 2.3.10 (1407ff1)</li>
+<li><strong>deps:</strong> bump less from 3.11.1 to 3.11.2 (cb41a7e)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.46...v1.2.47" target="_self" rel="nofollow noopener noreferrer">1.2.47</a> (2020-06-03)</h2>
+<h2>1.2.47 (2020-06-03)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.6 to 2.6.10 (<a href="https://github.com/kvadevack/site/commit/f5f8db9044808512045b2d2ef192b75b3dfc0f1e" target="_self" rel="nofollow noopener noreferrer">f5f8db9</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.6 to 2.6.10 (f5f8db9)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.45...v1.2.46" target="_self" rel="nofollow noopener noreferrer">1.2.46</a> (2020-06-02)</h2>
+<h2>1.2.46 (2020-06-02)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-robots-txt from 1.5.0 to 1.5.1 (<a href="https://github.com/kvadevack/site/commit/92ebd33988ad4c23065fd8edaef30c71c25a14c3" target="_self" rel="nofollow noopener noreferrer">92ebd33</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.3 to 2.3.4 (<a href="https://github.com/kvadevack/site/commit/0ae9f9c90a4b7202e709bfe9dc0a153324091bae" target="_self" rel="nofollow noopener noreferrer">0ae9f9c</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-robots-txt from 1.5.0 to 1.5.1 (92ebd33)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.3 to 2.3.4 (0ae9f9c)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.44...v1.2.45" target="_self" rel="nofollow noopener noreferrer">1.2.45</a> (2020-06-02)</h2>
+<h2>1.2.45 (2020-06-02)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.3.1 to 3.3.3 (<a href="https://github.com/kvadevack/site/commit/05109b110743aa3581862fc2d57d483099e98ddd" target="_self" rel="nofollow noopener noreferrer">05109b1</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.2 to 2.4.4 (<a href="https://github.com/kvadevack/site/commit/170025031da93a4376813e473d4e8972949f89bb" target="_self" rel="nofollow noopener noreferrer">1700250</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.5.2 to 2.5.4 (<a href="https://github.com/kvadevack/site/commit/083c000d91c6cdc5f2f9f915bc7266c4cadfc93a" target="_self" rel="nofollow noopener noreferrer">083c000</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.3.1 to 3.3.3 (05109b1)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.2 to 2.4.4 (1700250)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.5.2 to 2.5.4 (083c000)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.43...v1.2.44" target="_self" rel="nofollow noopener noreferrer">1.2.44</a> (2020-05-27)</h2>
+<h2>1.2.44 (2020-05-27)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> flesh out summary for AUTOCOM position (<a href="https://github.com/kvadevack/site/commit/3a3eb363a2563897db9d026775c7883b0f0e9a43" target="_self" rel="nofollow noopener noreferrer">3a3eb36</a>)</li>
+<li><strong>resume:</strong> flesh out summary for AUTOCOM position (3a3eb36)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.42...v1.2.43" target="_self" rel="nofollow noopener noreferrer">1.2.43</a> (2020-05-26)</h2>
+<h2>1.2.43 (2020-05-26)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.22.1 to 2.22.11 (<a href="https://github.com/kvadevack/site/commit/ffe5735924d12e173484863541b4a2d0b8b3214b" target="_self" rel="nofollow noopener noreferrer">ffe5735</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.1 to 2.5.3 (<a href="https://github.com/kvadevack/site/commit/0efd43cda2efe21d4b44265202a0d347c32154fa" target="_self" rel="nofollow noopener noreferrer">0efd43c</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.1 to 3.2.2 (<a href="https://github.com/kvadevack/site/commit/912b266823f025d23ac46c680fa41ddf32b445e1" target="_self" rel="nofollow noopener noreferrer">912b266</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.2 to 2.3.3 (<a href="https://github.com/kvadevack/site/commit/cddc96a509f21ceea70a1be0b90bddacefb29ade" target="_self" rel="nofollow noopener noreferrer">cddc96a</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.1 to 3.5.2 (<a href="https://github.com/kvadevack/site/commit/1065e4c2793b46d1f27359f6d1771b4184a2e970" target="_self" rel="nofollow noopener noreferrer">1065e4c</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.2 to 2.4.3 (<a href="https://github.com/kvadevack/site/commit/04a8c0e9dfe7e239ae6f01cab333ce601e6f4c7d" target="_self" rel="nofollow noopener noreferrer">04a8c0e</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.22.1 to 2.22.11 (ffe5735)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.1 to 2.5.3 (0efd43c)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.1 to 3.2.2 (912b266)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.2 to 2.3.3 (cddc96a)</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.1 to 3.5.2 (1065e4c)</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.2 to 2.4.3 (04a8c0e)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.41...v1.2.42" target="_self" rel="nofollow noopener noreferrer">1.2.42</a> (2020-05-26)</h2>
+<h2>1.2.42 (2020-05-26)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> reword position to developer (<a href="https://github.com/kvadevack/site/commit/af1820a835059df2fed3f62db4ff96a4914fb026" target="_self" rel="nofollow noopener noreferrer">af1820a</a>)</li>
+<li><strong>resume:</strong> reword position to developer (af1820a)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.40...v1.2.41" target="_self" rel="nofollow noopener noreferrer">1.2.41</a> (2020-05-23)</h2>
+<h2>1.2.41 (2020-05-23)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.4 to 3.2.7 (<a href="https://github.com/kvadevack/site/commit/91f4009c1dffb5ceb15618ba60c5c3d24409fd4a" target="_self" rel="nofollow noopener noreferrer">91f4009</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.10 to 2.8.13 (<a href="https://github.com/kvadevack/site/commit/0969acf8b2660c7d91fe9ab3d47b1a179e1ce945" target="_self" rel="nofollow noopener noreferrer">0969acf</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.4 to 3.2.7 (91f4009)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.10 to 2.8.13 (0969acf)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.39...v1.2.40" target="_self" rel="nofollow noopener noreferrer">1.2.40</a> (2020-05-23)</h2>
+<h2>1.2.40 (2020-05-23)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.3 to 2.4.5 (<a href="https://github.com/kvadevack/site/commit/54e0c647d0b9593254928aef1628c099147c80de" target="_self" rel="nofollow noopener noreferrer">54e0c64</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.6 to 2.4.9 (<a href="https://github.com/kvadevack/site/commit/60684589bc9d2689d8ef1a2711dba380cd62c8b0" target="_self" rel="nofollow noopener noreferrer">6068458</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.5 to 3.3.8 (<a href="https://github.com/kvadevack/site/commit/f2ed74aeac974ff0cb31e9e5ab131f10c370db20" target="_self" rel="nofollow noopener noreferrer">f2ed74a</a>)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.5 to 2.3.8 (<a href="https://github.com/kvadevack/site/commit/37cbd95796928c59437aa95846e7907943e713f2" target="_self" rel="nofollow noopener noreferrer">37cbd95</a>)</li>
-<li><strong>deps:</strong> bump moment from 2.25.3 to 2.26.0 (<a href="https://github.com/kvadevack/site/commit/ecdfeda30044230be5593f8eab54200b8fbc3ae1" target="_self" rel="nofollow noopener noreferrer">ecdfeda</a>)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.3 to 2.4.5 (54e0c64)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.6 to 2.4.9 (6068458)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.5 to 3.3.8 (f2ed74a)</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.5 to 2.3.8 (37cbd95)</li>
+<li><strong>deps:</strong> bump moment from 2.25.3 to 2.26.0 (ecdfeda)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.38...v1.2.39" target="_self" rel="nofollow noopener noreferrer">1.2.39</a> (2020-05-20)</h2>
+<h2>1.2.39 (2020-05-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.22.0 to 2.22.1 (<a href="https://github.com/kvadevack/site/commit/ab630153beb9d5bc09717d3d0c72668af1ac7839" target="_self" rel="nofollow noopener noreferrer">ab63015</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.22.0 to 2.22.1 (ab63015)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.37...v1.2.38" target="_self" rel="nofollow noopener noreferrer">1.2.38</a> (2020-05-19)</h2>
+<h2>1.2.38 (2020-05-19)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.24 to 2.22.0 (<a href="https://github.com/kvadevack/site/commit/f459c8036b57bbbec43c8c3d82428d8cc2549a01" target="_self" rel="nofollow noopener noreferrer">f459c80</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.2 to 2.4.6 (<a href="https://github.com/kvadevack/site/commit/3789f38b494694566d87151500bc76c304413974" target="_self" rel="nofollow noopener noreferrer">3789f38</a>)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.1 to 2.3.5 (<a href="https://github.com/kvadevack/site/commit/a7ba0f0bb6ff3b9daeac6bf50ebe6908fd07f312" target="_self" rel="nofollow noopener noreferrer">a7ba0f0</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.24 to 2.22.0 (f459c80)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.2 to 2.4.6 (3789f38)</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.1 to 2.3.5 (a7ba0f0)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.36...v1.2.37" target="_self" rel="nofollow noopener noreferrer">1.2.37</a> (2020-05-19)</h2>
+<h2>1.2.37 (2020-05-19)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.1 to 3.2.4 (<a href="https://github.com/kvadevack/site/commit/cca54c06b7c587a348aaeb6bcccfec854da41729" target="_self" rel="nofollow noopener noreferrer">cca54c0</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.2 to 2.6.6 (<a href="https://github.com/kvadevack/site/commit/4021729597c4fe0a513e0a52b68e261d6bd0464d" target="_self" rel="nofollow noopener noreferrer">4021729</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.2 to 3.3.5 (<a href="https://github.com/kvadevack/site/commit/4fa56a750d932b5dbeecf4f4254a5cd05e7f88a6" target="_self" rel="nofollow noopener noreferrer">4fa56a7</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.7 to 2.8.10 (<a href="https://github.com/kvadevack/site/commit/f09e7c18a58aacabd4512a40a66f696815390a39" target="_self" rel="nofollow noopener noreferrer">f09e7c1</a>)</li>
-<li><strong>deps:</strong> bump mermaid from 8.5.0 to 8.5.1 (<a href="https://github.com/kvadevack/site/commit/13e2482c93953df1fae1dd9bc47cd89e475b46ba" target="_self" rel="nofollow noopener noreferrer">13e2482</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.1 to 3.2.4 (cca54c0)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.2 to 2.6.6 (4021729)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.2 to 3.3.5 (4fa56a7)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.7 to 2.8.10 (f09e7c1)</li>
+<li><strong>deps:</strong> bump mermaid from 8.5.0 to 8.5.1 (13e2482)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.35...v1.2.36" target="_self" rel="nofollow noopener noreferrer">1.2.36</a> (2020-05-12)</h2>
+<h2>1.2.36 (2020-05-12)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.22 to 2.21.24 (<a href="https://github.com/kvadevack/site/commit/c3e23a80c14493143bc587313865bd01e0306163" target="_self" rel="nofollow noopener noreferrer">c3e23a8</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.22 to 2.21.24 (c3e23a8)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.34...v1.2.35" target="_self" rel="nofollow noopener noreferrer">1.2.35</a> (2020-05-11)</h2>
+<h2>1.2.35 (2020-05-11)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.21 to 2.21.22 (<a href="https://github.com/kvadevack/site/commit/1f6896e4e7ceefe3dafaaf3b85229e2b9f25c75e" target="_self" rel="nofollow noopener noreferrer">1f6896e</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.21 to 2.21.22 (1f6896e)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.33...v1.2.34" target="_self" rel="nofollow noopener noreferrer">1.2.34</a> (2020-05-08)</h2>
+<h2>1.2.34 (2020-05-08)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.19 to 2.21.21 (<a href="https://github.com/kvadevack/site/commit/9b457a77f7c5a8d1b338bd3ea0129ddff3b2fa21" target="_self" rel="nofollow noopener noreferrer">9b457a7</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.1 to 3.3.2 (<a href="https://github.com/kvadevack/site/commit/8c29240fdd3acfbd0723d1000efc5f044072f0c2" target="_self" rel="nofollow noopener noreferrer">8c29240</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.19 to 2.21.21 (9b457a7)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.1 to 3.3.2 (8c29240)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.32...v1.2.33" target="_self" rel="nofollow noopener noreferrer">1.2.33</a> (2020-05-08)</h2>
+<h2>1.2.33 (2020-05-08)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.2 to 2.4.3 (<a href="https://github.com/kvadevack/site/commit/a3dfb450a890561c4f8f40c47163cf6c69ffb1ba" target="_self" rel="nofollow noopener noreferrer">a3dfb45</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.1 to 2.6.2 (<a href="https://github.com/kvadevack/site/commit/c9080dc5a4d0c4972a136f18c288c0e57324b3b6" target="_self" rel="nofollow noopener noreferrer">c9080dc</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.0 to 3.5.1 (<a href="https://github.com/kvadevack/site/commit/739fd282cfbba2f10785d4cce64bbe4bee2df0d1" target="_self" rel="nofollow noopener noreferrer">739fd28</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.5 to 2.8.7 (<a href="https://github.com/kvadevack/site/commit/5f9a4aec2516a156ac98a45538d2d51295a15aac" target="_self" rel="nofollow noopener noreferrer">5f9a4ae</a>)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.2 to 2.4.3 (a3dfb45)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.1 to 2.6.2 (c9080dc)</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.5.0 to 3.5.1 (739fd28)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.5 to 2.8.7 (5f9a4ae)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.31...v1.2.32" target="_self" rel="nofollow noopener noreferrer">1.2.32</a> (2020-05-07)</h2>
+<h2>1.2.32 (2020-05-07)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.11 to 2.21.19 (<a href="https://github.com/kvadevack/site/commit/1c7ff9e1958302eb511f8181f1c99df2ea1ad610" target="_self" rel="nofollow noopener noreferrer">1c7ff9e</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.1 to 2.4.2 (<a href="https://github.com/kvadevack/site/commit/c6a9930113a8d8bb41660370b46565423069ac37" target="_self" rel="nofollow noopener noreferrer">c6a9930</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.11 to 2.21.19 (1c7ff9e)</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.1 to 2.4.2 (c6a9930)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.30...v1.2.31" target="_self" rel="nofollow noopener noreferrer">1.2.31</a> (2020-05-07)</h2>
+<h2>1.2.31 (2020-05-07)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.1 to 2.3.2 (<a href="https://github.com/kvadevack/site/commit/0797523999a1edce9e8ac200c7b6c18cd10473e3" target="_self" rel="nofollow noopener noreferrer">0797523</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.0 to 3.3.1 (<a href="https://github.com/kvadevack/site/commit/fb2a656b924fb2a7a579111a5aac4f4468608f1e" target="_self" rel="nofollow noopener noreferrer">fb2a656</a>)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.0 to 2.3.1 (<a href="https://github.com/kvadevack/site/commit/4a3d12c42b446f85b7cfacc6f5a79f9c3d94c4e2" target="_self" rel="nofollow noopener noreferrer">4a3d12c</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.5.0 to 2.5.2 (<a href="https://github.com/kvadevack/site/commit/f7883d20d0e081320a5471a1258a46ac6a246aa2" target="_self" rel="nofollow noopener noreferrer">f7883d2</a>)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.1 to 2.3.2 (0797523)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.3.0 to 3.3.1 (fb2a656)</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.3.0 to 2.3.1 (4a3d12c)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.5.0 to 2.5.2 (f7883d2)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.29...v1.2.30" target="_self" rel="nofollow noopener noreferrer">1.2.30</a> (2020-05-06)</h2>
+<h2>1.2.30 (2020-05-06)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.4.0 to 2.4.2 (<a href="https://github.com/kvadevack/site/commit/f2d24923da82ab4e8dc504b0d01e95ee08318ac6" target="_self" rel="nofollow noopener noreferrer">f2d2492</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.0 to 3.2.1 (<a href="https://github.com/kvadevack/site/commit/7ba601335b30b2a5e2693928cec5c1a0f2480505" target="_self" rel="nofollow noopener noreferrer">7ba6013</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.0 to 3.2.1 (<a href="https://github.com/kvadevack/site/commit/ce6c51a86f36bfdafd74cc680d461ad30f7126e2" target="_self" rel="nofollow noopener noreferrer">ce6c51a</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.0 to 2.6.1 (<a href="https://github.com/kvadevack/site/commit/a20c232454bc9db42af3cec03350b5340e9c1239" target="_self" rel="nofollow noopener noreferrer">a20c232</a>)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.4.0 to 2.4.2 (f2d2492)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.2.0 to 3.2.1 (7ba6013)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.2.0 to 3.2.1 (ce6c51a)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.6.0 to 2.6.1 (a20c232)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.28...v1.2.29" target="_self" rel="nofollow noopener noreferrer">1.2.29</a> (2020-05-06)</h2>
+<h2>1.2.29 (2020-05-06)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.0 to 2.5.1 (<a href="https://github.com/kvadevack/site/commit/4f45c2be20643e42936ffb4a16a5438c405cb234" target="_self" rel="nofollow noopener noreferrer">4f45c2b</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.1 to 2.4.2 (<a href="https://github.com/kvadevack/site/commit/659fb034706b43655d742f90c71f0e98fa7443bb" target="_self" rel="nofollow noopener noreferrer">659fb03</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.3.0 to 3.3.1 (<a href="https://github.com/kvadevack/site/commit/ab6c179ee64485a0ada736c0216db34fd51ba736" target="_self" rel="nofollow noopener noreferrer">ab6c179</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.1 to 2.4.2 (<a href="https://github.com/kvadevack/site/commit/c1ab86ad6ed90a3f598cb3e3225721c34677aa49" target="_self" rel="nofollow noopener noreferrer">c1ab86a</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.5.0 to 2.5.1 (4f45c2b)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.1 to 2.4.2 (659fb03)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.3.0 to 3.3.1 (ab6c179)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.1 to 2.4.2 (c1ab86a)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.27...v1.2.28" target="_self" rel="nofollow noopener noreferrer">1.2.28</a> (2020-05-04)</h2>
+<h2>1.2.28 (2020-05-04)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.10 to 2.21.11 (<a href="https://github.com/kvadevack/site/commit/dc6a6a95bd3a04de0d1f32a4f038b264c0141dee" target="_self" rel="nofollow noopener noreferrer">dc6a6a9</a>)</li>
-<li><strong>deps:</strong> bump moment from 2.24.0 to 2.25.3 (<a href="https://github.com/kvadevack/site/commit/35da4306b7c06fe1b2209496c1d1a27cb2ff884d" target="_self" rel="nofollow noopener noreferrer">35da430</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.10 to 2.21.11 (dc6a6a9)</li>
+<li><strong>deps:</strong> bump moment from 2.24.0 to 2.25.3 (35da430)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.26...v1.2.27" target="_self" rel="nofollow noopener noreferrer">1.2.27</a> (2020-05-04)</h2>
+<h2>1.2.27 (2020-05-04)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.9 to 2.21.10 (<a href="https://github.com/kvadevack/site/commit/1c5535d3b31b35b8f0096558217d7bc4ce7b850c" target="_self" rel="nofollow noopener noreferrer">1c5535d</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.4 to 2.8.5 (<a href="https://github.com/kvadevack/site/commit/2fe6cd759387fb8fe3d6fa265c97f9855ad53816" target="_self" rel="nofollow noopener noreferrer">2fe6cd7</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.9 to 2.21.10 (1c5535d)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.4 to 2.8.5 (2fe6cd7)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.25...v1.2.26" target="_self" rel="nofollow noopener noreferrer">1.2.26</a> (2020-05-03)</h2>
+<h2>1.2.26 (2020-05-03)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.7 to 2.21.9 (<a href="https://github.com/kvadevack/site/commit/bc5cc2f21be21a4996b37cabd6bfb44ffcec17e6" target="_self" rel="nofollow noopener noreferrer">bc5cc2f</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.0 to 2.4.1 (<a href="https://github.com/kvadevack/site/commit/61e6dd8c857951b227508e1462690e2d37b3bb08" target="_self" rel="nofollow noopener noreferrer">61e6dd8</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-embed-video from 2.0.1 to 3.0.10 (<a href="https://github.com/kvadevack/site/commit/fdb3f3f6d2acd7877ba34f80398023ddad7aa813" target="_self" rel="nofollow noopener noreferrer">fdb3f3f</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.3 to 2.8.4 (<a href="https://github.com/kvadevack/site/commit/7928c8bb5c064913f9926bfd46bbce4fb9630889" target="_self" rel="nofollow noopener noreferrer">7928c8b</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.7 to 2.21.9 (bc5cc2f)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.4.0 to 2.4.1 (61e6dd8)</li>
+<li><strong>deps:</strong> bump gatsby-remark-embed-video from 2.0.1 to 3.0.10 (fdb3f3f)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.3 to 2.8.4 (7928c8b)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.24...v1.2.25" target="_self" rel="nofollow noopener noreferrer">1.2.25</a> (2020-04-30)</h2>
+<h2>1.2.25 (2020-04-30)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.5 to 2.21.7 (<a href="https://github.com/kvadevack/site/commit/5d29ba118361f4da3eb4e1ce10d0c6c76a0be105" target="_self" rel="nofollow noopener noreferrer">5d29ba1</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.5 to 2.21.7 (5d29ba1)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.23...v1.2.24" target="_self" rel="nofollow noopener noreferrer">1.2.24</a> (2020-04-29)</h2>
+<h2>1.2.24 (2020-04-29)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.4 to 2.21.5 (<a href="https://github.com/kvadevack/site/commit/0b43e6a5377531cd44d9b08664eb4fb13d6d3d33" target="_self" rel="nofollow noopener noreferrer">0b43e6a</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.4 to 2.21.5 (0b43e6a)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.22...v1.2.23" target="_self" rel="nofollow noopener noreferrer">1.2.23</a> (2020-04-29)</h2>
+<h2>1.2.23 (2020-04-29)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.1 to 2.21.4 (<a href="https://github.com/kvadevack/site/commit/9a202163ad40ffa79ac272bd5349112c38c5b4fa" target="_self" rel="nofollow noopener noreferrer">9a20216</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.0 to 2.8.3 (<a href="https://github.com/kvadevack/site/commit/fccbe178e0a72b16b866bba704c661a9d934bdc2" target="_self" rel="nofollow noopener noreferrer">fccbe17</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.1 to 2.21.4 (9a20216)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.8.0 to 2.8.3 (fccbe17)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.21...v1.2.22" target="_self" rel="nofollow noopener noreferrer">1.2.22</a> (2020-04-28)</h2>
+<h2>1.2.22 (2020-04-28)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.21.0 to 2.21.1 (<a href="https://github.com/kvadevack/site/commit/b20ebf949a52aed290c589fd8b48bd86f54f7fac" target="_self" rel="nofollow noopener noreferrer">b20ebf9</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.0 to 2.4.1 (<a href="https://github.com/kvadevack/site/commit/ad539f12a817e4e2396bd8956b176f00599940bb" target="_self" rel="nofollow noopener noreferrer">ad539f1</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.0 to 2.3.1 (<a href="https://github.com/kvadevack/site/commit/d34018eb35f928e4c5304020249b0580e595c063" target="_self" rel="nofollow noopener noreferrer">d34018e</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.0 to 2.4.1 (<a href="https://github.com/kvadevack/site/commit/086deb9b1f704939b976cb608070f0b3dc506369" target="_self" rel="nofollow noopener noreferrer">086deb9</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.21.0 to 2.21.1 (b20ebf9)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.4.0 to 2.4.1 (ad539f1)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.3.0 to 2.3.1 (d34018e)</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.4.0 to 2.4.1 (086deb9)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.20...v1.2.21" target="_self" rel="nofollow noopener noreferrer">1.2.21</a> (2020-04-28)</h2>
+<h2>1.2.21 (2020-04-28)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.4 to 2.5.0 (<a href="https://github.com/kvadevack/site/commit/27aa877b8ac2c9302cef942dd27c30d5ce19ed46" target="_self" rel="nofollow noopener noreferrer">27aa877</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.1.3 to 3.2.0 (<a href="https://github.com/kvadevack/site/commit/f92dff87eb2bec2ff4fdc89b47d0efae307fc5a0" target="_self" rel="nofollow noopener noreferrer">f92dff8</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.5.6 to 2.6.0 (<a href="https://github.com/kvadevack/site/commit/951ce379a61b8c79c14d786dcc69cc2ff0bb13df" target="_self" rel="nofollow noopener noreferrer">951ce37</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.5 to 3.3.0 (<a href="https://github.com/kvadevack/site/commit/98d4e92db9ad7d7bfa38dc4247d9a770ac815625" target="_self" rel="nofollow noopener noreferrer">98d4e92</a>)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.2.4 to 2.3.0 (<a href="https://github.com/kvadevack/site/commit/90d228af3a843da40e15193b0d86693391934b48" target="_self" rel="nofollow noopener noreferrer">90d228a</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.7.3 to 2.8.0 (<a href="https://github.com/kvadevack/site/commit/4cafba2d667aecd898c6aa75a105f88633ebb619" target="_self" rel="nofollow noopener noreferrer">4cafba2</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.4.6 to 2.5.0 (<a href="https://github.com/kvadevack/site/commit/ae483714dd2f01a9686ae13240f328c6e1f35841" target="_self" rel="nofollow noopener noreferrer">ae48371</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.4 to 2.5.0 (27aa877)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.1.3 to 3.2.0 (f92dff8)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.5.6 to 2.6.0 (951ce37)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.5 to 3.3.0 (98d4e92)</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.2.4 to 2.3.0 (90d228a)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.7.3 to 2.8.0 (4cafba2)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.4.6 to 2.5.0 (ae48371)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.19...v1.2.20" target="_self" rel="nofollow noopener noreferrer">1.2.20</a> (2020-04-26)</h2>
+<h2>1.2.20 (2020-04-26)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.35 to 2.20.36 (<a href="https://github.com/kvadevack/site/commit/801b75b812ddde253fa6020413950947d759892b" target="_self" rel="nofollow noopener noreferrer">801b75b</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.35 to 2.20.36 (801b75b)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.18...v1.2.19" target="_self" rel="nofollow noopener noreferrer">1.2.19</a> (2020-04-25)</h2>
+<h2>1.2.19 (2020-04-25)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.29 to 2.20.35 (<a href="https://github.com/kvadevack/site/commit/881a933fad6d10d48aa93b34d5d4847a9d8a6111" target="_self" rel="nofollow noopener noreferrer">881a933</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.29 to 2.20.35 (881a933)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.17...v1.2.18" target="_self" rel="nofollow noopener noreferrer">1.2.18</a> (2020-04-24)</h2>
+<h2>1.2.18 (2020-04-24)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.3.4 to 2.3.5 (<a href="https://github.com/kvadevack/site/commit/bc597b9dba4be90093b6d95849319dc7035ef063" target="_self" rel="nofollow noopener noreferrer">bc597b9</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.3 to 2.4.4 (<a href="https://github.com/kvadevack/site/commit/c85970468b091a0677606e86e54a67e1569e6679" target="_self" rel="nofollow noopener noreferrer">c859704</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.3.6 to 2.3.7 (<a href="https://github.com/kvadevack/site/commit/891ef321281e648b99a0a5e8eeaaeb11abb1b48a" target="_self" rel="nofollow noopener noreferrer">891ef32</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.1.4 to 3.1.5 (<a href="https://github.com/kvadevack/site/commit/a8fbe75bafaeaae447c33f15b43e9afe14984861" target="_self" rel="nofollow noopener noreferrer">a8fbe75</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.2.4 to 3.2.5 (<a href="https://github.com/kvadevack/site/commit/d1e90cf0fa29be8b3bbeacbe0a7168de7e1bcc33" target="_self" rel="nofollow noopener noreferrer">d1e90cf</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.3.5 to 2.3.6 (<a href="https://github.com/kvadevack/site/commit/48e64805e413c504ec8e204b4fce7a22cc9739b2" target="_self" rel="nofollow noopener noreferrer">48e6480</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.2.3 to 2.2.4 (<a href="https://github.com/kvadevack/site/commit/cc85332b1902acde225c4bd158de5e12a7536e2c" target="_self" rel="nofollow noopener noreferrer">cc85332</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.4 to 3.4.5 (<a href="https://github.com/kvadevack/site/commit/5f6e4a601bddb32fd75833d86643efc34563a0f7" target="_self" rel="nofollow noopener noreferrer">5f6e4a6</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.3.3 to 2.3.4 (<a href="https://github.com/kvadevack/site/commit/7cd7d8a85f4e916f942010f90a5bbee828e3aa0b" target="_self" rel="nofollow noopener noreferrer">7cd7d8a</a>)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.3.4 to 2.3.5 (bc597b9)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.3 to 2.4.4 (c859704)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.3.6 to 2.3.7 (891ef32)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.1.4 to 3.1.5 (a8fbe75)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.2.4 to 3.2.5 (d1e90cf)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.3.5 to 2.3.6 (48e6480)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.2.3 to 2.2.4 (cc85332)</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.4 to 3.4.5 (5f6e4a6)</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.3.3 to 2.3.4 (7cd7d8a)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.16...v1.2.17" target="_self" rel="nofollow noopener noreferrer">1.2.17</a> (2020-04-23)</h2>
+<h2>1.2.17 (2020-04-23)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.2.1 to 2.2.3 (<a href="https://github.com/kvadevack/site/commit/c8261ba8a4435b8ea929771c5603df67210a06d3" target="_self" rel="nofollow noopener noreferrer">c8261ba</a>)</li>
+<li><strong>deps:</strong> bump gatsby-remark-copy-linked-files from 2.2.1 to 2.2.3 (c8261ba)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.15...v1.2.16" target="_self" rel="nofollow noopener noreferrer">1.2.16</a> (2020-04-22)</h2>
+<h2>1.2.16 (2020-04-22)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.28 to 2.20.29 (<a href="https://github.com/kvadevack/site/commit/0b6081d0603fa1cc8a34ce52b2c988df71defe25" target="_self" rel="nofollow noopener noreferrer">0b6081d</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.28 to 2.20.29 (0b6081d)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.14...v1.2.15" target="_self" rel="nofollow noopener noreferrer">1.2.15</a> (2020-04-22)</h2>
+<h2>1.2.15 (2020-04-22)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.1.2 to 3.1.4 (<a href="https://github.com/kvadevack/site/commit/1a9ce3297a8abd63f4f8273828e82b05cee057ba" target="_self" rel="nofollow noopener noreferrer">1a9ce32</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.5.4 to 2.5.6 (<a href="https://github.com/kvadevack/site/commit/03cc4d6dbc3db9b36c5f4737b3102e78264e38ff" target="_self" rel="nofollow noopener noreferrer">03cc4d6</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.4 to 3.2.5 (<a href="https://github.com/kvadevack/site/commit/c2b8087e1102d642b653306440848abb86182f0e" target="_self" rel="nofollow noopener noreferrer">c2b8087</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.7.1 to 2.7.3 (<a href="https://github.com/kvadevack/site/commit/e262af5f7915ba0df63fda5b8d518f9d254a036c" target="_self" rel="nofollow noopener noreferrer">e262af5</a>)</li>
-<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.4.4 to 2.4.6 (<a href="https://github.com/kvadevack/site/commit/e34954793deb091be4e31763365dce448edbd289" target="_self" rel="nofollow noopener noreferrer">e349547</a>)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-offline from 3.1.2 to 3.1.4 (1a9ce32)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sharp from 2.5.4 to 2.5.6 (03cc4d6)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.4 to 3.2.5 (c2b8087)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-remark from 2.7.1 to 2.7.3 (e262af5)</li>
+<li><strong>deps:</strong> bump gatsby-transformer-sharp from 2.4.4 to 2.4.6 (e349547)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.13...v1.2.14" target="_self" rel="nofollow noopener noreferrer">1.2.14</a> (2020-04-21)</h2>
+<h2>1.2.14 (2020-04-21)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.27 to 2.20.28 (<a href="https://github.com/kvadevack/site/commit/6603cc9c2923a1d9cc871532d7f1171c77be8bd9" target="_self" rel="nofollow noopener noreferrer">6603cc9</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.3.3 to 2.3.6 (<a href="https://github.com/kvadevack/site/commit/3cc1ec4a8d433611883ff6c260c43cb37e93366d" target="_self" rel="nofollow noopener noreferrer">3cc1ec4</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.27 to 2.20.28 (6603cc9)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-manifest from 2.3.3 to 2.3.6 (3cc1ec4)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.12...v1.2.13" target="_self" rel="nofollow noopener noreferrer">1.2.13</a> (2020-04-21)</h2>
+<h2>1.2.13 (2020-04-21)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.26 to 2.20.27 (<a href="https://github.com/kvadevack/site/commit/3e212fedc873ebac0879a8a473647894a8691297" target="_self" rel="nofollow noopener noreferrer">3e212fe</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.1 to 2.4.3 (<a href="https://github.com/kvadevack/site/commit/a8fda903b4f894e8592973e6e8fe5fbfd48a4841" target="_self" rel="nofollow noopener noreferrer">a8fda90</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-less from 3.1.1 to 3.1.3 (<a href="https://github.com/kvadevack/site/commit/bf4cd52504f80a8d925436a866f853e9245e97b5" target="_self" rel="nofollow noopener noreferrer">bf4cd52</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.2 to 3.2.4 (<a href="https://github.com/kvadevack/site/commit/fc0dc1392b8ce1bc988a4aedb82a77836f635e01" target="_self" rel="nofollow noopener noreferrer">fc0dc13</a>)</li>
-<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.2.2 to 2.2.4 (<a href="https://github.com/kvadevack/site/commit/2d1821c52e470737774b9e4212be93c95c11790b" target="_self" rel="nofollow noopener noreferrer">2d1821c</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.26 to 2.20.27 (3e212fe)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-feed from 2.4.1 to 2.4.3 (a8fda90)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-less from 3.1.1 to 3.1.3 (bf4cd52)</li>
+<li><strong>deps:</strong> bump gatsby-remark-images from 3.2.2 to 3.2.4 (fc0dc13)</li>
+<li><strong>deps:</strong> bump gatsby-source-filesystem from 2.2.2 to 2.2.4 (2d1821c)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.11...v1.2.12" target="_self" rel="nofollow noopener noreferrer">1.2.12</a> (2020-04-20)</h2>
+<h2>1.2.12 (2020-04-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.1 to 3.4.4 (<a href="https://github.com/kvadevack/site/commit/756f5fe7b648d93c35ceee0ace6f843d01d508ea" target="_self" rel="nofollow noopener noreferrer">756f5fe</a>)</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.1 to 3.4.4 (756f5fe)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.10...v1.2.11" target="_self" rel="nofollow noopener noreferrer">1.2.11</a> (2020-04-20)</h2>
+<h2>1.2.11 (2020-04-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby from 2.20.25 to 2.20.26 (<a href="https://github.com/kvadevack/site/commit/c3589eb4c4d90ed7ad1101b71fc8c952f87e9f95" target="_self" rel="nofollow noopener noreferrer">c3589eb</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.2.2 to 3.2.4 (<a href="https://github.com/kvadevack/site/commit/6b918d899997c4148e345fcb76b1e0a4169195f2" target="_self" rel="nofollow noopener noreferrer">6b918d8</a>)</li>
-<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.3.1 to 2.3.5 (<a href="https://github.com/kvadevack/site/commit/ae6a4e26432b2a44ee2c29767478f62d6b4b7862" target="_self" rel="nofollow noopener noreferrer">ae6a4e2</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.1 to 3.4.3 (<a href="https://github.com/kvadevack/site/commit/2f1a6f772b14b28a6bfb1c5e1c4780f0be38daef" target="_self" rel="nofollow noopener noreferrer">2f1a6f7</a>)</li>
+<li><strong>deps:</strong> bump gatsby from 2.20.25 to 2.20.26 (c3589eb)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-react-helmet from 3.2.2 to 3.2.4 (6b918d8)</li>
+<li><strong>deps:</strong> bump gatsby-plugin-sitemap from 2.3.1 to 2.3.5 (ae6a4e2)</li>
+<li><strong>deps:</strong> bump gatsby-remark-prismjs from 3.4.1 to 3.4.3 (2f1a6f7)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.9...v1.2.10" target="_self" rel="nofollow noopener noreferrer">1.2.10</a> (2020-04-18)</h2>
+<h2>1.2.10 (2020-04-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>bump gatsby from 2.20.18 to 2.20.25 (<a href="https://github.com/kvadevack/site/commit/a541bcf050783ac427e1706a9ade5a8b6af98055" target="_self" rel="nofollow noopener noreferrer">a541bcf</a>)</li>
+<li>bump gatsby from 2.20.18 to 2.20.25 (a541bcf)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.8...v1.2.9" target="_self" rel="nofollow noopener noreferrer">1.2.9</a> (2020-04-18)</h2>
+<h2>1.2.9 (2020-04-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>deps:</strong> bump gatsby-image from 2.3.2 to 2.3.4 (<a href="https://github.com/kvadevack/site/commit/e9b04f313543fd178994059b6d8da1ee6c079ece" target="_self" rel="nofollow noopener noreferrer">e9b04f3</a>)</li>
-<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.3.1 to 2.3.3 (<a href="https://github.com/kvadevack/site/commit/e5b2eb18e83bee4a2d7c0bcbbfe0ce72853b5d8e" target="_self" rel="nofollow noopener noreferrer">e5b2eb1</a>)</li>
+<li><strong>deps:</strong> bump gatsby-image from 2.3.2 to 2.3.4 (e9b04f3)</li>
+<li><strong>deps:</strong> bump gatsby-remark-responsive-iframe from 2.3.1 to 2.3.3 (e5b2eb1)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.7...v1.2.8" target="_self" rel="nofollow noopener noreferrer">1.2.8</a> (2020-04-17)</h2>
+<h2>1.2.8 (2020-04-17)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>upgrade start-server-and-test from 1.10.11 to 1.11.0 (<a href="https://github.com/kvadevack/site/commit/29fe2766770ee658aeb18a406a5d7b574bbd78f8" target="_self" rel="nofollow noopener noreferrer">29fe276</a>)</li>
+<li>upgrade start-server-and-test from 1.10.11 to 1.11.0 (29fe276)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.6...v1.2.7" target="_self" rel="nofollow noopener noreferrer">1.2.7</a> (2020-04-16)</h2>
+<h2>1.2.7 (2020-04-16)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>upgrade cypress from 4.3.0 to 4.4.0 (<a href="https://github.com/kvadevack/site/commit/1a14158e34575491c03c935e457c36a703908e6c" target="_self" rel="nofollow noopener noreferrer">1a14158</a>)</li>
+<li>upgrade cypress from 4.3.0 to 4.4.0 (1a14158)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.5...v1.2.6" target="_self" rel="nofollow noopener noreferrer">1.2.6</a> (2020-04-16)</h2>
+<h2>1.2.6 (2020-04-16)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li>package.json, package-lock.json &#x26; .snyk to reduce vulnerabilities (<a href="https://github.com/kvadevack/site/commit/8603c967447b856172cf55f38790ad811dc5a71b" target="_self" rel="nofollow noopener noreferrer">8603c96</a>)</li>
+<li>package.json, package-lock.json &#x26; .snyk to reduce vulnerabilities (8603c96)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.4...v1.2.5" target="_self" rel="nofollow noopener noreferrer">1.2.5</a> (2020-04-13)</h2>
+<h2>1.2.5 (2020-04-13)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.19.12 to 2.20.18 (<a href="https://github.com/kvadevack/site/commit/0d3e3b415f93eb371581442ae42fb9753a39db24" target="_self" rel="nofollow noopener noreferrer">0d3e3b4</a>)</li>
-<li><strong>package:</strong> update gatsby-image from 2.2.40 to 2.3.2 (<a href="https://github.com/kvadevack/site/commit/a0ac4588a840351e3eab6adca76057fc62ce8f85" target="_self" rel="nofollow noopener noreferrer">a0ac458</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.27 to 2.4.1 (<a href="https://github.com/kvadevack/site/commit/fb096ec2e55ab65e8dcc03399a355a1ffe63e879" target="_self" rel="nofollow noopener noreferrer">fb096ec</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-less from 3.0.19 to 3.1.1 (<a href="https://github.com/kvadevack/site/commit/421d7c49585dc405502dff059d752ba59cb36ba1" target="_self" rel="nofollow noopener noreferrer">421d7c4</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-manifest from 2.2.5 to 2.3.3 (<a href="https://github.com/kvadevack/site/commit/7d9e07e648f8c0459058124f62f263abfb99d251" target="_self" rel="nofollow noopener noreferrer">7d9e07e</a>)</li>
+<li><strong>package:</strong> update gatsby from 2.19.12 to 2.20.18 (0d3e3b4)</li>
+<li><strong>package:</strong> update gatsby-image from 2.2.40 to 2.3.2 (a0ac458)</li>
+<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.27 to 2.4.1 (fb096ec)</li>
+<li><strong>package:</strong> update gatsby-plugin-less from 3.0.19 to 3.1.1 (421d7c4)</li>
+<li><strong>package:</strong> update gatsby-plugin-manifest from 2.2.5 to 2.3.3 (7d9e07e)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.3...v1.2.4" target="_self" rel="nofollow noopener noreferrer">1.2.4</a> (2020-04-09)</h2>
+<h2>1.2.4 (2020-04-09)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update react-helmet to version 6.0.0 (<a href="https://github.com/kvadevack/site/commit/7d952f0fda04213094771a0b963d889d2626459c" target="_self" rel="nofollow noopener noreferrer">7d952f0</a>)</li>
+<li><strong>package:</strong> update react-helmet to version 6.0.0 (7d952f0)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.2...v1.2.3" target="_self" rel="nofollow noopener noreferrer">1.2.3</a> (2020-02-08)</h2>
+<h2>1.2.3 (2020-02-08)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> update with new position (<a href="https://github.com/kvadevack/site/commit/376322cf8d3a5cd036a6184086eed436f34d5cc1" target="_self" rel="nofollow noopener noreferrer">376322c</a>)</li>
+<li><strong>resume:</strong> update with new position (376322c)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.1...v1.2.2" target="_self" rel="nofollow noopener noreferrer">1.2.2</a> (2020-02-08)</h2>
+<h2>1.2.2 (2020-02-08)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.13.64 to 2.19.12 (<a href="https://github.com/kvadevack/site/commit/1f61e0dc9c6cf31b673059ecf4bd1d2d9ccd2419" target="_self" rel="nofollow noopener noreferrer">1f61e0d</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-less from 2.1.2 to 3.0.19 (<a href="https://github.com/kvadevack/site/commit/ed78af8c1be570954e1b7f77c0260ca32bf62df9" target="_self" rel="nofollow noopener noreferrer">ed78af8</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-offline from 2.2.10 to 3.0.34 (<a href="https://github.com/kvadevack/site/commit/13f0ac11292ff96ba22a5f266d2f76646e6923e9" target="_self" rel="nofollow noopener noreferrer">13f0ac1</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-embed-video from 1.7.1 to 2.0.1 (<a href="https://github.com/kvadevack/site/commit/ad68663094ff0a187e07698b9f5fa2c8ea7c84da" target="_self" rel="nofollow noopener noreferrer">ad68663</a>)</li>
+<li><strong>package:</strong> update gatsby from 2.13.64 to 2.19.12 (1f61e0d)</li>
+<li><strong>package:</strong> update gatsby-plugin-less from 2.1.2 to 3.0.19 (ed78af8)</li>
+<li><strong>package:</strong> update gatsby-plugin-offline from 2.2.10 to 3.0.34 (13f0ac1)</li>
+<li><strong>package:</strong> update gatsby-remark-embed-video from 1.7.1 to 2.0.1 (ad68663)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.2.0...v1.2.1" target="_self" rel="nofollow noopener noreferrer">1.2.1</a> (2019-08-23)</h2>
+<h2>1.2.1 (2019-08-23)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update semantic-ui-react to version 0.88.0 (<a href="https://github.com/kvadevack/site/commit/357c82a" target="_self" rel="nofollow noopener noreferrer">357c82a</a>)</li>
+<li><strong>package:</strong> update semantic-ui-react to version 0.88.0 (357c82a)</li>
 </ul>
-<h1><a href="https://github.com/kvadevack/site/compare/v1.1.1...v1.2.0" target="_self" rel="nofollow noopener noreferrer">1.2.0</a> (2019-08-18)</h1>
+<h2>1.2.0 (2019-08-18)</h2>
 <h3>Features</h3>
 <ul>
-<li><strong>resume:</strong> about/summary (<a href="https://github.com/kvadevack/site/commit/16fbf28" target="_self" rel="nofollow noopener noreferrer">16fbf28</a>)</li>
+<li><strong>resume:</strong> about/summary (16fbf28)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.1.0...v1.1.1" target="_self" rel="nofollow noopener noreferrer">1.1.1</a> (2019-08-18)</h2>
+<h2>1.1.1 (2019-08-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> add some technologies (<a href="https://github.com/kvadevack/site/commit/b283859" target="_self" rel="nofollow noopener noreferrer">b283859</a>)</li>
-<li><strong>resume:</strong> show GitHub URL for print and add a link to the resume (<a href="https://github.com/kvadevack/site/commit/45857a5" target="_self" rel="nofollow noopener noreferrer">45857a5</a>)</li>
+<li><strong>resume:</strong> add some technologies (b283859)</li>
+<li><strong>resume:</strong> show GitHub URL for print and add a link to the resume (45857a5)</li>
 </ul>
-<h1><a href="https://github.com/kvadevack/site/compare/v1.0.6...v1.1.0" target="_self" rel="nofollow noopener noreferrer">1.1.0</a> (2019-08-18)</h1>
+<h2>1.1.0 (2019-08-18)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>dom:</strong> use new react-helmet syntax and ensure all head tags are unique (<a href="https://github.com/kvadevack/site/commit/7b17f9a" target="_self" rel="nofollow noopener noreferrer">7b17f9a</a>)</li>
-<li><strong>posts/nintendo-switch-virtual-keyboard:</strong> meaningful alts (<a href="https://github.com/kvadevack/site/commit/33f4992" target="_self" rel="nofollow noopener noreferrer">33f4992</a>)</li>
-<li><strong>posts/wrapping-c-libraries-with-smart-pointers:</strong> update GitHub URL to reflect transferred repository (<a href="https://github.com/kvadevack/site/commit/a29c2fc" target="_self" rel="nofollow noopener noreferrer">a29c2fc</a>)</li>
+<li><strong>dom:</strong> use new react-helmet syntax and ensure all head tags are unique (7b17f9a)</li>
+<li><strong>posts/nintendo-switch-virtual-keyboard:</strong> meaningful alts (33f4992)</li>
+<li><strong>posts/wrapping-c-libraries-with-smart-pointers:</strong> update GitHub URL to reflect transferred repository (a29c2fc)</li>
 </ul>
 <h3>Features</h3>
 <ul>
-<li><strong>posts:</strong> new post "How This Site Gets Built" (<a href="https://github.com/kvadevack/site/commit/84f9f12" target="_self" rel="nofollow noopener noreferrer">84f9f12</a>)</li>
+<li><strong>posts:</strong> new post "How This Site Gets Built" (84f9f12)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.0.5...v1.0.6" target="_self" rel="nofollow noopener noreferrer">1.0.6</a> (2019-08-15)</h2>
+<h2>1.0.6 (2019-08-15)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>content:</strong> use better photo (<a href="https://github.com/kvadevack/site/commit/d8e1ebe" target="_self" rel="nofollow noopener noreferrer">d8e1ebe</a>)</li>
-<li><strong>resume:</strong> update address to current (<a href="https://github.com/kvadevack/site/commit/70359be" target="_self" rel="nofollow noopener noreferrer">70359be</a>)</li>
+<li><strong>content:</strong> use better photo (d8e1ebe)</li>
+<li><strong>resume:</strong> update address to current (70359be)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.0.4...v1.0.5" target="_self" rel="nofollow noopener noreferrer">1.0.5</a> (2019-08-15)</h2>
+<h2>1.0.5 (2019-08-15)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.10.5 to 2.13.64 (<a href="https://github.com/kvadevack/site/commit/6c7432e" target="_self" rel="nofollow noopener noreferrer">6c7432e</a>)</li>
-<li><strong>package:</strong> update gatsby-image from 2.2.3 to 2.2.8 (<a href="https://github.com/kvadevack/site/commit/0a0dc3c" target="_self" rel="nofollow noopener noreferrer">0a0dc3c</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.1 to 2.3.6 (<a href="https://github.com/kvadevack/site/commit/e7e48c2" target="_self" rel="nofollow noopener noreferrer">e7e48c2</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-less from 2.1.0 to 2.1.2 (<a href="https://github.com/kvadevack/site/commit/3f5216b" target="_self" rel="nofollow noopener noreferrer">3f5216b</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-manifest from 2.2.0 to 2.2.5 (<a href="https://github.com/kvadevack/site/commit/299d96a" target="_self" rel="nofollow noopener noreferrer">299d96a</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-offline from 2.2.0 to 2.2.6 (<a href="https://github.com/kvadevack/site/commit/52062e6" target="_self" rel="nofollow noopener noreferrer">52062e6</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-react-helmet from 3.1.0 to 3.1.3 (<a href="https://github.com/kvadevack/site/commit/8ed5458" target="_self" rel="nofollow noopener noreferrer">8ed5458</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-robots-txt from 1.4.0 to 1.5.0 (<a href="https://github.com/kvadevack/site/commit/91714f6" target="_self" rel="nofollow noopener noreferrer">91714f6</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-sharp from 2.2.1 to 2.2.11 (<a href="https://github.com/kvadevack/site/commit/e51734a" target="_self" rel="nofollow noopener noreferrer">e51734a</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-sitemap from 2.2.0 to 2.2.6 (<a href="https://github.com/kvadevack/site/commit/f1cbe1c" target="_self" rel="nofollow noopener noreferrer">f1cbe1c</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-copy-linked-files from 2.1.0 to 2.1.6 (<a href="https://github.com/kvadevack/site/commit/b99c278" target="_self" rel="nofollow noopener noreferrer">b99c278</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-images from 3.1.2 to 3.1.11 (<a href="https://github.com/kvadevack/site/commit/ba5a7bd" target="_self" rel="nofollow noopener noreferrer">ba5a7bd</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-prismjs from 3.3.0 to 3.3.5 (<a href="https://github.com/kvadevack/site/commit/389a34f" target="_self" rel="nofollow noopener noreferrer">389a34f</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.2.1 to 2.2.4 (<a href="https://github.com/kvadevack/site/commit/7739b8a" target="_self" rel="nofollow noopener noreferrer">7739b8a</a>)</li>
-<li><strong>package:</strong> update gatsby-source-filesystem from 2.1.1 to 2.1.9 (<a href="https://github.com/kvadevack/site/commit/240573c" target="_self" rel="nofollow noopener noreferrer">240573c</a>)</li>
-<li><strong>package:</strong> update gatsby-transformer-remark from 2.5.0 to 2.6.14 (<a href="https://github.com/kvadevack/site/commit/b273620" target="_self" rel="nofollow noopener noreferrer">b273620</a>)</li>
-<li><strong>package:</strong> update gatsby-transformer-sharp from 2.2.0 to 2.2.6 (<a href="https://github.com/kvadevack/site/commit/db38e1f" target="_self" rel="nofollow noopener noreferrer">db38e1f</a>)</li>
-<li><strong>package:</strong> update mermaid from 8.1.0 to 8.2.3 (<a href="https://github.com/kvadevack/site/commit/dc9b6e7" target="_self" rel="nofollow noopener noreferrer">dc9b6e7</a>)</li>
-<li><strong>package:</strong> update prismjs from 1.16.0 to 1.17.1 (<a href="https://github.com/kvadevack/site/commit/ace81ce" target="_self" rel="nofollow noopener noreferrer">ace81ce</a>)</li>
-<li><strong>package:</strong> update react from 16.8.6 to 16.9.0 (<a href="https://github.com/kvadevack/site/commit/025e653" target="_self" rel="nofollow noopener noreferrer">025e653</a>)</li>
-<li><strong>package:</strong> update react-dom from 16.8.6 to 16.9.0 (<a href="https://github.com/kvadevack/site/commit/3bd5266" target="_self" rel="nofollow noopener noreferrer">3bd5266</a>)</li>
-<li><strong>package:</strong> update semantic-ui-react from 0.87.2 to 0.87.3 (<a href="https://github.com/kvadevack/site/commit/fa0546b" target="_self" rel="nofollow noopener noreferrer">fa0546b</a>)</li>
+<li><strong>package:</strong> update gatsby from 2.10.5 to 2.13.64 (6c7432e)</li>
+<li><strong>package:</strong> update gatsby-image from 2.2.3 to 2.2.8 (0a0dc3c)</li>
+<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.1 to 2.3.6 (e7e48c2)</li>
+<li><strong>package:</strong> update gatsby-plugin-less from 2.1.0 to 2.1.2 (3f5216b)</li>
+<li><strong>package:</strong> update gatsby-plugin-manifest from 2.2.0 to 2.2.5 (299d96a)</li>
+<li><strong>package:</strong> update gatsby-plugin-offline from 2.2.0 to 2.2.6 (52062e6)</li>
+<li><strong>package:</strong> update gatsby-plugin-react-helmet from 3.1.0 to 3.1.3 (8ed5458)</li>
+<li><strong>package:</strong> update gatsby-plugin-robots-txt from 1.4.0 to 1.5.0 (91714f6)</li>
+<li><strong>package:</strong> update gatsby-plugin-sharp from 2.2.1 to 2.2.11 (e51734a)</li>
+<li><strong>package:</strong> update gatsby-plugin-sitemap from 2.2.0 to 2.2.6 (f1cbe1c)</li>
+<li><strong>package:</strong> update gatsby-remark-copy-linked-files from 2.1.0 to 2.1.6 (b99c278)</li>
+<li><strong>package:</strong> update gatsby-remark-images from 3.1.2 to 3.1.11 (ba5a7bd)</li>
+<li><strong>package:</strong> update gatsby-remark-prismjs from 3.3.0 to 3.3.5 (389a34f)</li>
+<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.2.1 to 2.2.4 (7739b8a)</li>
+<li><strong>package:</strong> update gatsby-source-filesystem from 2.1.1 to 2.1.9 (240573c)</li>
+<li><strong>package:</strong> update gatsby-transformer-remark from 2.5.0 to 2.6.14 (b273620)</li>
+<li><strong>package:</strong> update gatsby-transformer-sharp from 2.2.0 to 2.2.6 (db38e1f)</li>
+<li><strong>package:</strong> update mermaid from 8.1.0 to 8.2.3 (dc9b6e7)</li>
+<li><strong>package:</strong> update prismjs from 1.16.0 to 1.17.1 (ace81ce)</li>
+<li><strong>package:</strong> update react from 16.8.6 to 16.9.0 (025e653)</li>
+<li><strong>package:</strong> update react-dom from 16.8.6 to 16.9.0 (3bd5266)</li>
+<li><strong>package:</strong> update semantic-ui-react from 0.87.2 to 0.87.3 (fa0546b)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.0.3...v1.0.4" target="_self" rel="nofollow noopener noreferrer">1.0.4</a> (2019-06-26)</h2>
+<h2>1.0.4 (2019-06-26)</h2>
 <h3>Performance Improvements</h3>
 <ul>
-<li><strong>fonts:</strong> use font-display and preconnect for Google Fonts (<a href="https://github.com/kvadevack/site/commit/5271922" target="_self" rel="nofollow noopener noreferrer">5271922</a>)</li>
+<li><strong>fonts:</strong> use font-display and preconnect for Google Fonts (5271922)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.0.2...v1.0.3" target="_self" rel="nofollow noopener noreferrer">1.0.3</a> (2019-06-26)</h2>
+<h2>1.0.3 (2019-06-26)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.10.0 to 2.10.5 (<a href="https://github.com/kvadevack/site/commit/b9a492a" target="_self" rel="nofollow noopener noreferrer">b9a492a</a>)</li>
-<li><strong>package:</strong> update gatsby-image from 2.2.1 to 2.2.3 (<a href="https://github.com/kvadevack/site/commit/2264bf3" target="_self" rel="nofollow noopener noreferrer">2264bf3</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.0 to 2.3.1 (<a href="https://github.com/kvadevack/site/commit/aada1da" target="_self" rel="nofollow noopener noreferrer">aada1da</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-images from 3.1.0 to 3.1.2 (<a href="https://github.com/kvadevack/site/commit/4e325be" target="_self" rel="nofollow noopener noreferrer">4e325be</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.2.0 to 2.2.1 (<a href="https://github.com/kvadevack/site/commit/4fcf48a" target="_self" rel="nofollow noopener noreferrer">4fcf48a</a>)</li>
-<li><strong>package:</strong> update gatsby-source-filesystem from 2.1.0 to 2.1.1 (<a href="https://github.com/kvadevack/site/commit/cbc203a" target="_self" rel="nofollow noopener noreferrer">cbc203a</a>)</li>
-<li><strong>package:</strong> update mermaid from 8.0.0 to 8.1.0 (<a href="https://github.com/kvadevack/site/commit/1e957b6" target="_self" rel="nofollow noopener noreferrer">1e957b6</a>)</li>
+<li><strong>package:</strong> update gatsby from 2.10.0 to 2.10.5 (b9a492a)</li>
+<li><strong>package:</strong> update gatsby-image from 2.2.1 to 2.2.3 (2264bf3)</li>
+<li><strong>package:</strong> update gatsby-plugin-feed from 2.3.0 to 2.3.1 (aada1da)</li>
+<li><strong>package:</strong> update gatsby-remark-images from 3.1.0 to 3.1.2 (4e325be)</li>
+<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.2.0 to 2.2.1 (4fcf48a)</li>
+<li><strong>package:</strong> update gatsby-source-filesystem from 2.1.0 to 2.1.1 (cbc203a)</li>
+<li><strong>package:</strong> update mermaid from 8.0.0 to 8.1.0 (1e957b6)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.0.1...v1.0.2" target="_self" rel="nofollow noopener noreferrer">1.0.2</a> (2019-06-24)</h2>
+<h2>1.0.2 (2019-06-24)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update gatsby from 2.1.29 to 2.10.0 (<a href="https://github.com/kvadevack/site/commit/e93bae8" target="_self" rel="nofollow noopener noreferrer">e93bae8</a>)</li>
-<li><strong>package:</strong> update gatsby-image from 2.0.31 to 2.2.1 (<a href="https://github.com/kvadevack/site/commit/81727d1" target="_self" rel="nofollow noopener noreferrer">81727d1</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-feed from 2.0.14 to 2.3.0 (<a href="https://github.com/kvadevack/site/commit/ff0fe49" target="_self" rel="nofollow noopener noreferrer">ff0fe49</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-less from 2.0.11 to 2.1.0 (<a href="https://github.com/kvadevack/site/commit/dba423a" target="_self" rel="nofollow noopener noreferrer">dba423a</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-manifest from 2.0.22 to 2.2.0 (<a href="https://github.com/kvadevack/site/commit/5b66b7b" target="_self" rel="nofollow noopener noreferrer">5b66b7b</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-offline from 2.0.24 to 2.2.0 (<a href="https://github.com/kvadevack/site/commit/ba1e216" target="_self" rel="nofollow noopener noreferrer">ba1e216</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-react-helmet from 3.0.8 to 3.1.0 (<a href="https://github.com/kvadevack/site/commit/9e03bc6" target="_self" rel="nofollow noopener noreferrer">9e03bc6</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-sharp from 2.0.25 to 2.2.1 (<a href="https://github.com/kvadevack/site/commit/749570b" target="_self" rel="nofollow noopener noreferrer">749570b</a>)</li>
-<li><strong>package:</strong> update gatsby-plugin-sitemap from 2.0.6 to 2.2.0 (<a href="https://github.com/kvadevack/site/commit/f2ec55a" target="_self" rel="nofollow noopener noreferrer">f2ec55a</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-copy-linked-files from 2.0.9 to 2.1.0 (<a href="https://github.com/kvadevack/site/commit/56ff361" target="_self" rel="nofollow noopener noreferrer">56ff361</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-embed-video from 1.7.0 to 1.7.1 (<a href="https://github.com/kvadevack/site/commit/6cc5383" target="_self" rel="nofollow noopener noreferrer">6cc5383</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-images from 3.0.6 to 3.1.0 (<a href="https://github.com/kvadevack/site/commit/2a7ca12" target="_self" rel="nofollow noopener noreferrer">2a7ca12</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-prismjs from 3.2.4 to 3.3.0 (<a href="https://github.com/kvadevack/site/commit/199cbd1" target="_self" rel="nofollow noopener noreferrer">199cbd1</a>)</li>
-<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.0.10 to 2.2.0 (<a href="https://github.com/kvadevack/site/commit/c8f59e5" target="_self" rel="nofollow noopener noreferrer">c8f59e5</a>)</li>
-<li><strong>package:</strong> update gatsby-source-filesystem from 2.0.23 to 2.1.0 (<a href="https://github.com/kvadevack/site/commit/f013c19" target="_self" rel="nofollow noopener noreferrer">f013c19</a>)</li>
-<li><strong>package:</strong> update gatsby-transformer-remark from 2.3.1 to 2.5.0 (<a href="https://github.com/kvadevack/site/commit/9f257f1" target="_self" rel="nofollow noopener noreferrer">9f257f1</a>)</li>
-<li><strong>package:</strong> update gatsby-transformer-sharp from 2.1.15 to 2.2.0 (<a href="https://github.com/kvadevack/site/commit/7309fe6" target="_self" rel="nofollow noopener noreferrer">7309fe6</a>)</li>
-<li><strong>package:</strong> update prismjs from 1.15.0 to 1.16.0 (<a href="https://github.com/kvadevack/site/commit/4c71b1c" target="_self" rel="nofollow noopener noreferrer">4c71b1c</a>)</li>
-<li><strong>package:</strong> update react from 16.8.4 to 16.8.6 (<a href="https://github.com/kvadevack/site/commit/fc6bdd9" target="_self" rel="nofollow noopener noreferrer">fc6bdd9</a>)</li>
-<li><strong>package:</strong> update react-dom from 16.8.4 to 16.8.6 (<a href="https://github.com/kvadevack/site/commit/8e6b553" target="_self" rel="nofollow noopener noreferrer">8e6b553</a>)</li>
-<li><strong>package:</strong> update react-helmet from 5.2.0 to 5.2.1 (<a href="https://github.com/kvadevack/site/commit/ff694d2" target="_self" rel="nofollow noopener noreferrer">ff694d2</a>)</li>
+<li><strong>package:</strong> update gatsby from 2.1.29 to 2.10.0 (e93bae8)</li>
+<li><strong>package:</strong> update gatsby-image from 2.0.31 to 2.2.1 (81727d1)</li>
+<li><strong>package:</strong> update gatsby-plugin-feed from 2.0.14 to 2.3.0 (ff0fe49)</li>
+<li><strong>package:</strong> update gatsby-plugin-less from 2.0.11 to 2.1.0 (dba423a)</li>
+<li><strong>package:</strong> update gatsby-plugin-manifest from 2.0.22 to 2.2.0 (5b66b7b)</li>
+<li><strong>package:</strong> update gatsby-plugin-offline from 2.0.24 to 2.2.0 (ba1e216)</li>
+<li><strong>package:</strong> update gatsby-plugin-react-helmet from 3.0.8 to 3.1.0 (9e03bc6)</li>
+<li><strong>package:</strong> update gatsby-plugin-sharp from 2.0.25 to 2.2.1 (749570b)</li>
+<li><strong>package:</strong> update gatsby-plugin-sitemap from 2.0.6 to 2.2.0 (f2ec55a)</li>
+<li><strong>package:</strong> update gatsby-remark-copy-linked-files from 2.0.9 to 2.1.0 (56ff361)</li>
+<li><strong>package:</strong> update gatsby-remark-embed-video from 1.7.0 to 1.7.1 (6cc5383)</li>
+<li><strong>package:</strong> update gatsby-remark-images from 3.0.6 to 3.1.0 (2a7ca12)</li>
+<li><strong>package:</strong> update gatsby-remark-prismjs from 3.2.4 to 3.3.0 (199cbd1)</li>
+<li><strong>package:</strong> update gatsby-remark-responsive-iframe from 2.0.10 to 2.2.0 (c8f59e5)</li>
+<li><strong>package:</strong> update gatsby-source-filesystem from 2.0.23 to 2.1.0 (f013c19)</li>
+<li><strong>package:</strong> update gatsby-transformer-remark from 2.3.1 to 2.5.0 (9f257f1)</li>
+<li><strong>package:</strong> update gatsby-transformer-sharp from 2.1.15 to 2.2.0 (7309fe6)</li>
+<li><strong>package:</strong> update prismjs from 1.15.0 to 1.16.0 (4c71b1c)</li>
+<li><strong>package:</strong> update react from 16.8.4 to 16.8.6 (fc6bdd9)</li>
+<li><strong>package:</strong> update react-dom from 16.8.4 to 16.8.6 (8e6b553)</li>
+<li><strong>package:</strong> update react-helmet from 5.2.0 to 5.2.1 (ff694d2)</li>
 </ul>
-<h2><a href="https://github.com/kvadevack/site/compare/v1.0.0...v1.0.1" target="_self" rel="nofollow noopener noreferrer">1.0.1</a> (2019-06-20)</h2>
+<h2>1.0.1 (2019-06-20)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>package:</strong> update semantic-ui-react to version 0.87.2 (<a href="https://github.com/kvadevack/site/commit/38dfc87" target="_self" rel="nofollow noopener noreferrer">38dfc87</a>), closes <a href="https://github.com/kvadevack/site/issues/29" target="_self" rel="nofollow noopener noreferrer">#29</a></li>
+<li><strong>package:</strong> update semantic-ui-react to version 0.87.2 (38dfc87)</li>
 </ul>
-<h1>1.0.0 (2019-03-15)</h1>
+<h2>1.0.0 (2019-03-15)</h2>
 <h3>Bug Fixes</h3>
 <ul>
-<li><strong>resume:</strong> reword DevOps level (<a href="https://github.com/kvadevack/site/commit/4e35c73" target="_self" rel="nofollow noopener noreferrer">4e35c73</a>)</li>
-</ul></div></div></div></div><div class="row mobile only"><div class="sixteen wide column"><div class="ui basic center aligned segment"><p>© <!-- -->Martin Häger<!-- -->, 2018 - 2021.</p><p>v<!-- -->1.5.1<!-- --> (<a href="/changelog">changelog</a>). Built with <a href="https://graphql.org/">GraphQL</a>, <a href="https://reactjs.org/">React</a> and <a href="https://semantic-ui.com/">Semantic UI</a>.</p></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/changelog";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e01de5659a002fb7adfb.js"],"app":["/app-6228d84f66e98df05d8e.js"]};/*]]>*/</script><script src="/polyfill-e01de5659a002fb7adfb.js" nomodule=""></script><script src="/app-6228d84f66e98df05d8e.js" async=""></script><script src="/styles-08bc34de4ea872a98d93.js" async=""></script><script src="/framework-04017db0dec66097c42d.js" async=""></script><script src="/webpack-runtime-71e046241d7d5cdf707d.js" async=""></script></body></html>
+<li><strong>resume:</strong> reword DevOps level (4e35c73)</li>
+</ul></div></div></div></div><div class="row mobile only"><div class="sixteen wide column"><div class="ui basic center aligned segment"><p>© <!-- -->Martin Häger<!-- -->, 2018 - 2021.</p><p>v<!-- -->1.5.2<!-- --> (<a href="/changelog">changelog</a>). Built with <a href="https://graphql.org/">GraphQL</a>, <a href="https://reactjs.org/">React</a> and <a href="https://semantic-ui.com/">Semantic UI</a>.</p></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/changelog";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e01de5659a002fb7adfb.js"],"app":["/app-c071990d232c107de880.js"]};/*]]>*/</script><script src="/polyfill-e01de5659a002fb7adfb.js" nomodule=""></script><script src="/app-c071990d232c107de880.js" async=""></script><script src="/styles-08bc34de4ea872a98d93.js" async=""></script><script src="/framework-04017db0dec66097c42d.js" async=""></script><script src="/webpack-runtime-71e046241d7d5cdf707d.js" async=""></script></body></html>
