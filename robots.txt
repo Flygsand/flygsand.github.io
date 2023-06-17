@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://flygsand.dev/sitemap/sitemap-index.xml
+Sitemap: https://flygsand.dev/sitemap-index.xml
 Host: https://flygsand.dev
